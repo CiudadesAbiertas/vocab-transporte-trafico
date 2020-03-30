@@ -1,0 +1,20 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "estraf:Carga" "http://www.w3.org/ns/sosa/ObservableProperty" "estraf:Incidencia" "http://www.opengis.net/spec/geosparql/1.0#SpatialObject" "estraf:PropiedadMedicionTrafico" "estraf:EquipoTrafico" "estraf:DispositivoMedicionTrafico" "http://www.opengis.net/spec/geosparql/1.0#Point" "estraf:Intensidad" "http://www.opengis.net/spec/geosparql/1.0#Geometry" "estraf:IncidenciaPlanificada" "http://www.w3.org/ns/sosa/Sensor" "estraf:Ocupacion" "estraf:IncidenciaNoPlanificada" "http://www.opengis.net/spec/geosparql/1.0#Feature" ; /*classes style*/
+node [shape = rectangle, color="black"]; "" ; /*literals style*/
+	"http://www.opengis.net/spec/geosparql/1.0#Geometry" -> "http://www.opengis.net/spec/geosparql/1.0#SpatialObject" [ label = "rdfs:subClassOf" ];
+	"estraf:Carga" -> "estraf:PropiedadMedicionTrafico" [ label = "rdfs:subClassOf" ];
+	"estraf:IncidenciaNoPlanificada" -> "" [ label = "rdfs:subClassOf" ];
+	"estraf:IncidenciaNoPlanificada" -> "estraf:Incidencia" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/spec/geosparql/1.0#Point" -> "http://www.opengis.net/spec/geosparql/1.0#Geometry" [ label = "rdfs:subClassOf" ];
+	"rdfs:subClassOf" -> "owl:AnnotationProperty" [ label = "rdf:type" ];
+	"estraf:Ocupacion" -> "estraf:PropiedadMedicionTrafico" [ label = "rdfs:subClassOf" ];
+	"estraf:IncidenciaPlanificada" -> "estraf:Incidencia" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/spec/geosparql/1.0#Feature" -> "http://www.opengis.net/spec/geosparql/1.0#SpatialObject" [ label = "rdfs:subClassOf" ];
+	"estraf:PropiedadMedicionTrafico" -> "http://www.w3.org/ns/sosa/ObservableProperty" [ label = "rdfs:subClassOf" ];
+	"estraf:DispositivoMedicionTrafico" -> "http://www.w3.org/ns/sosa/Sensor" [ label = "rdfs:subClassOf" ];
+	"estraf:DispositivoMedicionTrafico" -> "estraf:EquipoTrafico" [ label = "rdfs:subClassOf" ];
+	"estraf:Intensidad" -> "estraf:PropiedadMedicionTrafico" [ label = "rdfs:subClassOf" ];
+
+}
