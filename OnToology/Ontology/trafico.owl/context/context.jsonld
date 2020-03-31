@@ -3,6 +3,9 @@
     "IncidenciaPlanificada" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada"
     },
+    "termsissued" : {
+      "@id" : "http:/purl.org/dc/termsissued"
+    },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
@@ -28,10 +31,6 @@
     },
     "Carga" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga"
-    },
-    "via" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#via",
-      "@type" : "@id"
     },
     "FeatureOfInterest" : {
       "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
@@ -64,24 +63,14 @@
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
     "Concept" : {
-      "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
-      "@type" : "@id"
-    },
-    "qualifiedCardinality" : {
-      "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality"
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "tipoEquipoTrafico" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoEquipoTrafico",
       "@type" : "@id"
     },
-    "subClassOf" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#subClassOf"
-    },
     "Intensidad" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Intensidad"
-    },
-    "maxQualifiedCardinality" : {
-      "@id" : "http://www.w3.org/2002/07/owl#maxQualifiedCardinality"
     },
     "esRecurrente" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente",
@@ -173,9 +162,6 @@
     "hasFeatureOfInterest" : {
       "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
       "@type" : "@id"
-    },
-    "minQualifiedCardinality" : {
-      "@id" : "http://www.w3.org/2002/07/owl#minQualifiedCardinality"
     },
     "observedProperty" : {
       "@id" : "http://www.w3.org/ns/sosa/observedProperty",
