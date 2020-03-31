@@ -224,14 +224,14 @@ This section provides details for each class and property defined by Vocabulary 
          <dt>is in domain of</dt>
          <dd>
             <a href="#http://schema.org/startDate" title="http://schema.org/startDate">(expected) start date</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#numCarriles"
-               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles">Carriles de circulación</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#incidenciaEnTramo"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo">Incidence in Section</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#ubicacionIncidencia"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia">Location of Incidence</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#numSentidos"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos">Street directions</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#numCarriles"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles">Traffic lanes</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#tipoIncidencia"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia">Type of Incidence</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://schema.org/endDate" title="http://schema.org/endDate">end date</a>
@@ -552,6 +552,12 @@ This section provides details for each class and property defined by Vocabulary 
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Ocupacion">Occupation</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#unidadMedida"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida">Unit of Measurement</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="DispositivoMedicionTrafico">
@@ -597,6 +603,11 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
       </dl>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/ns/sosa/Observation">observation</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#http://www.w3.org/ns/sosa/phenomenonTime" title="http://www.w3.org/ns/sosa/phenomenonTime">Interval Time</a>
@@ -1069,10 +1080,6 @@ This section provides details for each class and property defined by Vocabulary 
          <a href="#http://schema.org/startDate" title="http://schema.org/startDate">(expected) start date</a>
       </li>
       <li>
-         <a href="#numCarriles"
-            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles">Carriles de circulación</a>
-      </li>
-      <li>
          <a href="#http://schema.org/endDate" title="http://schema.org/endDate">end date</a>
       </li>
       <li>
@@ -1105,6 +1112,14 @@ This section provides details for each class and property defined by Vocabulary 
       <li>
          <a href="#numSentidos"
             title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos">Street directions</a>
+      </li>
+      <li>
+         <a href="#numCarriles"
+            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles">Traffic lanes</a>
+      </li>
+      <li>
+         <a href="#unidadMedida"
+            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida">Unit of Measurement</a>
       </li>
    </ul>
    <div class="entity" id="fechaFinPrevista">
@@ -1163,37 +1178,6 @@ This section provides details for each class and property defined by Vocabulary 
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="numCarriles">
-      <h3>Carriles de circulación<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles</p>
-      <div class="comment">
-         <span class="markdown">Number of lanes of traffic</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://vocab.ciudadesabiertas.es/def/transporte/trafico">http://vocab.ciudadesabiertas.es/def/transporte/trafico</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Incidencia"
-                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">Incidence</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
             </dd>
          </dl>
       </div>
@@ -1493,6 +1477,67 @@ This section provides details for each class and property defined by Vocabulary 
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="numCarriles">
+      <h3>Traffic lanes<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles</p>
+      <div class="comment">
+         <span class="markdown">Number of lanes of traffic</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.ciudadesabiertas.es/def/transporte/trafico">http://vocab.ciudadesabiertas.es/def/transporte/trafico</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Incidencia"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">Incidence</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#integer">integer</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="unidadMedida">
+      <h3>Unit of Measurement<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida</p>
+      <div class="comment">
+         <span class="markdown">This property allows describing
+	the unit of measurement of the Trafic Monitoring Device</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PropiedadMedicionTrafico"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico">Traffic meassuring property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
             </dd>
          </dl>
       </div>

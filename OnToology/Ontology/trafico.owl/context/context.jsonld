@@ -19,6 +19,10 @@
       "@id" : "http://schema.org/startDate",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
+    "unidadMedida" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "issued" : {
       "@id" : "http://purl.org/dc/terms/issued"
     },
