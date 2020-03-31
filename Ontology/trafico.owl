@@ -482,8 +482,8 @@
         <rdfs:comment xml:lang="en">Number of lanes of traffic</rdfs:comment>
         <rdfs:comment xml:lang="es">Número de carriles de circulación</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
-        <rdfs:label xml:lang="en">Carriles de circulación</rdfs:label>
-        <rdfs:label xml:lang="es">Traffic lanes</rdfs:label>
+        <rdfs:label xml:lang="es">Carriles de circulación</rdfs:label>
+        <rdfs:label xml:lang="en">Traffic lanes</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -527,7 +527,22 @@
         <rdfs:label xml:lang="en">Recurrence</rdfs:label>
         <rdfs:label xml:lang="es">Recurrencia</rdfs:label>
     </owl:DatatypeProperty>
-    
+
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Esta propiedad permite describir
+	la unidad de medida de la medición del Dispositivo de Medición
+	de Tráfico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property allows describing
+	the unit of measurement of the Trafic Monitoring Device</rdfs:comment>
+        <rdfs:label xml:lang="es">Unidad de Medida</rdfs:label>
+        <rdfs:label xml:lang="en">Unit of Measurement</rdfs:label>
+    </owl:DatatypeProperty>
+
 
 
     <!-- http://www.w3.org/ns/sosa/hasSimpleResult -->
