@@ -162,7 +162,9 @@
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#finTramo -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#finTramo">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
+        <rdfs:domain
+	    rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.opengis.net/spec/geosparql/1.0#Point"/>
         <rdfs:comment xml:lang="es">Relación del tramo con el lugar donde finaliza el tramo.</rdfs:comment>
         <rdfs:comment xml:lang="en">Relationship of the section with the point where it ends.</rdfs:comment>
@@ -174,7 +176,9 @@
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
+        <rdfs:domain
+	    rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
         <rdfs:comment xml:lang="es">Relación de la Incidencia con el Tramo donde se produce la misma.</rdfs:comment>
         <rdfs:comment xml:lang="en">Relationship of the Incidence withe the  Section, where it happens.</rdfs:comment>
@@ -188,7 +192,9 @@
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#inicioTramo -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#inicioTramo">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
+        <rdfs:domain
+	    rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.opengis.net/spec/geosparql/1.0#Point"/>
         <rdfs:comment xml:lang="es">Relación del tramo con el lugar donde se inicia el tramo.</rdfs:comment>
         <rdfs:comment xml:lang="en">Relationship of the section with the point where it starts.</rdfs:comment>
@@ -201,7 +207,9 @@
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea">
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"/>
-        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
+        <rdfs:range
+	    rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:comment xml:lang="es">Relación del Equipo de Tráfico con el tramo que monitorea</rdfs:comment>
         <rdfs:comment xml:lang="en">Relationship between Traffic Equipment and the section it monitors</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
@@ -212,7 +220,9 @@
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoEquipoTrafico -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoEquipoTrafico">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"/>
+        <rdfs:domain
+	    rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -234,7 +244,9 @@
         <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
+        <rdfs:domain
+	    rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -258,7 +270,9 @@
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoNivelServicio -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoNivelServicio">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga"/>
+        <rdfs:domain
+	    rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -281,7 +295,9 @@
         <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"/>
+        <rdfs:domain
+	    rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.opengis.net/spec/geosparql/1.0#Point"/>
         <rdfs:comment xml:lang="es">Relación del Equipo de Tráfico con su ubicación</rdfs:comment>
         <rdfs:comment xml:lang="en">Relationship between Traffic Equipment and its location</rdfs:comment>
@@ -295,7 +311,9 @@
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
+        <rdfs:domain
+	    rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.opengis.net/spec/geosparql/1.0#Point"/>
         <rdfs:comment xml:lang="es">Relación de la Incidencia con su Ubicación</rdfs:comment>
         <rdfs:comment xml:lang="en">Relationship between Incidence and its location</rdfs:comment>
@@ -304,8 +322,20 @@
         <rdfs:label xml:lang="es">Ubicación de la Incidencia</rdfs:label>
     </owl:ObjectProperty>
 
-    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#via -->
 
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#via">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"/>
+        <rdfs:comment xml:lang="es">Relación del Tramo con la/s vía/s que cubre, en caso de que se digan</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship of the Section with the track/s it covers, in case the it is indicated</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
+        <rdfs:label xml:lang="en">Tracks</rdfs:label>
+        <rdfs:label xml:lang="es">Vía</rdfs:label>
+    </owl:ObjectProperty>
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+    
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
