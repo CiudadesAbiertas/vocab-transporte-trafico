@@ -3,20 +3,19 @@
      xml:base="http://vocab.ciudadesabiertas.es/def/transporte/trafico"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dct="http:/purl.org/dc/terms"
-     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
-     xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:schema="http://schema.org"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:sosa="http://w3.org/ns/sosa"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:time="http://www.w3.org/2006/time#"
-     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:estraf="http://vocab.ciudadesabiertas.es/def/transporte/trafico#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:sosa="http://w3.org/ns/sosa"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:estraf="http://vocab.ciudadesabiertas.es/def/transporte/trafico#"
+     xmlns:schema="http://schema.org"
+     xmlns:geosparql="http://www.opengis.net/ont/geosparql#">
     <owl:Ontology rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico">
         <owl:versionIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0"/>
         <dc:contributor xml:lang="es">Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid</dc:contributor>
@@ -43,10 +42,10 @@
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0</terms:license>
         <vann:preferredNamespacePrefix>estraf</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#"/>
-        <rdfs:comment xml:lang="es">Esta versión ha sido generada dentro del contexto del proyecto &quot;Plataforma de gobierno abierto, colaborativa e interoperable&quot; en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   
+        <vann:preferredNamespaceUri xml:lang="es">Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   
     En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos
-    propuestos en las reuniones del ???REPASAR FECHAS.</rdfs:comment>
-        <owl:versionInfo>Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto &quot;Plataforma de gobierno abierto, colaborativa e interoperable&quot; en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</owl:versionInfo>
+    propuestos en las reuniones del grupo.</vann:preferredNamespaceUri>
+        <owl:versionInfo>Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -128,48 +127,6 @@
     
 
 
-    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
-    
-
-
-    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#subClassOf -->
-
-    <owl:AnnotationProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#subClassOf"/>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#subClassOf -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#maxQualifiedCardinality -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#maxQualifiedCardinality"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#minQualifiedCardinality -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#minQualifiedCardinality"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
@@ -184,12 +141,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.w3.org/2001/SMLSchema#nonNegativeInteger -->
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/SMLSchema#nonNegativeInteger"/>
     
 
 
@@ -208,8 +159,6 @@
      -->
 
     
-
-
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#finTramo -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#finTramo">
@@ -222,8 +171,6 @@
         <rdfs:label xml:lang="en">Section end</rdfs:label>
     </owl:ObjectProperty>
     
-
-
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo">
@@ -249,10 +196,8 @@
         <rdfs:label xml:lang="es">Inicio del Tramo</rdfs:label>
         <rdfs:label xml:lang="en">Section start</rdfs:label>
     </owl:ObjectProperty>
-    
 
-
-    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea -->
+        <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea">
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"/>
@@ -263,8 +208,6 @@
         <rdfs:label xml:lang="es">Monitorea</rdfs:label>
         <rdfs:label xml:lang="en">Monitors</rdfs:label>
     </owl:ObjectProperty>
-    
-
 
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoEquipoTrafico -->
 
@@ -275,8 +218,8 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico"/>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -287,9 +230,8 @@
         <rdfs:label xml:lang="es">Tipo de Equipo de Tráfico</rdfs:label>
         <rdfs:label xml:lang="en">Type of Traffic Equipment</rdfs:label>
     </owl:ObjectProperty>
-    
 
-    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia -->
+        <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia">
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
@@ -298,8 +240,8 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia"/>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-incidencia"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -322,7 +264,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
                         <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -335,10 +277,8 @@
         <rdfs:label xml:lang="en">Level of Service</rdfs:label>
         <rdfs:label xml:lang="es">Tipo de Nivel de servicio</rdfs:label>
     </owl:ObjectProperty>
-    
 
-
-    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico -->
+        <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico">
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"/>
@@ -363,23 +303,6 @@
         <rdfs:label xml:lang="en">Location of Incidence</rdfs:label>
         <rdfs:label xml:lang="es">Ubicación de la Incidencia</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#via -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#via">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"/>
-        <rdfs:comment xml:lang="es">Relación del Tramo con la/s vía/s que cubre, en caso de que se digan</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relationship of the Section with the track/s it covers, in case the it is indicated</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
-        <rdfs:label xml:lang="en">Tracks</rdfs:label>
-        <rdfs:label xml:lang="es">Vía</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
 
     <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
 
@@ -406,31 +329,15 @@
 
     <!-- http://www.w3.org/ns/sosa/observedProperty -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observedProperty">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico"/>
-        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"/>
-        <rdfs:comment xml:lang="es">Relación entre la Observación del Tráfico y la Propiedad de Medición del Tráfico.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relationship between Traffic Observation and Traffice Meassuring Property</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
-        <rdfs:label xml:lang="en">Observed property</rdfs:label>
-        <rdfs:label xml:lang="es">Propiedad observada</rdfs:label>
-    </owl:ObjectProperty>
-    
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observedProperty"/>
+       
 
 
     <!-- http://www.w3.org/ns/sosa/observes -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observes">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico"/>
-        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"/>
-        <rdfs:comment xml:lang="es">Relación el Dispositivo de Medición del Tráfico y la Propiedad de Medición del Tráfico.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relationship between Traffic Meassurement Device and Traffice Meassuring Property</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
-        <rdfs:label xml:lang="es">Observa</rdfs:label>
-        <rdfs:label xml:lang="en">Observes</rdfs:label>
-    </owl:ObjectProperty>
-
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observes"/>
     
+
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -519,6 +426,8 @@
         <rdfs:label xml:lang="en">Recurrent incidence</rdfs:label>
     </owl:DatatypeProperty>
     
+
+
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#fechaFinPrevista -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#fechaFinPrevista">
@@ -532,6 +441,7 @@
         <rdfs:label xml:lang="en">(expected) end date</rdfs:label>
         <rdfs:label xml:lang="es">fecha de fin (prevista)</rdfs:label>
     </owl:DatatypeProperty>
+    
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles -->
@@ -556,8 +466,8 @@
         <rdfs:comment xml:lang="en">Number of directions of traffic</rdfs:comment>
         <rdfs:comment xml:lang="es">Número de sentidos de circulación</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
-        <rdfs:label xml:lang="en">Street directions</rdfs:label>
         <rdfs:label xml:lang="es">Sentidos de circulación</rdfs:label>
+        <rdfs:label xml:lang="en">Street directions</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -638,22 +548,12 @@
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    -->
 
-    
-
-
-    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga -->
+        <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga -->
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga">
-      <rdfs:subClassOf
-	  rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"/>
-      <rdfs:subClassOf>
-	<owl:Restriction>
-	  <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoNivelServicio"/>
-	  <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	</owl:Restriction>
-      </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"/>
         <rdfs:comment xml:lang="es">Carga es una propiedad de la Observación realizada por un Dispositivo de Medición de Tráfico</rdfs:comment>
         <rdfs:comment xml:lang="en">Load is a property of the Observation by a Traffic Measuring Device</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
@@ -674,15 +574,13 @@
         <rdfs:label xml:lang="es">Dispositivo de medición de tráfico</rdfs:label>
         <rdfs:label xml:lang="en">Traffic Measuring Device</rdfs:label>
     </owl:Class>
-    
 
-
-    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico -->
+        <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico -->
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico">
         <rdfs:comment xml:lang="en">A traffic equipment monitors the traffic of a city</rdfs:comment>
         <rdfs:comment xml:lang="es">Un Equipo de Tráfico es uno de los equipos que se encargan de controlar o monitorizar el tráfico de la ciudad.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
         <rdfs:label xml:lang="es">Equipo de tráfico</rdfs:label>
         <rdfs:label xml:lang="en">Traffic equipment</rdfs:label>
     </owl:Class>
@@ -692,12 +590,6 @@
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia -->
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo"/>
-                <owl:allValuesFrom rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Incidence in the traffic system of a city</rdfs:comment>
         <rdfs:comment xml:lang="es">Incidencia que ocurre en el sistema de tráfico de una ciudad</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
@@ -716,7 +608,6 @@
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
         <rdfs:label xml:lang="es">Incidencia no planificada</rdfs:label>
         <rdfs:label xml:lang="en">Unplanned incidence</rdfs:label>
-        <rdfs:subClassOf></rdfs:subClassOf>
     </owl:Class>
     
 
@@ -725,28 +616,12 @@
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada">
         <rdfs:subClassOf rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Incidencia planificada, puede ser recurrente o no</rdfs:comment>
         <rdfs:comment xml:lang="en">Planned traffic incidence</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
         <rdfs:label xml:lang="es">Incidencia planificada</rdfs:label>
         <rdfs:label xml:lang="en">Planned incidence</rdfs:label>
     </owl:Class>
-    
-
 
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#Intensidad -->
 
@@ -809,10 +684,12 @@
         <rdfs:label xml:lang="en">Section of track</rdfs:label>
         <rdfs:label xml:lang="es">Tramo</rdfs:label>
     </owl:Class>
-    
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via -->
+
+    <!--
+     http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via
+    -->
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via">
         <rdfs:comment xml:lang="en">Part of street network</rdfs:comment>
@@ -870,13 +747,15 @@
     </owl:Class>
     
 
-
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
         <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <dct:issued>2004-02-xx</dct:issued>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <skos:definition>An abstract idea or notion; a unit of thought.</skos:definition>
     </owl:Class>
-    
 
 
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
@@ -929,7 +808,7 @@
 
     <!-- http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico -->
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -937,7 +816,7 @@
 
     <!-- http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia -->
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-incidencia">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -945,80 +824,11 @@
 
     <!-- http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio -->
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio">
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-nivel-servicio">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/tipo-dispositivo-medicion-trafico -->
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/tipo-dispositivo-medicion-trafico">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/incidencia-no-planificada -->
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/incidencia-no-planificada">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/incidencia-planificada -->
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/incidencia-planificada">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:inScheme rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia"/>
-    </owl:NamedIndividual>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/SMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/SMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxQualifiedCardinality>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
-        <skos:definition>An abstract idea or notion; a unit of thought.</skos:definition>
-        <rdfs:label xml:lang="en">Concept</rdfs:label>
-        <terms:issued>2004-02-xx</terms:issued>
-    </rdf:Description>
 </rdf:RDF>
 
 
