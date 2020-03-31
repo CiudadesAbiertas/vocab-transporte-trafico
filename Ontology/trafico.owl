@@ -683,12 +683,14 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico -->
 
-    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico">
-        <rdfs:comment xml:lang="es">Observación realizada por un Dispositivo de Medición de Tráfico, puede medir intensidad, ocupación y carga</rdfs:comment>
-        <rdfs:comment xml:lang="en">Observation by a Traffic Measuring Device, you can measure intensity, occupancy and load</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
-        <rdfs:label xml:lang="es">Observación del tráfico</rdfs:label>
-        <rdfs:label xml:lang="en">Traffic monitoring</rdfs:label>
+    <owl:Class
+	rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico">
+      <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+      <rdfs:comment xml:lang="es">Observación realizada por un Dispositivo de Medición de Tráfico, puede medir intensidad, ocupación y carga</rdfs:comment>
+      <rdfs:comment xml:lang="en">Observation by a Traffic Measuring Device, you can measure intensity, occupancy and load</rdfs:comment>
+      <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
+      <rdfs:label xml:lang="es">Observación del tráfico</rdfs:label>
+      <rdfs:label xml:lang="en">Traffic monitoring</rdfs:label>
     </owl:Class>
     
 
