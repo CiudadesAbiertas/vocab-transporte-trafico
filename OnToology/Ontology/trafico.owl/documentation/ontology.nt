@@ -22,9 +22,8 @@
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/terms/issued> "2020-04-02"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/vocab/vann/preferredNamespacePrefix> "estraf" .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#> .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta versión ha sido generada dentro del contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   \n    En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos\n    propuestos en las reuniones del ???REPASAR FECHAS."@es .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/2002/07/owl#versionInfo> "Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña." .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/vocab/vann/preferredNamespaceUri> "Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   \n    En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos\n    propuestos en las reuniones del grupo."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/2002/07/owl#versionInfo> "Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña." .
 # 
 # 
 # #################################################################
@@ -71,23 +70,11 @@
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://vocab.ciudadesabiertas.es/def/transporte/trafico#subClassOf
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/2000/01/rdf-schema#subClassOf
-<http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/2002/07/owl#maxQualifiedCardinality
-<http://www.w3.org/2002/07/owl#maxQualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/2002/07/owl#minQualifiedCardinality
-<http://www.w3.org/2002/07/owl#minQualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/2002/07/owl#qualifiedCardinality
-<http://www.w3.org/2002/07/owl#qualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http:/purl.org/dc/termsissued
+<http:/purl.org/dc/termsissued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -97,9 +84,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://www.w3.org/2001/SMLSchema#nonNegativeInteger
-<http://www.w3.org/2001/SMLSchema#nonNegativeInteger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
 # http://www.w3.org/2001/XMLSchema#date
 <http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
@@ -160,13 +144,12 @@
 _:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoEquipoTrafico> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de equipo de tráfico, equipos de control y dispositivos de medición"@es .
@@ -186,8 +169,8 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-incidencia> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de incidencia, pueden ser planificadas o no planificadas."@es .
@@ -207,8 +190,9 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid11 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio> .
+<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoNivelServicio> <http://www.w3.org/2000/01/rdf-schema#comment> "Level of service according to the property Load"@en .
@@ -237,18 +221,6 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia> <http://www.w3.org/2000/01/rdf-schema#label> "Location of Incidence"@en .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia> <http://www.w3.org/2000/01/rdf-schema#label> "Ubicación de la Incidencia"@es .
 # 
-# http://vocab.ciudadesabiertas.es/def/transporte/trafico#via
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo> .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via> .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación del Tramo con la/s vía/s que cubre, en caso de que se digan"@es .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship of the Section with the track/s it covers, in case the it is indicated"@en .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/2000/01/rdf-schema#label> "Tracks"@en .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/2000/01/rdf-schema#label> "Vía"@es .
-# 
-# http://www.w3.org/2004/02/skos/core#Concept
-# 
 # http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
@@ -264,23 +236,9 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.w3.org/ns/sosa/observedProperty
 <http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico> .
-<http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico> .
-<http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre la Observación del Tráfico y la Propiedad de Medición del Tráfico."@es .
-<http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between Traffic Observation and Traffice Meassuring Property"@en .
-<http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
-<http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Observed property"@en .
-<http://www.w3.org/ns/sosa/observedProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Propiedad observada"@es .
 # 
 # http://www.w3.org/ns/sosa/observes
 <http://www.w3.org/ns/sosa/observes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico> .
-<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico> .
-<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación el Dispositivo de Medición del Tráfico y la Propiedad de Medición del Tráfico."@es .
-<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between Traffic Meassurement Device and Traffice Meassuring Property"@en .
-<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
-<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#label> "Observa"@es .
-<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#label> "Observes"@en .
 # 
 # 
 # 
@@ -440,10 +398,6 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico> .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoNivelServicio> .
-_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga> <http://www.w3.org/2000/01/rdf-schema#comment> "Carga es una propiedad de la Observación realizada por un Dispositivo de Medición de Tráfico"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga> <http://www.w3.org/2000/01/rdf-schema#comment> "Load is a property of the Observation by a Traffic Measuring Device"@en .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
@@ -464,16 +418,12 @@ _:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2004/
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico> <http://www.w3.org/2000/01/rdf-schema#comment> "A traffic equipment monitors the traffic of a city"@en .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico> <http://www.w3.org/2000/01/rdf-schema#comment> "Un Equipo de Tráfico es uno de los equipos que se encargan de controlar o monitorizar el tráfico de la ciudad."@es .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico> <http://www.w3.org/2000/01/rdf-schema#label> "Equipo de tráfico"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico> <http://www.w3.org/2000/01/rdf-schema#label> "Traffic equipment"@en .
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo> .
-_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Incidence in the traffic system of a city"@en .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Incidencia que ocurre en el sistema de tráfico de una ciudad"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
@@ -488,21 +438,10 @@ _:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.ciudadesab
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaNoPlanificada> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaNoPlanificada> <http://www.w3.org/2000/01/rdf-schema#label> "Incidencia no planificada"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaNoPlanificada> <http://www.w3.org/2000/01/rdf-schema#label> "Unplanned incidence"@en .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaNoPlanificada> <http://www.w3.org/2000/01/rdf-schema#subClassOf> "" .
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente> .
-_:genid18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid18 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia> .
-_:genid19 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid19 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada> <http://www.w3.org/2000/01/rdf-schema#comment> "Incidencia planificada, puede ser recurrente o no"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada> <http://www.w3.org/2000/01/rdf-schema#comment> "Planned traffic incidence"@en .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
@@ -592,6 +531,10 @@ _:genid19 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought." .
+<http://www.w3.org/2004/02/skos/core#Concept> <http:/purl.org/dc/termsissued> "2004-02-xx" .
 # 
 # http://www.w3.org/2004/02/skos/core#ConceptScheme
 <http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -623,42 +566,20 @@ _:genid19 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # #################################################################
 # 
 # 
-# http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
-# http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-incidencia
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-incidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-incidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-nivel-servicio
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-nivel-servicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-nivel-servicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
 # http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 # 
-# http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/tipo-dispositivo-medicion-trafico
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/tipo-dispositivo-medicion-trafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/tipo-dispositivo-medicion-trafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-# 
-# http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/incidencia-no-planificada
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/incidencia-no-planificada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/incidencia-no-planificada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/incidencia-no-planificada> <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia> .
-# 
-# http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/incidencia-planificada
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/incidencia-planificada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/incidencia-planificada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/incidencia-planificada> <http://www.w3.org/2004/02/skos/core#inScheme> <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia> .
-# 
-_:genid20 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid21 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid22 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid23 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/SMLSchema#nonNegativeInteger> .
-_:genid24 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid25 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "3"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid25 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid26 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid27 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid28 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/SMLSchema#nonNegativeInteger> .
 # 
 # 
 # #################################################################
@@ -672,10 +593,5 @@ _:genid28 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of formal issuance (e.g., publication) of the resource."@en .
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/dc/terms/"@en .
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "Date Issued"@en .
-# 
-<http://www.w3.org/2004/02/skos/core#Concept> <http://purl.org/dc/terms/issued> "2004-02-xx" .
-<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core#> .
-<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
-<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought." .
 # 
 # Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
