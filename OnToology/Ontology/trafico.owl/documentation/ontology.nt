@@ -99,6 +99,7 @@
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#finTramo
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#finTramo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#finTramo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#finTramo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#finTramo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/spec/geosparql/1.0#Point> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#finTramo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación del tramo con el lugar donde finaliza el tramo."@es .
@@ -109,6 +110,7 @@
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación de la Incidencia con el Tramo donde se produce la misma."@es .
@@ -119,6 +121,7 @@
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#inicioTramo
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#inicioTramo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#inicioTramo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#inicioTramo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#inicioTramo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/spec/geosparql/1.0#Point> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#inicioTramo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación del tramo con el lugar donde se inicia el tramo."@es .
@@ -129,6 +132,7 @@
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación del Equipo de Tráfico con el tramo que monitorea"@es .
@@ -139,6 +143,7 @@
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoEquipoTrafico
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoEquipoTrafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoEquipoTrafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoEquipoTrafico> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoEquipoTrafico> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
 _:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
@@ -160,6 +165,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
 _:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
@@ -181,6 +187,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoNivelServicio
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoNivelServicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoNivelServicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoNivelServicio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoNivelServicio> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
 _:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
@@ -203,6 +210,7 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/spec/geosparql/1.0#Point> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación del Equipo de Tráfico con su ubicación"@es .
@@ -213,6 +221,7 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.opengis.net/spec/geosparql/1.0#Point> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación de la Incidencia con su Ubicación"@es .
@@ -220,6 +229,16 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia> <http://www.w3.org/2000/01/rdf-schema#label> "Location of Incidence"@en .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia> <http://www.w3.org/2000/01/rdf-schema#label> "Ubicación de la Incidencia"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/trafico#via
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación del Tramo con la/s vía/s que cubre, en caso de que se digan"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship of the Section with the track/s it covers, in case the it is indicated"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/2000/01/rdf-schema#label> "Tracks"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#via> <http://www.w3.org/2000/01/rdf-schema#label> "Vía"@es .
 # 
 # http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
