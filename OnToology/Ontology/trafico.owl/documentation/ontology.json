@@ -475,6 +475,9 @@
   }, {
     "@language" : "en",
     "@value" : "Traffic monitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Observation"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Ocupacion",
@@ -715,10 +718,10 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
+    "@language" : "es",
     "@value" : "Carriles de circulación"
   }, {
-    "@language" : "es",
+    "@language" : "en",
     "@value" : "Traffic lanes"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -905,6 +908,32 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.opengis.net/spec/geosparql/1.0#Point"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad permite describir\n\tla unidad de medida de la medición del Dispositivo de Medición\n\tde Tráfico."
+  }, {
+    "@language" : "en",
+    "@value" : "This property allows describing\n\tthe unit of measurement of the Trafic Monitoring Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Unidad de Medida"
+  }, {
+    "@language" : "en",
+    "@value" : "Unit of Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano",

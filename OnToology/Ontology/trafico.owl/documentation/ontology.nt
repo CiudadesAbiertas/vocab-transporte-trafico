@@ -342,8 +342,8 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of lanes of traffic"@en .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de carriles de circulación"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/2000/01/rdf-schema#label> "Carriles de circulación"@en .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/2000/01/rdf-schema#label> "Traffic lanes"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/2000/01/rdf-schema#label> "Carriles de circulación"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles> <http://www.w3.org/2000/01/rdf-schema#label> "Traffic lanes"@en .
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -364,6 +364,16 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows describing the recurrence"@en .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia> <http://www.w3.org/2000/01/rdf-schema#label> "Recurrence"@en .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia> <http://www.w3.org/2000/01/rdf-schema#label> "Recurrencia"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad permite describir\n\tla unidad de medida de la medición del Dispositivo de Medición\n\tde Tráfico."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows describing\n\tthe unit of measurement of the Trafic Monitoring Device"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida> <http://www.w3.org/2000/01/rdf-schema#label> "Unidad de Medida"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida> <http://www.w3.org/2000/01/rdf-schema#label> "Unit of Measurement"@en .
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -478,6 +488,7 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # 
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Observation> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico> <http://www.w3.org/2000/01/rdf-schema#comment> "Observación realizada por un Dispositivo de Medición de Tráfico, puede medir intensidad, ocupación y carga"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico> <http://www.w3.org/2000/01/rdf-schema#comment> "Observation by a Traffic Measuring Device, you can measure intensity, occupancy and load"@en .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .

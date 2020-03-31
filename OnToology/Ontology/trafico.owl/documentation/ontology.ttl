@@ -358,8 +358,8 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:comment "Number of lanes of traffic"@en ,
                           "Número de carriles de circulación"@es ;
              rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/transporte/trafico> ;
-             rdfs:label "Carriles de circulación"@en ,
-                        "Traffic lanes"@es .
+             rdfs:label "Carriles de circulación"@es ,
+                        "Traffic lanes"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos
@@ -382,6 +382,20 @@ xsd:date rdf:type rdfs:Datatype .
                           "This property allows describing the recurrence"@en ;
              rdfs:label "Recurrence"@en ,
                         "Recurrencia"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida
+:unidadMedida rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :PropiedadMedicionTrafico ;
+              rdfs:range xsd:string ;
+              rdfs:comment """Esta propiedad permite describir
+	la unidad de medida de la medición del Dispositivo de Medición
+	de Tráfico."""@es ,
+                           """This property allows describing
+	the unit of measurement of the Trafic Monitoring Device"""@en ;
+              rdfs:label "Unidad de Medida"@es ,
+                         "Unit of Measurement"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano
@@ -503,6 +517,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico
 :ObservacionTrafico rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
                     rdfs:comment "Observación realizada por un Dispositivo de Medición de Tráfico, puede medir intensidad, ocupación y carga"@es ,
                                  "Observation by a Traffic Measuring Device, you can measure intensity, occupancy and load"@en ;
                     rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/transporte/trafico> ;
