@@ -32,6 +32,10 @@
     "Carga" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga"
     },
+    "via" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#via",
+      "@type" : "@id"
+    },
     "FeatureOfInterest" : {
       "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
     },
