@@ -1,5 +1,39 @@
 <html>
-<h2 id="desc" class="list">Vocabulary for the representation of data on traffic made by motor vehicles.: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
-<span class="markdown">Descripci&oacute;n completa de la ontolog&iacute;a: en caso de ser posible, a&ntilde;adir un diagrama explicando c&oacute;omo las clases est&aacute;n relacionadas, ejemplos de uso, etc.</span>
+    <h2 id="desc" class="list">Vocabulario para la representación de los datos de tráfico de vehículos a motor: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
 
+	<!-- Comienzo explicación -->
+    <p>La Figura 1 muestra las clases y propiedades del vocabulario de tráfico. El principal objetivo de este vocabulario es permitir la representación de los equipos de tráfico así como de las incidencias.</p>
+
+    <div><center><img src="resources/images/Vocabulario-Trafico.png" alt="Diagrama del vocabulario de tráfico de la iniciativas Ciudades Abiertas"/><figcaption>Figura 1. - Vocabulario para la representación de datos sobre el tráfico de vehículos a motor</figcaption></center></div>
+
+    <p>Para representar los equipos de control se ha creado el concepto <a href="#EquipoTrafico">estraf:EquipoTrafico</a> que debe tener asociado un <a href="#tipoEquipoTrafico">estraf:tipoEquipoTrafico</a> que se relaciona con la taxonomía tipo-equipo-trafico. Tiene como propiedades un identificador del equipo <a href="http://purl.org/dc/terms/identifier" >dct:identifier</a>, una descripción <a href="#descripcion">estraf:descripcion</a>, el número de sentidos a los que sirve <a href="#numSentidos" >estraf#numSentidos</a>, el número de carriles <a href="#numeroCarriles">estraf:numCarriles</a> y si es urbano o no <a href="#urbano" >estraf:urbano</a>.</p>
+
+    <p>Este equipo tiene una <a href="#ubicacion">estraf:ubicacion</a> que es un <a href="http://www.opengis.net/doc/IS/geosparql/1.0#Point">geosparql:Point</a> con una <a href="#lat">geo:lat</a> y una <a href="#long">geo:long</a>, más explicado en <a href="#Tramo">estraf:Tramo</a></p>
+
+    <p>El equipo <a href="#monitorea">estraf:monitorea</a> un <a href="#Tramo">estraf:Tramo</a> que es una clase que se ha creado para describir tanto los tramos que monitorean los equipos como los tramos de vía que se ven afectados por una <a href="#Incidencia">estraf:Incidencia</a>.</p>
+
+    <p>Hay dos tipos de equipo de tráfico, equipos de control de tráfico y dispositivos de medición de tráfico. Ambos subtipos y sus corresondientes subtipos están definidos en la citada taxomonía tipo-equipo-trafico.</p>
+
+    <p>Para los dispositivos de medición de tráfico se ha creado la subclase <a href="#DispositivoMedicionTrafico">estraf:DispositivoMedicionTrafico</a> que es a su vez una subclase de <a href="http://www.w3.org/ns/sosa/Sensor">sosa:Sensor</a> y que despliega el diagrama de relación con este vocabulario de descripción de dispositivos.</p>
+
+    <div><center><img src="resources/images/trafico-equipo.png" alt="Diagrama del Equipo de Tráfico y del Dispositivo de Medición de Tráfico como subclase de sosa:Sensor"/><figcaption>Figura 2. - Diagrama del Equipo de Tráfico y del Dispositivo de Medición de Tráfico como subclase de sosa:Sensor</figcaption></center></div>
+
+    <p>El <a href="#DispositivoMedicionTrafico">estraf:DispositivoMedicionTrafico</a> que es subclase de <a href="#EquipoTrafico">estraf:EquipoTrafico</a> y de <a href="http://www.w3.org/ns/sosa/Sensor">sosa:Sensor</a> está observando (<a href="http://www.w3.org/ns/sosa/observes">sosa:observes</a>) la clase creada <a href="#PropiedadMedicionTrafico">estraf:PropiedadMedicionTrafico</a> que es una subclase de <a href="http://www.w3.org/ns/sosa/ObservableProperty">sosa:ObservableProperty</a> donde especificamos la unidad medida por el dispositivo con la propiedad <a href="#unidadMedida">estraf:unidadMedida</a>. Además, <a href="#DispositivoMedicionTrafico" >estraf:DispositivoMedicionTrafico</a> tiene un atributo que indica si se encuentra en servicio o no, <a href="#enservicio" >estraf:enservicio</a></p>
+
+    <p><a href="#PropiedadMedicionTrafico">estraf:PropiedadMedicionTrafico</a> cuenta con tres subclases que son las mediciones definidas hasta ahora: <a href="#Intensidad">estraf:Intensidad</a>, <a href="#Ocupacion">estraf:Ocupacion</a> y <a href="#Carga">estraf:Carga</a>.</p>
+    <p>La <a href="#Carga">estraf:Carga</a> está relacionada con la taxonomía tipo-nivel-servicio a través de la propiedad <a href="#tipoNivelServicio">estraf:tipoNivelServicio</a>.</p>
+    <p>Es además la propiedad observada (<a href="https://www.w3.org/ns/sosa/observedProperty">sosa:observedProperty</a>) de la clase <a href="#ObservacionTrafico">estraf:ObservacionTrafico</a> que tiene como atributos el intervalo de la observación (<a href="https://www.w3.org/ns/sosa/phenomenonTime" >sosa:phenomenonTime</a>), el registro horario del resultado (<a href="https://www.w3.org/ns/sosa/resultTime" >sosa:resultTime</a>) y el resultado en sí (<a href="https://www.w3.org/ns/sosa/hasSimpleResult" >sosa:hasSimpleResult</a>).</p>
+    <p><a href="#ObservacionTrafico" >estraf:ObservacionTrafico</a> es subclase de <a href="https://www.w3.org/ns/sosa/Observation" >sosa:Observation</a> y tiene una relación <a href="https://www.w3.org/ns/sosa/hasFeatureOfInterest" >sosa:hasFeatureOfInterest</a> con <a href="#Tramo" >estraf:Tramo</a>.</p>
+
+    <!-- INCIDENCIA -->
+    
+    <div><center><img src="resources/images/trafico-incidencia.png" alt="Diagrama de la Incidencia de Tráfico y su relación con el Tramo"/><figcaption>Figura 3. - Diagrama de la Incidencia de Tráfico y su relación con el Tramo</figcaption></center></div>
+
+    <p></p>
+
+
+		      
+		      Con la finalidad de representar los posibles puntos de paso de los trayectos, expresados en términos de su longitud y latitud, se han reutilizado las clases [geosparql:Feature](http://www.opengis.net/doc/IS/geosparql/1.0#Feature), [geosparql:SpatialObject](http://www.opengis.net/doc/IS/geosparql/1.0#SpatialObject), [geosparql:Geometry](http://www.opengis.net/doc/IS/geosparql/1.0#Geometry) y [geosparql:Point](http://www.opengis.net/doc/IS/geosparql/1.0#Point) del vocabulario [geosparql](http://www.opengis.net/doc/IS/geosparql/1.0)
+
+		      
 </html>

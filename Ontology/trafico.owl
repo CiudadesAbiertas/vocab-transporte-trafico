@@ -77,7 +77,10 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
     
 
+<!-- http://purl.org/dc/elements/1.1/description -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
     <!-- http://purl.org/dc/elements/1.1/identifier -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
@@ -377,6 +380,24 @@
      -->
 
     
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"/>
+                    <rdf:Description rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
+		    <rdf:Description rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment xml:lang="en">A description of the resource within a given context.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una descripción del recurso dentro de un contexto dado.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="es">Descripción</rdfs:label>
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+    </owl:DatatypeProperty>
 
 
     <!-- http://purl.org/dc/terms/identifier -->
