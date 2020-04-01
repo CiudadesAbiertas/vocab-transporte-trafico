@@ -8,6 +8,7 @@
 
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> rdf:type owl:Ontology ;
                                                            owl:versionIRI <http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0> ;
+                                                           owl:imports <http://www.w3.org/ns/sosa/> ;
                                                            <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
                                                                                                          "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es ,
                                                                                                          "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es ,
@@ -21,19 +22,18 @@
                                                                                                      "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
                                                                                                      "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" ,
                                                                                                      "Paola Spinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)" ;
-                                                           <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/sector-publico/convenio"@es ;
+                                                           <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/transporte/trafico"@es ;
                                                            <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" ;
-                                                           <http://purl.org/dc/elements/1.1/title> """Vocabulario para la representación de datos sobre el tráfico de vehículos a
-    motor de las ciudades.."""@es ,
-                                                                                                   "Vocabulary for the representation of data on trafic made by motor vehicles."@en ;
+                                                           <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos sobre el tráfico de vehículos a motor de las ciudades."@es ,
+                                                                                                   "Vocabulary for the representation of data on traffic made by motor vehicles."@en ;
                                                            <http://purl.org/dc/terms/creator> "Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)" ;
                                                            <http://purl.org/dc/terms/hasVersion> "1.0.0" ;
                                                            <http://purl.org/dc/terms/issued> "2020-04-02"@es ;
                                                            <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
                                                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "estraf" ;
-                                                           <http://purl.org/vocab/vann/preferredNamespaceUri> """Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   
-    En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos
-    propuestos en las reuniones del grupo."""@es ;
+                                                           <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                                                           rdfs:comment "Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.      En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos	propuestos en las reuniones del grupo."@es ,
+                                                                        "This version has been generated within the context of the project Open, collaborative and 	interoperable government platform in which the city councils	of Madrid, Zaragoza, Santiago de Compostela and A Coruña	participate. In this version, classes and properties have been defined according to the requirements and glossary of concepts    proposed at the group's meetings."@en ;
                                                            owl:versionInfo "Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña." .
 
 #################################################################
@@ -79,14 +79,6 @@
 
 ###  http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#definition
@@ -274,6 +266,10 @@ xsd:date rdf:type rdfs:Datatype .
 <http://www.w3.org/ns/sosa/observes> rdf:type owl:ObjectProperty .
 
 
+###  http://www.w3.org/ns/sosa/phenomenonTime
+<http://www.w3.org/ns/sosa/phenomenonTime> rdfs:domain :ObservacionTrafico .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -423,12 +419,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.w3.org/ns/sosa/phenomenonTime
 <http://www.w3.org/ns/sosa/phenomenonTime> rdf:type owl:DatatypeProperty ;
                                            rdfs:subPropertyOf owl:topDataProperty ;
-                                           rdfs:domain :ObservacionTrafico ;
-                                           rdfs:range xsd:dateTime ;
-                                           rdfs:comment "Esta propiedad establece el intervalo de tiempo de la observación."@es ,
-                                                        "This property sets the interval of time of the observation"@en ;
-                                           rdfs:label "Interval Time"@en ,
-                                                      "Intervalo"@es .
+                                           rdfs:range xsd:dateTime .
 
 
 ###  http://www.w3.org/ns/sosa/resultTime
@@ -665,6 +656,12 @@ xsd:date rdf:type rdfs:Datatype .
                                   rdfs:comment "Date of formal issuance (e.g., publication) of the resource."@en ;
                                   rdfs:isDefinedBy "http://purl.org/dc/terms/"@en ;
                                   rdfs:label "Date Issued"@en .
+
+
+<http://www.w3.org/ns/sosa/phenomenonTime> rdfs:comment "Esta propiedad establece el intervalo de tiempo de la observación."@es ,
+                                                        "This property sets the interval of time of the observation"@en ;
+                                           rdfs:label "Interval Time"@en ,
+                                                      "Intervalo"@es .
 
 
 ###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
