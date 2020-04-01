@@ -18,6 +18,7 @@
      xmlns:geosparql="http://www.opengis.net/ont/geosparql#">
     <owl:Ontology rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico">
         <owl:versionIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0"/>
+	<owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
         <dc:contributor xml:lang="es">Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">María Carmen Ruiz Moreno - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza</dc:contributor>
@@ -31,20 +32,18 @@
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)</dc:creator>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paola Spinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
-        <dc:identifier xml:lang="es">http://vocab.ciudadesabiertas.es/def/sector-publico/convenio</dc:identifier>
+        <dc:identifier xml:lang="es">http://vocab.ciudadesabiertas.es/def/transporte/trafico</dc:identifier>
         <dc:rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</dc:rights>
-        <dc:title xml:lang="es">Vocabulario para la representación de datos sobre el tráfico de vehículos a
-    motor de las ciudades..</dc:title>
-        <dc:title xml:lang="en">Vocabulary for the representation of data on trafic made by motor vehicles.</dc:title>
+        <dc:title xml:lang="es">Vocabulario para la representación de datos sobre el tráfico de vehículos a motor de las ciudades.</dc:title>
+        <dc:title xml:lang="en">Vocabulary for the representation of data on traffic made by motor vehicles.</dc:title>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
         <terms:hasVersion>1.0.0</terms:hasVersion>
         <terms:issued xml:lang="es">2020-04-02</terms:issued>
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0</terms:license>
         <vann:preferredNamespacePrefix>estraf</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#"/>
-        <vann:preferredNamespaceUri xml:lang="es">Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   
-    En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos
-    propuestos en las reuniones del grupo.</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="es">Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.      En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos	propuestos en las reuniones del grupo.</rdfs:comment>
+	<rdfs:comment xml:lang="en">This version has been generated within the context of the project Open, collaborative and 	interoperable government platform in which the city councils	of Madrid, Zaragoza, Santiago de Compostela and A Coruña	participate. In this version, classes and properties have been defined according to the requirements and glossary of concepts    proposed at the group's meetings.</rdfs:comment>
         <owl:versionInfo>Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</owl:versionInfo>
     </owl:Ontology>
     
