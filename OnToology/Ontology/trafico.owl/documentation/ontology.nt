@@ -1,5 +1,6 @@
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/sosa/> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es .
@@ -13,16 +14,18 @@
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/creator> "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/creator> "Paola Spinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/sector-publico/convenio"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/transporte/trafico"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos sobre el tráfico de vehículos a\n    motor de las ciudades.."@es .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/title> "Vocabulary for the representation of data on trafic made by motor vehicles."@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos sobre el tráfico de vehículos a motor de las ciudades."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/title> "Vocabulary for the representation of data on traffic made by motor vehicles."@en .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/terms/creator> "Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/terms/hasVersion> "1.0.0" .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/terms/issued> "2020-04-02"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/vocab/vann/preferredNamespacePrefix> "estraf" .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/vocab/vann/preferredNamespaceUri> "Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   \n    En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos\n    propuestos en las reuniones del grupo."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.      En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos\tpropuestos en las reuniones del grupo."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/2000/01/rdf-schema#comment> "This version has been generated within the context of the project Open, collaborative and \tinteroperable government platform in which the city councils\tof Madrid, Zaragoza, Santiago de Compostela and A Coruña\tparticipate. In this version, classes and properties have been defined according to the requirements and glossary of concepts    proposed at the group's meetings."@en .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/2002/07/owl#versionInfo> "Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña." .
 # 
 # 
@@ -63,12 +66,6 @@
 # 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -259,6 +256,9 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://www.w3.org/ns/sosa/observes
 <http://www.w3.org/ns/sosa/observes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
+# http://www.w3.org/ns/sosa/phenomenonTime
+<http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico> .
+# 
 # 
 # 
 # #################################################################
@@ -398,12 +398,7 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://www.w3.org/ns/sosa/phenomenonTime
 <http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico> .
 <http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad establece el intervalo de tiempo de la observación."@es .
-<http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#comment> "This property sets the interval of time of the observation"@en .
-<http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#label> "Interval Time"@en .
-<http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#label> "Intervalo"@es .
 # 
 # http://www.w3.org/ns/sosa/resultTime
 <http://www.w3.org/ns/sosa/resultTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -623,5 +618,10 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of formal issuance (e.g., publication) of the resource."@en .
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/dc/terms/"@en .
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "Date Issued"@en .
+# 
+<http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad establece el intervalo de tiempo de la observación."@es .
+<http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#comment> "This property sets the interval of time of the observation"@en .
+<http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#label> "Interval Time"@en .
+<http://www.w3.org/ns/sosa/phenomenonTime> <http://www.w3.org/2000/01/rdf-schema#label> "Intervalo"@es .
 # 
 # Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

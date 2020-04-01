@@ -137,12 +137,6 @@
   "@id" : "http://purl.org/dc/terms/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://schema.org/datePosted",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -261,17 +255,17 @@
   } ],
   "http://purl.org/dc/elements/1.1/identifier" : [ {
     "@language" : "es",
-    "@value" : "http://vocab.ciudadesabiertas.es/def/sector-publico/convenio"
+    "@value" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico"
   } ],
   "http://purl.org/dc/elements/1.1/rights" : [ {
     "@value" : "Creative Commons Attribution 4.0 International (CC BY 4.0)"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "es",
-    "@value" : "Vocabulario para la representación de datos sobre el tráfico de vehículos a\n    motor de las ciudades.."
+    "@value" : "Vocabulario para la representación de datos sobre el tráfico de vehículos a motor de las ciudades."
   }, {
     "@language" : "en",
-    "@value" : "Vocabulary for the representation of data on trafic made by motor vehicles."
+    "@value" : "Vocabulary for the representation of data on traffic made by motor vehicles."
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)"
@@ -290,8 +284,17 @@
     "@value" : "estraf"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.   \n    En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos\n    propuestos en las reuniones del grupo."
+    "@value" : "Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.      En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos\tpropuestos en las reuniones del grupo."
+  }, {
+    "@language" : "en",
+    "@value" : "This version has been generated within the context of the project Open, collaborative and \tinteroperable government platform in which the city councils\tof Madrid, Zaragoza, Santiago de Compostela and A Coruña\tparticipate. In this version, classes and properties have been defined according to the requirements and glossary of concepts    proposed at the group's meetings."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0"
