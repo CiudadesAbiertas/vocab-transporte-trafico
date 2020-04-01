@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://vocab.ciudadesabiertas.es/def/transporte/trafico","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://vocab.ciudadesabiertas.es/def/transporte/trafico","name":"Vocabulary for the representation of data on traffic made by motor vehicles.", "headline":"Document describing the ontology http://vocab.ciudadesabiertas.es/def/transporte/trafico", "datePublished":"Wed Apr 01 09:12:00 UTC 2020", "version":"Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.", "license":"https://creativecommons.org/licenses/by/4.0", "author":[{"@type":"Person","name":"Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)"},{"@type":"Person","name":"Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)"},{"@type":"Person","name":"Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)"},{"@type":"Person","name":"Paola Spinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"},{"@type":"Person","name":"Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)"}], "contributor":[{"@type":"Person","name":"Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"},{"@type":"Person","name":"María Carmen Ruiz Moreno - Ayuntamiento de Madrid"},{"@type":"Person","name":"María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"},{"@type":"Person","name":"María Jesús Gallego San Miguel - Ayuntamiento de Madrid"},{"@type":"Person","name":"María del Mar Arribas de Andrés - Ayuntamiento de Madrid"},{"@type":"Person","name":"Red.es"},{"@type":"Person","name":"Servicio de Informática - Ayuntamiento de Santiago de Compostela"},{"@type":"Person","name":"Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"},{"@type":"Person","name":"Víctor Morlán Plo - Ayuntamiento de Zaragoza"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://vocab.ciudadesabiertas.es/def/transporte/trafico","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://vocab.ciudadesabiertas.es/def/transporte/trafico","name":"Vocabulary for the representation of data on traffic made by motor vehicles.", "headline":"Document describing the ontology http://vocab.ciudadesabiertas.es/def/transporte/trafico", "datePublished":"Wed Apr 01 09:12:01 UTC 2020", "version":"Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.", "license":"https://creativecommons.org/licenses/by/4.0", "author":[{"@type":"Person","name":"Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)"},{"@type":"Person","name":"Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)"},{"@type":"Person","name":"Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)"},{"@type":"Person","name":"Paola Spinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"},{"@type":"Person","name":"Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)"}], "contributor":[{"@type":"Person","name":"Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"},{"@type":"Person","name":"María Carmen Ruiz Moreno - Ayuntamiento de Madrid"},{"@type":"Person","name":"María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"},{"@type":"Person","name":"María Jesús Gallego San Miguel - Ayuntamiento de Madrid"},{"@type":"Person","name":"María del Mar Arribas de Andrés - Ayuntamiento de Madrid"},{"@type":"Person","name":"Red.es"},{"@type":"Person","name":"Servicio de Informática - Ayuntamiento de Santiago de Compostela"},{"@type":"Person","name":"Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"},{"@type":"Person","name":"Víctor Morlán Plo - Ayuntamiento de Zaragoza"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -21,7 +21,7 @@ function loadHash() {
 }
 function loadTOC(){
 	//process toc dynamically
-	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  var t='<h2>Tabla de contenidos</h2><ul>';i = 1;j=0;
 	  jQuery(".list").each(function(){
 		if(jQuery(this).is('h2')){
 			if(j>0){
@@ -45,12 +45,12 @@ function loadTOC(){
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
  };    $(function(){
-      $("#abstract").load("sections/abstract-en.html"); 
-      $("#introduction").load("sections/introduction-en.html"); 
-      $("#overview").load("sections/overview-en.html"); 
-      $("#description").load("sections/description-en.html"); 
-      $("#references").load("sections/references-en.html"); 
-      $("#crossref").load("sections/crossref-en.html", null, loadHash); 
+      $("#abstract").load("sections/abstract-es.html"); 
+      $("#introduction").load("sections/introduction-es.html"); 
+      $("#overview").load("sections/overview-es.html"); 
+      $("#description").load("sections/description-es.html"); 
+      $("#references").load("sections/references-es.html"); 
+      $("#crossref").load("sections/crossref-es.html", null, loadHash); 
     });
     </script> 
   </head> 
@@ -63,25 +63,25 @@ function loadTOC(){
 
 
 <dl>
-<dt>This version:</dt>
+<dt>Versi&oacute;n:</dt>
 <dd><a href="http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0">http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0</a></dd>
-<dt>Revision:</dt>
+<dt>Revisi&oacute;n n&uacute;mero:</dt>
 <dd>Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</dd>
-<dt>Authors:</dt>
+<dt>Autores:</dt>
 <dd>Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)</dd><dd>Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)</dd><dd>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)</dd><dd>Paola Spinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</dd><dd>Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)</dd>
 
-<dt>Contributors:</dt>
+<dt>Colaboradores:</dt>
 <dd>Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid</dd><dd>María Carmen Ruiz Moreno - Ayuntamiento de Madrid</dd><dd>María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza</dd><dd>María Jesús Gallego San Miguel - Ayuntamiento de Madrid</dd><dd>María del Mar Arribas de Andrés - Ayuntamiento de Madrid</dd><dd>Red.es</dd><dd>Servicio de Informática - Ayuntamiento de Santiago de Compostela</dd><dd>Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña</dd><dd>Víctor Morlán Plo - Ayuntamiento de Zaragoza</dd>
 
-<dt>Imported Ontologies:</dt>
+<dt>Ontolog&iacute;as importadas:</dt>
 <dd><a href="http://www.w3.org/ns/sosa/">&lt;http://www.w3.org/ns/sosa/&gt;</a></dd>
 
-<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://creativecommons.org/licenses/by/4.0" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0-blue.svg" alt="https://creativecommons.org/licenses/by/4.0" /></a>
-</dd><dt>Cite as:</dt>
+<dt>Descargar serializaci&oacute;n:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>Licencia:  </dt><dd><a href="https://creativecommons.org/licenses/by/4.0" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0-blue.svg" alt="https://creativecommons.org/licenses/by/4.0" /></a>
+</dd><dt>Citar como:</dt>
 <dd>Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid),Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid),Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata),Paola Spinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid),Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid). Vocabulary for the representation of data on traffic made by motor vehicles..Revision: Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña..http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0</dd>
 </dl>
 
-<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+<a href="provenance/provenance-es.html" target="_blank">Provenance de esta p&aacute;gina</a><hr/>
 </div>
 <div class="status">
 <div>
@@ -95,9 +95,8 @@ function loadTOC(){
      <div id="references"></div>
 <html>
 <div id="acknowledgements">
-<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<p>
-The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+<h2 id="ack" class="list">Agradecimientos <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<p>Los autores agradecen a <a href="http://www.essepuntato.it/">Silvio Peroni</a> el desarrollo de <a href="http://www.essepuntato.it/lode">LODE</a>, un entorno de documentaci&oacute;n para OWL que es usado para generar la descripci&oacute;n de t&eacute;rminos de la ontolog&iacute;a de este documento; y a  <a href="http://purl.org/net/dgarijo">Daniel Garijo</a> por desarrollar <a href="https://github.com/dgarijo/Widoco">Widoco</a>, el programa utilizado para producir la plantilla en la que se basa este documento.</p>
 </div>
 
 </html>
