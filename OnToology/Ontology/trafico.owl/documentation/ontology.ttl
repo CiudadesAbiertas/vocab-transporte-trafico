@@ -9,12 +9,21 @@
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> rdf:type owl:Ontology ;
                                                            owl:versionIRI <http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0> ;
                                                            owl:imports <http://www.w3.org/ns/sosa/> ;
-                                                           <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
+                                                           <http://purl.org/dc/elements/1.1/contributor> "Flavia Martín-Delgado Becerril - Ayuntamiento de Madrid"@es ,
+                                                                                                         "Guillermo Montesinos Ballesteros (Ontology Engineering Group - Universidad Politécnica de Madrid)"@es ,
+                                                                                                         "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
+                                                                                                         "Isabel Martínez - Ayuntamiento de A Coruña"@es ,
+                                                                                                         "Jesús Mora De la Cruz - Ayuntamiento de Madrid"@es ,
+                                                                                                         "Jesús Rodríguez Castro - Ayuntamiento de Compostela"@es ,
+                                                                                                         "Juan Antonio López - Ayuntamiento de A Coruña"@es ,
                                                                                                          "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es ,
                                                                                                          "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es ,
                                                                                                          "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"@es ,
                                                                                                          "María del Mar Arribas de Andrés - Ayuntamiento de Madrid"@es ,
+                                                                                                         "Rafael Rodríguez Gayoso - Ayuntamiento de Compostela"@es ,
                                                                                                          "Red.es"@es ,
+                                                                                                         "Rubén Cid - Ayuntamiento de A Coruña"@es ,
+                                                                                                         "Rubén Notivol Bezares - Ayuntamiento de Zaragoza"@es ,
                                                                                                          "Servicio de Informática - Ayuntamiento de Santiago de Compostela"@es ,
                                                                                                          "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es ,
                                                                                                          "Víctor Morlán Plo - Ayuntamiento de Zaragoza"@es ;
@@ -52,6 +61,10 @@
 <http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/elements/1.1/identifier
 <http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
 
@@ -66,6 +79,10 @@
 
 ###  http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdfs:domain _:genid2147483670 .
 
 
 ###  http://purl.org/dc/terms/hasVersion
@@ -273,6 +290,10 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:DatatypeProperty .
+
 
 ###  http://purl.org/dc/terms/identifier
 <http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty ;
@@ -651,6 +672,13 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Annotations
 #################################################################
+
+<http://purl.org/dc/terms/description> rdfs:comment "A description of the resource within a given context."@en ,
+                                                    "Una descripción del recurso dentro de un contexto dado."@es ;
+                                       rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                       rdfs:label "Descripción"@es ,
+                                                  "Description"@en .
+
 
 <http://purl.org/dc/terms/issued> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#issued-003> ;
                                   rdfs:comment "Date of formal issuance (e.g., publication) of the resource."@en ;

@@ -16,12 +16,21 @@
     <owl:Ontology rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico">
         <owl:versionIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
+        <dc:contributor xml:lang="es">Flavia Martín-Delgado Becerril - Ayuntamiento de Madrid</dc:contributor>
+        <dc:contributor xml:lang="es">Guillermo Montesinos Ballesteros (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:contributor>
         <dc:contributor xml:lang="es">Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid</dc:contributor>
+        <dc:contributor xml:lang="es">Isabel Martínez - Ayuntamiento de A Coruña</dc:contributor>
+        <dc:contributor xml:lang="es">Jesús Mora De la Cruz - Ayuntamiento de Madrid</dc:contributor>
+        <dc:contributor xml:lang="es">Jesús Rodríguez Castro - Ayuntamiento de Compostela</dc:contributor>
+        <dc:contributor xml:lang="es">Juan Antonio López - Ayuntamiento de A Coruña</dc:contributor>
         <dc:contributor xml:lang="es">María Carmen Ruiz Moreno - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza</dc:contributor>
         <dc:contributor xml:lang="es">María Jesús Gallego San Miguel - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">María del Mar Arribas de Andrés - Ayuntamiento de Madrid</dc:contributor>
+        <dc:contributor xml:lang="es">Rafael Rodríguez Gayoso - Ayuntamiento de Compostela</dc:contributor>
         <dc:contributor xml:lang="es">Red.es</dc:contributor>
+        <dc:contributor xml:lang="es">Rubén Cid - Ayuntamiento de A Coruña</dc:contributor>
+        <dc:contributor xml:lang="es">Rubén Notivol Bezares - Ayuntamiento de Zaragoza</dc:contributor>
         <dc:contributor xml:lang="es">Servicio de Informática - Ayuntamiento de Santiago de Compostela</dc:contributor>
         <dc:contributor xml:lang="es">Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña</dc:contributor>
         <dc:contributor xml:lang="es">Víctor Morlán Plo - Ayuntamiento de Zaragoza</dc:contributor>
@@ -79,6 +88,13 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/identifier -->
 
 
@@ -104,6 +120,15 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:domain rdf:resource="_:genid2147483670"/>
+    </rdf:Description>
     
 
 
@@ -423,6 +448,13 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
@@ -983,6 +1015,13 @@
      -->
 
 
+    <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:comment xml:lang="en">A description of the resource within a given context.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una descripción del recurso dentro de un contexto dado.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="es">Descripción</rdfs:label>
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
         <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
         <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>

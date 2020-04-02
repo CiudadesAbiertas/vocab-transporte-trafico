@@ -212,6 +212,9 @@
       "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
       "@type" : "@id"
     },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
     "preferredNamespaceUri" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
     },

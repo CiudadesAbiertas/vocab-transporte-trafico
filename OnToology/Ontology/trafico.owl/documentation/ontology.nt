@@ -1,12 +1,21 @@
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/sosa/> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Flavia Martín-Delgado Becerril - Ayuntamiento de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Guillermo Montesinos Ballesteros (Ontology Engineering Group - Universidad Politécnica de Madrid)"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Isabel Martínez - Ayuntamiento de A Coruña"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Jesús Mora De la Cruz - Ayuntamiento de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Jesús Rodríguez Castro - Ayuntamiento de Compostela"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Juan Antonio López - Ayuntamiento de A Coruña"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "María del Mar Arribas de Andrés - Ayuntamiento de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Rafael Rodríguez Gayoso - Ayuntamiento de Compostela"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Red.es"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Rubén Cid - Ayuntamiento de A Coruña"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Rubén Notivol Bezares - Ayuntamiento de Zaragoza"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Servicio de Informática - Ayuntamiento de Santiago de Compostela"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Víctor Morlán Plo - Ayuntamiento de Zaragoza"@es .
@@ -45,6 +54,9 @@
 # http://purl.org/dc/elements/1.1/date
 <http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/elements/1.1/identifier
 <http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -56,6 +68,9 @@
 # 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#domain> <_:genid2147483670> .
 # 
 # http://purl.org/dc/terms/hasVersion
 <http://purl.org/dc/terms/hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -267,6 +282,9 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #
 # #################################################################
 # 
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
 # http://purl.org/dc/terms/identifier
 <http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -613,6 +631,12 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #
 # #################################################################
 # 
+# 
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of the resource within a given context."@en .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#comment> "Una descripción del recurso dentro de un contexto dado."@es .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "Descripción"@es .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "Description"@en .
 # 
 <http://purl.org/dc/terms/issued> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#issued-003> .
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of formal issuance (e.g., publication) of the resource."@en .
