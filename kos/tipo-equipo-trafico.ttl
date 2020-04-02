@@ -35,7 +35,7 @@
     skos:preflabel "centralised-traffic-light-controller"@en ;
     skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/tipo-equipo-control> .
     
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/tipo/equipo-control> skos:narrower
+<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/tipo-equipo-control> skos:narrower
     <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/regulador-semaforico-centralizado> .
 
 <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/tipo-equipo-control/regulador-semaforico-no-centralizado> a skos:Concept ;
@@ -45,7 +45,7 @@
     skos:preflabel "non-centralised-traffic-light-controller"@en ;
     skos:broader <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/tipo-equipo-control> .
     
-<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/tipo/equipo-control> skos:narrower
+<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/tipo-equipo-control> skos:narrower
     <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/regulador-semaforico-no-centralizado> .
 
 <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/tipo-equipo-trafico/foto-rojo> a skos:Concept ;
