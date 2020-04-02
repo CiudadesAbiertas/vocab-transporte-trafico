@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "estraf:Tramo" "-2cf0ebfa:1713502d3e7:-7ff4" "estraf:Carga" "sosa:ObservableProperty" "estraf:Incidencia" "sosa:FeatureOfInterest" "estraf:PropiedadMedicionTrafico" "estraf:EquipoTrafico" "sosa:Observation" "skos:ConceptScheme" "http://www.opengis.net/spec/geosparql/1.0#Point" "-2cf0ebfa:1713502d3e7:-7ff8" "estraf:IncidenciaPlanificada" "sosa:Sensor" "skos:Concept" "estraf:ObservacionTrafico" "-2cf0ebfa:1713502d3e7:-7ffc" "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via" "-2cf0ebfa:1713502d3e7:-7ff0" "sosa:Actuation" "sosa:Platform" "sosa:ActuatableProperty" "sosa:Actuator" "sosa:Sample" "time:TemporalEntity" "sosa:Sampling" "sosa:Procedure" "sosa:Result" "sosa:Sampler" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "estraf:Tramo" "estraf:Carga" "sosa:ObservableProperty" "estraf:Incidencia" "sosa:FeatureOfInterest" "-76f35a61:1713acf50ab:-7ff4" "estraf:PropiedadMedicionTrafico" "-76f35a61:1713acf50ab:-7ff8" "estraf:EquipoTrafico" "sosa:Observation" "skos:ConceptScheme" "http://www.opengis.net/spec/geosparql/1.0#Point" "-76f35a61:1713acf50ab:-7fec" "estraf:IncidenciaPlanificada" "sosa:Sensor" "-76f35a61:1713acf50ab:-7ff0" "skos:Concept" "estraf:ObservacionTrafico" "-76f35a61:1713acf50ab:-7ffc" "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via" "sosa:Actuation" "sosa:Platform" "sosa:ActuatableProperty" "sosa:Actuator" "sosa:Sample" "time:TemporalEntity" "sosa:Sampling" "sosa:Procedure" "sosa:Result" "sosa:Sampler" ; /*classes style*/
 	"estraf:recurrencia" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"sosa:observedProperty" -> "sosa:ObservableProperty" [ label = ":rangeIncludes" ];
 	"sosa:observedProperty" -> "sosa:Observation" [ label = ":domainIncludes" ];
@@ -65,21 +65,25 @@ node [shape = rectangle, color="orange"]; "estraf:Tramo" "-2cf0ebfa:1713502d3e7:
 	"sosa:isHostedBy" -> "sosa:Sensor" [ label = ":domainIncludes" ];
 	"sosa:isHostedBy" -> "sosa:Actuator" [ label = ":domainIncludes" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico" [ label = "owl:hasValue" ];
+	"NULL" -> "-76f35a61:1713acf50ab:-7ff7" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-76f35a61:1713acf50ab:-7fef" [ label = "owl:unionOf" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-incidencia" [ label = "owl:hasValue" ];
-	"NULL" -> "-2cf0ebfa:1713502d3e7:-7fef" [ label = "owl:unionOf" ];
-	"NULL" -> "-2cf0ebfa:1713502d3e7:-7ff3" [ label = "owl:intersectionOf" ];
-	"NULL" -> "-2cf0ebfa:1713502d3e7:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "-76f35a61:1713acf50ab:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "-76f35a61:1713acf50ab:-7fea" [ label = "rdf:rest" ];
+	"NULL" -> "-76f35a61:1713acf50ab:-7fed" [ label = "rdf:rest" ];
+	"NULL" -> "estraf:Tramo" [ label = "rdf:first" ];
+	"NULL" -> "-76f35a61:1713acf50ab:-7feb" [ label = "owl:unionOf" ];
 	"NULL" -> "estraf:Incidencia" [ label = "rdf:first" ];
 	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
+	"NULL" -> "-76f35a61:1713acf50ab:-7ff3" [ label = "owl:intersectionOf" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
-	"NULL" -> "-2cf0ebfa:1713502d3e7:-7ff5" [ label = "rdf:rest" ];
-	"NULL" -> "-2cf0ebfa:1713502d3e7:-7ff7" [ label = "owl:intersectionOf" ];
-	"NULL" -> "-2cf0ebfa:1713502d3e7:-7fee" [ label = "rdf:rest" ];
-	"NULL" -> "-2cf0ebfa:1713502d3e7:-7ff1" [ label = "rdf:rest" ];
+	"NULL" -> "-76f35a61:1713acf50ab:-7ff5" [ label = "rdf:rest" ];
+	"NULL" -> "-76f35a61:1713acf50ab:-7ffb" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-76f35a61:1713acf50ab:-7fee" [ label = "rdf:rest" ];
+	"NULL" -> "-76f35a61:1713acf50ab:-7ff1" [ label = "rdf:rest" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio" [ label = "owl:hasValue" ];
 	"NULL" -> "estraf:EquipoTrafico" [ label = "rdf:first" ];
 	"NULL" -> "skos:inScheme" [ label = "owl:onProperty" ];
-	"NULL" -> "-2cf0ebfa:1713502d3e7:-7ffb" [ label = "owl:intersectionOf" ];
 	"sosa:hasSample" -> "sosa:Sample" [ label = ":rangeIncludes" ];
 	"sosa:hasSample" -> "sosa:FeatureOfInterest" [ label = ":domainIncludes" ];
 	"sosa:observes" -> "sosa:ObservableProperty" [ label = ":rangeIncludes" ];
@@ -91,7 +95,7 @@ node [shape = rectangle, color="orange"]; "estraf:Tramo" "-2cf0ebfa:1713502d3e7:
 	"sosa:actsOnProperty" -> "sosa:ActuatableProperty" [ label = ":rangeIncludes" ];
 	"sosa:actsOnProperty" -> "sosa:Actuation" [ label = ":domainIncludes" ];
 	"sosa:" -> "http://www.opengeospatial.org/ogc/Software" [ label = "dcterms:license" ];
-	"sosa:" -> "92db32d7db411dd174a131e3bd48ddc2" [ label = "dcterms:creator" ];
+	"sosa:" -> "99178a25fa821ca9ea1b88afd507a44d" [ label = "dcterms:creator" ];
 	"sosa:" -> "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" [ label = "dcterms:license" ];
 	"sosa:isFeatureOfInterestOf" -> "sosa:FeatureOfInterest" [ label = ":domainIncludes" ];
 	"sosa:isFeatureOfInterestOf" -> "sosa:Actuation" [ label = ":rangeIncludes" ];
@@ -106,11 +110,12 @@ node [shape = rectangle, color="orange"]; "estraf:Tramo" "-2cf0ebfa:1713502d3e7:
 	"sosa:madeBySampler" -> "sosa:Sampling" [ label = ":domainIncludes" ];
 	"estraf:Incidencia" -> "xsd:dateTime" [ label = ":startDate" ];
 	"estraf:Tramo" -> "http://www.opengis.net/spec/geosparql/1.0#Point" [ label = "estraf:finTramo" ];
-	"estraf:Carga" -> "-2cf0ebfa:1713502d3e7:-7ff4" [ label = "estraf:tipoNivelServicio" ];
+	"estraf:Carga" -> "-76f35a61:1713acf50ab:-7ff4" [ label = "estraf:tipoNivelServicio" ];
+	"-76f35a61:1713acf50ab:-7ff0" -> "owl:Thing" [ label = "dcterms:description" ];
 	"owl:Thing" -> "skos:ConceptScheme" [ label = "skos:inScheme" ];
 	"estraf:ObservacionTrafico" -> "xsd:dateTime" [ label = "sosa:phenomenonTime" ];
 	"estraf:EquipoTrafico" -> "estraf:Tramo" [ label = "estraf:monitorea" ];
-	"estraf:EquipoTrafico" -> "-2cf0ebfa:1713502d3e7:-7ffc" [ label = "estraf:tipoEquipoTrafico" ];
+	"estraf:EquipoTrafico" -> "-76f35a61:1713acf50ab:-7ffc" [ label = "estraf:tipoEquipoTrafico" ];
 	"estraf:IncidenciaPlanificada" -> "xsd:dateTime" [ label = "estraf:fechaFinPrevista" ];
 	"estraf:Tramo" -> "http://www.opengis.net/spec/geosparql/1.0#Point" [ label = "estraf:inicioTramo" ];
 	"estraf:Incidencia" -> "xsd:dateTime" [ label = ":datePosted" ];
@@ -118,14 +123,14 @@ node [shape = rectangle, color="orange"]; "estraf:Tramo" "-2cf0ebfa:1713502d3e7:
 	"estraf:IncidenciaPlanificada" -> "xsd:string" [ label = "estraf:recurrencia" ];
 	"estraf:Incidencia" -> "estraf:Tramo" [ label = "estraf:incidenciaEnTramo" ];
 	"estraf:ObservacionTrafico" -> "rdfs:Literal" [ label = "sosa:hasSimpleResult" ];
-	"-2cf0ebfa:1713502d3e7:-7ff0" -> "owl:Thing" [ label = "dcterms:identifier" ];
+	"-76f35a61:1713acf50ab:-7fec" -> "owl:Thing" [ label = "dcterms:identifier" ];
 	"estraf:Incidencia" -> "xsd:dateTime" [ label = ":endDate" ];
 	"estraf:Incidencia" -> "xsd:integer" [ label = "estraf:numCarriles" ];
 	"estraf:Incidencia" -> "xsd:integer" [ label = "estraf:numSentidos" ];
 	"estraf:Incidencia" -> "http://www.opengis.net/spec/geosparql/1.0#Point" [ label = "estraf:ubicacionIncidencia" ];
 	"estraf:ObservacionTrafico" -> "xsd:dateTime" [ label = "sosa:resultTime" ];
 	"estraf:IncidenciaPlanificada" -> "xsd:boolean" [ label = "estraf:esRecurrente" ];
-	"estraf:Incidencia" -> "-2cf0ebfa:1713502d3e7:-7ff8" [ label = "estraf:tipoIncidencia" ];
+	"estraf:Incidencia" -> "-76f35a61:1713acf50ab:-7ff8" [ label = "estraf:tipoIncidencia" ];
 	"estraf:PropiedadMedicionTrafico" -> "xsd:string" [ label = "estraf:unidadMedida" ];
 	"estraf:IncidenciaPlanificada" -> "xsd:string" [ label = "estraf:urbano" ];
 	"estraf:Tramo" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via" [ label = "estraf:via" ];
