@@ -259,7 +259,7 @@
     "@value" : "Jesús Mora De la Cruz - Ayuntamiento de Madrid"
   }, {
     "@language" : "es",
-    "@value" : "Jesús Rodríguez Castro - Ayuntamiento de Compostela"
+    "@value" : "Jesús Rodríguez Castro - Ayuntamiento de Santiago de Compostela"
   }, {
     "@language" : "es",
     "@value" : "Juan Antonio López - Ayuntamiento de A Coruña"
@@ -295,7 +295,7 @@
     "@value" : "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"
   }, {
     "@language" : "es",
-    "@value" : "Víctor Morlán Plo - Ayuntamiento de Zaragoza"
+    "@value" : "Víctor Morlán Pío - Ayuntamiento de Zaragoza"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)"
