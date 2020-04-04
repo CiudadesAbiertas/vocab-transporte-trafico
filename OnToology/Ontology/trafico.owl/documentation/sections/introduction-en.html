@@ -1,5 +1,7 @@
 <html><h2 id="intro" class="list">Introduction <span class="backlink">      back to <a href="#toc">ToC</a></span></h2>
-    <p>Traffic refers to the circulation of vehicles that occurs in a certain space and period of time. In order to know how this circulation takes place, or better known as the state of the traffic, a great variety of devices are used to carry out the measurements, for example, turns, artificial vision, etc. These measurements are generally made taking into account different variables, for example: the number of vehicles that pass through an area in a certain period of time, the speed of the vehicle, the type of vehicle, etc. Additionally, it is necessary to consider the incidents that occur on the roads and that influence the circulation of vehicles. These incidents can be planned, as in the case of long-term works or demonstrations, or unplanned, as in the case of accidents.</p>
+  <!-- WARNING: VALIDATION PENDING -->
+  
+  <p>Traffic refers to the circulation of vehicles that occurs in a certain space and period of time. In order to know how this circulation takes place, or better known as the state of the traffic, a great variety of devices are used to carry out the measurements, for example, turns, artificial vision, etc. These measurements are generally made taking into account different variables, for example: the number of vehicles that pass through an area in a certain period of time, the speed of the vehicle, the type of vehicle, etc. Additionally, it is necessary to consider the incidents that occur on the roads and that influence the circulation of vehicles. These incidents can be planned, as in the case of long-term works or demonstrations, or unplanned, as in the case of accidents.</p>
     <p>Having the data on the traffic that occurs in cities is a valuable input for both the Town Halls and the public. On the one hand, thanks to this data, Town and City Councils can have a valuable input for urban planning in different areas such as traffic management, road infrastructure design, forecasts and policies regarding pollution protocols, mobility studies, etc. On the other hand, citizens benefit from the availability of this data to plan the best route to move around, make the decision to use public transport instead of their own vehicle, etc.</p>
     <p>In the City Councils, traffic data is published either through visualizations or available files, in some cases in their open data portals, in formats such as: CSV, XLS, XML, KML, JSON, etc. The level of detail and update frequency (which can range from about 5 minutes to several hours) varies between entities, however, it is noted that in general there is traffic status data expressed as traffic intensity, location of points where measurement devices are located, expected incidents on the roads, etc.</p>
     <p>Having the semantic representation of traffic status data by means of a consensus model is an opportunity for the development of tools to facilitate access to and exploitation of this data. And in the future, its relationship with other sets of data that can enrich it, for example, data from the street map, districts, neighbourhoods, etc.</p>
@@ -10,23 +12,21 @@
 <table>
 <caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
 <tbody>
-<tr><td><b>estraf</b></td><td>&lt;http://vocab.ciudadesabiertas.es/def/transporte/trafico&gt;</td></tr>
-<tr><td><b>schema</b></td><td>&lt;http://schema.org&gt;</td></tr>
-<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
-<tr><td><b>transporte</b></td><td>&lt;http://vocab.ciudadesabiertas.es/def/transporte&gt;</td></tr>
-<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
-<tr><td><b>callejero</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero&gt;</td></tr>
-<tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
-<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
-<tr><td><b>geosparql</b></td><td>&lt;http://www.opengis.net/spec/geosparql&gt;</td></tr>
-<tr><td><b>dc1</b></td><td>&lt;http:/purl.org/dc&gt;</td></tr>
-<tr><td><b>1-0</b></td><td>&lt;http://www.opengis.net/spec/geosparql/1.0&gt;</td></tr>
-<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
-<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
-<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann&gt;</td></tr>
-<tr><td><b>foaf</b></td><td>&lt;http://xmlns.com/foaf/0.1&gt;</td></tr>
-<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
-<tr><td><b>sosa</b></td><td>&lt;http://www.w3.org/ns/sosa&gt;</td></tr>
+    <tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1&gt;</td></tr>
+    <tr><td><b>dct</b></td><td>&lt;http:/purl.org/terms&gt;</td></tr>
+    <tr><td><b>escjr</b></td><td>&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#&gt;</td></tr>
+    <tr><td><b>estraf</b></td><td>&lt;http://vocab.ciudadesabiertas.es/def/transporte/trafico&gt;</td></tr>
+    <tr><td><b>geosparql</b></td><td>&lt;http://www.opengis.net/spec/geosparql&gt;</td></tr>
+    <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+    <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+    <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#"&gt;</td></tr>
+    <tr><td><b>schema</b></td><td>&lt;http://schema.org&gt;</td></tr>
+    <tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core&gt;</td></tr>
+    <tr><td><b>sosa</b></td><td>&lt;http://www.w3.org/ns/sosa&gt;</td></tr>   
+    <tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms&gt;</td></tr>
+    <tr><td><b>terms</b></td><td>&lt;http://www.w3.org/2006/time#&gt;</td></tr>
+    <tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+    <tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
 </tbody>
 </table>
 </div>
