@@ -626,12 +626,12 @@
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="es">Esta propiedad permite describir la recurrencia.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property allows describing the recurrence</rdfs:comment>
-        <rdfs:label xml:lang="en">Recurrence</rdfs:label>
-        <rdfs:label xml:lang="es">Recurrencia</rdfs:label>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="es">Esta propiedad permite saber si el dispositivo es urbano o no.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property allows knowing whether the device is urban or not</rdfs:comment>
+        <rdfs:label xml:lang="en">Urban</rdfs:label>
+        <rdfs:label xml:lang="es">Urbano</rdfs:label>
     </owl:DatatypeProperty>
     
 

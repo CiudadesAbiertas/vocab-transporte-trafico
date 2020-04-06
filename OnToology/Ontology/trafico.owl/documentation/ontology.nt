@@ -396,12 +396,12 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada> .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad permite describir la recurrencia."@es .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows describing the recurrence"@en .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/2000/01/rdf-schema#label> "Recurrence"@en .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/2000/01/rdf-schema#label> "Recurrencia"@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad permite saber si el dispositivo es urbano o no."@es .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows knowing whether the device is urban or not"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/2000/01/rdf-schema#label> "Urban"@en .
+<http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano> <http://www.w3.org/2000/01/rdf-schema#label> "Urbano"@es .
 # 
 # http://www.w3.org/ns/sosa/hasSimpleResult
 <http://www.w3.org/ns/sosa/hasSimpleResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .

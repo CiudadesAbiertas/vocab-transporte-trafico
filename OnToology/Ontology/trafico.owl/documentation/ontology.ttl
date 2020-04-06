@@ -418,12 +418,12 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano
 :urbano rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
-        rdfs:domain :IncidenciaPlanificada ;
-        rdfs:range xsd:string ;
-        rdfs:comment "Esta propiedad permite describir la recurrencia."@es ,
-                     "This property allows describing the recurrence"@en ;
-        rdfs:label "Recurrence"@en ,
-                   "Recurrencia"@es .
+        rdfs:domain :EquipoTrafico ;
+        rdfs:range xsd:boolean ;
+        rdfs:comment "Esta propiedad permite saber si el equipo es urbano o no."@es ,
+                     "This property allows knowing whether the device is urban or not"@en ;
+        rdfs:label "Urban"@en ,
+                   "Urbano"@es .
 
 
 ###  http://www.w3.org/ns/sosa/hasSimpleResult

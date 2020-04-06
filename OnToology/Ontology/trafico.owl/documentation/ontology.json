@@ -996,23 +996,23 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Esta propiedad permite describir la recurrencia."
+    "@value" : "Esta propiedad permite saber si el equipo es urbano  o no."
   }, {
     "@language" : "en",
-    "@value" : "This property allows describing the recurrence"
+    "@value" : "This property allows knowing whether the device is urban or not"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Recurrence"
+    "@value" : "Urban"
   }, {
     "@language" : "es",
-    "@value" : "Recurrencia"
+    "@value" : "Urbano"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
