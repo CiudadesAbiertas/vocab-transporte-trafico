@@ -26,7 +26,7 @@
     skos:notation "Planned Incidence"@en ;
     skos:prefLabel "planned-incidence"@en ;
     skos:prefLabel "incidencia-planificada"@es .
-    skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico> .
+    skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia> .
 
 <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/incidencia-planificada/obras> a skos:Concept ;
     skos:notation "Obras en la vía pública"@es ;
