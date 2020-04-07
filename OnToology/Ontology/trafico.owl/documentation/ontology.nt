@@ -1,21 +1,12 @@
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0> .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/sosa/> .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Flavia Martín-Delgado Becerril - Ayuntamiento de Madrid"@es .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Guillermo Montesinos Ballesteros (Ontology Engineering Group - Universidad Politécnica de Madrid)"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Isabel Martínez - Ayuntamiento de A Coruña"@es .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Jesús Mora De la Cruz - Ayuntamiento de Madrid"@es .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Jesús Rodríguez Castro - Ayuntamiento de Santiago de Compostela"@es .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Juan Antonio López - Ayuntamiento de A Coruña"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "María del Mar Arribas de Andrés - Ayuntamiento de Madrid"@es .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Rafael Rodríguez Gayoso - Ayuntamiento de Compostela"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Red.es"@es .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Rubén Cid - Ayuntamiento de A Coruña"@es .
-<http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Rubén Notivol Bezares - Ayuntamiento de Zaragoza"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Servicio de Informática - Ayuntamiento de Santiago de Compostela"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es .
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> <http://purl.org/dc/elements/1.1/contributor> "Víctor Morlán Pío - Ayuntamiento de Zaragoza"@es .

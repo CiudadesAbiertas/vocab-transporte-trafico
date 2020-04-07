@@ -9,21 +9,13 @@
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> rdf:type owl:Ontology ;
                                                            owl:versionIRI <http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0> ;
                                                            owl:imports <http://www.w3.org/ns/sosa/> ;
-                                                           <http://purl.org/dc/elements/1.1/contributor> "Flavia Martín-Delgado Becerril - Ayuntamiento de Madrid"@es ,
-                                                                                                         "Guillermo Montesinos Ballesteros (Ontology Engineering Group - Universidad Politécnica de Madrid)"@es ,
+                                                           <http://purl.org/dc/elements/1.1/contributor> 
                                                                                                          "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
-                                                                                                         "Isabel Martínez - Ayuntamiento de A Coruña"@es ,
-                                                                                                         "Jesús Mora De la Cruz - Ayuntamiento de Madrid"@es ,
-                                                                                                         "Jesús Rodríguez Castro - Ayuntamiento de Santiago de Compostela"@es ,
-                                                                                                         "Juan Antonio López - Ayuntamiento de A Coruña"@es ,
                                                                                                          "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es ,
                                                                                                          "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es ,
                                                                                                          "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"@es ,
                                                                                                          "María del Mar Arribas de Andrés - Ayuntamiento de Madrid"@es ,
-                                                                                                         "Rafael Rodríguez Gayoso - Ayuntamiento de Compostela"@es ,
                                                                                                          "Red.es"@es ,
-                                                                                                         "Rubén Cid - Ayuntamiento de A Coruña"@es ,
-                                                                                                         "Rubén Notivol Bezares - Ayuntamiento de Zaragoza"@es ,
                                                                                                          "Servicio de Informática - Ayuntamiento de Santiago de Compostela"@es ,
                                                                                                          "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"@es ,
                                                                                                          "Víctor Morlán Pío - Ayuntamiento de Zaragoza"@es ;

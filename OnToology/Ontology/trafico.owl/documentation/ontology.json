@@ -242,28 +242,11 @@
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@language" : "es",
-    "@value" : "Flavia Martín-Delgado Becerril - Ayuntamiento de Madrid"
-  }, {
-    "@language" : "es",
-    "@value" : "Guillermo Montesinos Ballesteros (Ontology Engineering Group - Universidad Politécnica de Madrid)"
-  }, {
+    "http://purl.org/dc/elements/1.1/contributor" : [
+	{
     "@language" : "es",
     "@value" : "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"
-  }, {
-    "@language" : "es",
-    "@value" : "Isabel Martínez - Ayuntamiento de A Coruña"
-  }, {
-    "@language" : "es",
-    "@value" : "Jesús Mora De la Cruz - Ayuntamiento de Madrid"
-  }, {
-    "@language" : "es",
-    "@value" : "Jesús Rodríguez Castro - Ayuntamiento de Santiago de Compostela"
-  }, {
-    "@language" : "es",
-    "@value" : "Juan Antonio López - Ayuntamiento de A Coruña"
-  }, {
+  },  {
     "@language" : "es",
     "@value" : "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"
   }, {
@@ -275,21 +258,9 @@
   }, {
     "@language" : "es",
     "@value" : "María del Mar Arribas de Andrés - Ayuntamiento de Madrid"
-  }, {
-    "@language" : "es",
-    "@value" : "Rafael Rodríguez Gayoso - Ayuntamiento de Compostela"
-  }, {
+  },  {
     "@language" : "es",
     "@value" : "Red.es"
-  }, {
-    "@language" : "es",
-    "@value" : "Rubén Cid - Ayuntamiento de A Coruña"
-  }, {
-    "@language" : "es",
-    "@value" : "Rubén Notivol Bezares - Ayuntamiento de Zaragoza"
-  }, {
-    "@language" : "es",
-    "@value" : "Servicio de Informática - Ayuntamiento de Santiago de Compostela"
   }, {
     "@language" : "es",
     "@value" : "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"
