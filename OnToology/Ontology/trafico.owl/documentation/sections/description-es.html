@@ -4,7 +4,7 @@
 	<!-- Comienzo explicación -->
     <p>La Figura 1 muestra las clases y propiedades del vocabulario de tráfico. El principal objetivo de este vocabulario es permitir la representación de los equipos de tráfico así como de las incidencias.</p>
 
-    <div><center><img src="resources/images/trafico-lite-20200406-19.png" alt="Diagrama del vocabulario de tráfico de la iniciativas Ciudades Abiertas"/><figcaption>Figura 1. - Vocabulario para la representación de datos sobre el tráfico de vehículos a motor</figcaption></center></div>
+    <div><center><img src="resources/images/ontologia-trafico.png" alt="Diagrama del vocabulario de tráfico de la iniciativas Ciudades Abiertas"/><figcaption>Figura 1. - Vocabulario para la representación de datos sobre el tráfico de vehículos a motor</figcaption></center></div>
 
     <p>Para representar los equipos de control se ha creado el concepto <a href="#EquipoTrafico">estraf:EquipoTrafico</a> que debe tener asociado un <a href="#tipoEquipoTrafico">estraf:tipoEquipoTrafico</a> que se relaciona con la taxonomía <a href="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico">estraf-kos:tipo-equipo-trafico</a>. Tiene como propiedades un identificador del equipo <a href="http://purl.org/dc/terms/identifier" >dct:identifier</a>, una descripción <a href="#descripcion">estraf:descripcion</a>, el número de sentidos a los que sirve <a href="#numSentidos" >estraf#numSentidos</a>, el número de carriles <a href="#numeroCarriles">estraf:numCarriles</a> y si es urbano o no <a href="#urbano" >estraf:urbano</a>.</p>
 
@@ -16,7 +16,7 @@
 
     <p>Para los dispositivos de medición de tráfico se ha creado la clase <a href="#DispositivoMedicionTrafico">estraf:DispositivoMedicionTrafico</a> que es a su vez una subclase de <a href="http://www.w3.org/ns/sosa/Sensor">sosa:Sensor</a> y que despliega el diagrama de relación con este vocabulario de descripción de dispositivos.</p>
 
-    <div><center><img src="resources/images/trafico-equipo-20200406.png" alt="Diagrama del Equipo de Tráfico y del Dispositivo de Medición de Tráfico como subclase de sosa:Sensor"/><figcaption>Figura 2. - Diagrama del Equipo de Tráfico y del Dispositivo de Medición de Tráfico como subclase de sosa:Sensor</figcaption></center></div>
+    <div><center><img src="resources/images/trafico-equipo.png" alt="Diagrama del Equipo de Tráfico y del Dispositivo de Medición de Tráfico como subclase de sosa:Sensor"/><figcaption>Figura 2. - Diagrama del Equipo de Tráfico y del Dispositivo de Medición de Tráfico como subclase de sosa:Sensor</figcaption></center></div>
 
     <p>La clase <a href="#DispositivoMedicionTrafico">estraf:DispositivoMedicionTrafico</a>, que es subclase de <a href="#EquipoTrafico">estraf:EquipoTrafico</a> y de <a href="http://www.w3.org/ns/sosa/Sensor">sosa:Sensor</a>, está observando (<a href="http://www.w3.org/ns/sosa/observes">sosa:observes</a>) la instancia de la clase creada <a href="#PropiedadMedicionTrafico">estraf:PropiedadMedicionTrafico</a> que es una subclase de <a href="http://www.w3.org/ns/sosa/ObservableProperty">sosa:ObservableProperty</a> donde se especifica la unidad medida por el dispositivo con la propiedad <a href="#unidadMedida">estraf:unidadMedida</a>. Además, <a href="#DispositivoMedicionTrafico" >estraf:DispositivoMedicionTrafico</a> tiene un atributo que indica si se encuentra en servicio o no, <a href="#enservicio" >estraf:enservicio</a></p>
 
@@ -28,7 +28,7 @@
 
     <!-- INCIDENCIA -->
     
-    <div><center><img src="resources/images/trafico-incidencia-20200401.png" alt="Diagrama de la Incidencia de Tráfico y su relación con el Tramo"/><figcaption>Figura 3. - Diagrama de la Incidencia de Tráfico y su relación con el Tramo</figcaption></center></div>
+    <div><center><img src="resources/images/trafico-incidencia.png" alt="Diagrama de la Incidencia de Tráfico y su relación con el Tramo"/><figcaption>Figura 3. - Diagrama de la Incidencia de Tráfico y su relación con el Tramo</figcaption></center></div>
 
     <p>El concepto principal de esta sección es la <a href="#Incidencia" >estraf:Incidencia</a> que se relaciona con <a href="#Tramo" >estraf:Tramo</a> a través de la propiedad <a href="#incidenciaEnTramo">estraf:incidenciaEnTramo</a>, con las coordenadas geográficas de <a href="http://www.opengis.net/doc/IS/geosparql/1.0#Point" >geosparql:Point</a> a traves de la propiedad <a href="#ubicacionIncidencia" >estraf:ubicacionIncidencia</a> y con la taxonomía <a href="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia">estraf-kos:tipo-incidencia</a> a través de la propiedad <a href="#tipoIncidencia" >estraf:tipoIncidencia</a>.</p>
     
