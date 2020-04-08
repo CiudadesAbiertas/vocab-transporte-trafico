@@ -2,7 +2,7 @@
 <rdf:RDF xmlns="http://vocab.ciudadesabiertas.es/def/transporte/trafico#"
      xml:base="http://vocab.ciudadesabiertas.es/def/transporte/trafico"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dct="http:/purl.org/dc/terms"
+     xmlns:dct="http://purl.org/dc/terms/"
      xmlns:escjr="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -39,8 +39,6 @@
         <terms:hasVersion>1.0.0</terms:hasVersion>
         <terms:issued xml:lang="es">2020-04-02</terms:issued>
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0</terms:license>
-        <vann:preferredNamespacePrefix>estraf</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#"/>
         <rdfs:comment xml:lang="es">Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña. En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos	propuestos en las reuniones del grupo.</rdfs:comment>
 	<rdfs:comment xml:lang="en">This version has been generated within the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate. In this version, classes and properties have been defined according to the requirements and glossary of concepts proposed at the group's meetings.</rdfs:comment>
         <owl:versionInfo>Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</owl:versionInfo>
