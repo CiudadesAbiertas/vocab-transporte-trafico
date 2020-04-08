@@ -94,8 +94,8 @@
 <http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
 
 
-###  http:/purl.org/dc/termsissued
-<http:/purl.org/dc/termsissued> rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -609,7 +609,7 @@ xsd:date rdf:type rdfs:Datatype .
                                               rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#> ;
                                               rdfs:label "Concept"@en ;
                                               <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought." ;
-                                              <http:/purl.org/dc/termsissued> "2004-02-xx" .
+                                              <http://purl.org/dc/terms/issued> "2004-02-xx" .
 
 
 ###  http://www.w3.org/2004/02/skos/core#ConceptScheme

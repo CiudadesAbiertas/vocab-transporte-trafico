@@ -1136,7 +1136,7 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "An abstract idea or notion; a unit of thought."
   } ],
-  "http:/purl.org/dc/termsissued" : [ {
+  "http://purl.org/dc/terms/issued" : [ {
     "@value" : "2004-02-xx"
   } ]
 }, {
@@ -1286,6 +1286,6 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http:/purl.org/dc/termsissued",
+  "@id" : "http://purl.org/dc/terms/issued",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]

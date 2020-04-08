@@ -2,7 +2,7 @@
 <rdf:RDF xmlns="http://vocab.ciudadesabiertas.es/def/transporte/trafico#"
      xml:base="http://vocab.ciudadesabiertas.es/def/transporte/trafico"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dc1="http:/purl.org/dc/"
+     xmlns:dct="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -153,10 +153,10 @@
     
 
 
-    <!-- http:/purl.org/dc/termsissued -->
+    <!-- http://purl.org/dc/terms/issued -->
 
 
-    <owl:AnnotationProperty rdf:about="http:/purl.org/dc/termsissued"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
 
 
