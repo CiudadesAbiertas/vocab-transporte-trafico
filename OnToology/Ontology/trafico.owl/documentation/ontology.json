@@ -25,6 +25,18 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"
     }, {
       "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"
+    }, {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"
+    }, {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"
     } ]
   } ]
 }, {
@@ -100,7 +112,7 @@
     "@value" : "Una descripción del recurso dentro de un contexto dado."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid2147483670"
+    "@id" : "_:genid13"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://purl.org/dc/terms/"
@@ -126,7 +138,7 @@
     "@value" : "Referencia inequívoca al recurso dentro de un contexto dado."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid13"
+    "@id" : "_:genid17"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://purl.org/dc/terms/"
@@ -242,11 +254,10 @@
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-    "http://purl.org/dc/elements/1.1/contributor" : [
-	{
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "es",
     "@value" : "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"
-  },  {
+  }, {
     "@language" : "es",
     "@value" : "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"
   }, {
@@ -258,9 +269,12 @@
   }, {
     "@language" : "es",
     "@value" : "María del Mar Arribas de Andrés - Ayuntamiento de Madrid"
-  },  {
+  }, {
     "@language" : "es",
     "@value" : "Red.es"
+  }, {
+    "@language" : "es",
+    "@value" : "Servicio de Informática - Ayuntamiento de Santiago de Compostela"
   }, {
     "@language" : "es",
     "@value" : "Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña"
@@ -275,7 +289,7 @@
   }, {
     "@value" : "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)"
   }, {
-    "@value" : "Paola Spinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+    "@value" : "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"
   } ],
   "http://purl.org/dc/elements/1.1/identifier" : [ {
     "@language" : "es",
@@ -304,50 +318,18 @@
   "http://purl.org/dc/terms/license" : [ {
     "@value" : "https://creativecommons.org/licenses/by/4.0"
   } ],
-  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@value" : "estraf"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.      En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos\tpropuestos en las reuniones del grupo."
+    "@value" : "Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña. En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos\tpropuestos en las reuniones del grupo."
   }, {
     "@language" : "en",
-    "@value" : "This version has been generated within the context of the project Open, collaborative and \tinteroperable government platform in which the city councils\tof Madrid, Zaragoza, Santiago de Compostela and A Coruña\tparticipate. In this version, classes and properties have been defined according to the requirements and glossary of concepts    proposed at the group's meetings."
-  } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/"
+    "@value" : "This version has been generated within the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate. In this version, classes and properties have been defined according to the requirements and glossary of concepts proposed at the group's meetings."
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña."
-  } ]
-}, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Carga es una propiedad de la Observación realizada por un Dispositivo de Medición de Tráfico"
-  }, {
-    "@language" : "en",
-    "@value" : "Load is a property of the Observation by a Traffic Measuring Device"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Carga"
-  }, {
-    "@language" : "en",
-    "@value" : "Load"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico",
@@ -461,37 +443,14 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"
   } ]
 }, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Intensidad",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Intensidad es una propiedad de la Observación realizada por un Dispositivo de Medición de Tráfico"
-  }, {
-    "@language" : "en",
-    "@value" : "Intensity is a property of the Observation by a Traffic Measuring Device"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Intensidad"
-  }, {
-    "@language" : "en",
-    "@value" : "Intensity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"
-  } ]
-}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Observación realizada por un Dispositivo de Medición de Tráfico, puede medir intensidad, ocupación y carga"
+    "@value" : "Observación realizada por un Dispositivo de Medición de Tráfico"
   }, {
     "@language" : "en",
-    "@value" : "Observation by a Traffic Measuring Device, you can measure intensity, occupancy and load"
+    "@value" : "Observation by a Traffic Measuring Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico"
@@ -505,29 +464,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/sosa/Observation"
-  } ]
-}, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Ocupacion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Occupation is a property of the Observation by a Traffic Measuring Device"
-  }, {
-    "@language" : "es",
-    "@value" : "Ocupación es una propiedad de la Observación realizada por un Dispositivo de Medición de Tráfico"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Occupation"
-  }, {
-    "@language" : "es",
-    "@value" : "Ocupación"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico",
@@ -557,7 +493,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Part of a route defined by coordinates and a date and time"
+    "@value" : "ParSt of a route defined by coordinates and a date and time"
   }, {
     "@language" : "es",
     "@value" : "Tramo definido por un punto de inicio y fin que puede pertenecer a una o\n      más vías"
@@ -571,6 +507,16 @@
   }, {
     "@language" : "es",
     "@value" : "Tramo"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#carga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "carga"
+  }, {
+    "@language" : "en",
+    "@value" : "traffic load"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente",
@@ -703,6 +649,16 @@
     "@id" : "http://www.opengis.net/spec/geosparql/1.0#Point"
   } ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#intensidad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "intensidad"
+  }, {
+    "@language" : "en",
+    "@value" : "traffic intensity"
+  } ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -779,6 +735,16 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#ocupacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "occupation"
+  }, {
+    "@language" : "es",
+    "@value" : "ocupación"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia",
@@ -863,13 +829,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Level of service according to the property Load"
+    "@value" : "Level of service according to the instance traffic load of the class PropiedadMedicionTrafico"
   }, {
     "@language" : "es",
-    "@value" : "Tipo de nivel de servicio que puede determinar la propiedad\n      Carga"
+    "@value" : "Tipo de nivel de servicio que puede determinar la instancia Carga de la clase Propiedad de Medición de Tráfico"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#carga"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico"
@@ -967,7 +933,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Esta propiedad permite saber si el equipo es urbano  o no."
+    "@value" : "Esta propiedad permite describir si el dispositivo es urbano o no."
   }, {
     "@language" : "en",
     "@value" : "This property allows knowing whether the device is urban or not"
@@ -1036,13 +1002,34 @@
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "tipo de equipo de tráfico"
+  }, {
+    "@language" : "en",
+    "@value" : "type of traffic devices"
+  } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-incidencia",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "tipo de incidencia"
+  }, {
+    "@language" : "en",
+    "@value" : "type of incidence"
+  } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-nivel-servicio",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "tipo de nivel de servicio"
+  }, {
+    "@language" : "en",
+    "@value" : "type of traffic levels of service"
+  } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
@@ -1123,6 +1110,9 @@
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2004-02-xx"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#"
   } ],
@@ -1135,9 +1125,6 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "An abstract idea or notion; a unit of thought."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@value" : "2004-02-xx"
   } ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
@@ -1285,7 +1272,4 @@
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
-}, {
-  "@id" : "http://purl.org/dc/terms/issued",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]
