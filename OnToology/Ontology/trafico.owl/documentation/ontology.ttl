@@ -8,9 +8,7 @@
 
 <http://vocab.ciudadesabiertas.es/def/transporte/trafico> rdf:type owl:Ontology ;
                                                            owl:versionIRI <http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0> ;
-                                                           owl:imports <http://www.w3.org/ns/sosa/> ;
-                                                           <http://purl.org/dc/elements/1.1/contributor> 
-                                                                                                         "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
+                                                           <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es ,
                                                                                                          "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es ,
                                                                                                          "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es ,
                                                                                                          "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"@es ,
@@ -22,7 +20,7 @@
                                                            <http://purl.org/dc/elements/1.1/creator> "Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
                                                                                                      "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
                                                                                                      "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" ,
-                                                                                                     "Paola Spinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)" ;
+                                                                                                     "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)" ;
                                                            <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/transporte/trafico"@es ;
                                                            <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" ;
                                                            <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos sobre el tráfico de vehículos a motor de las ciudades."@es ,
@@ -31,10 +29,8 @@
                                                            <http://purl.org/dc/terms/hasVersion> "1.0.0" ;
                                                            <http://purl.org/dc/terms/issued> "2020-04-02"@es ;
                                                            <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
-                                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "estraf" ;
-                                                           <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
-                                                           rdfs:comment "Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.      En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos	propuestos en las reuniones del grupo."@es ,
-                                                                        "This version has been generated within the context of the project Open, collaborative and 	interoperable government platform in which the city councils	of Madrid, Zaragoza, Santiago de Compostela and A Coruña	participate. In this version, classes and properties have been defined according to the requirements and glossary of concepts    proposed at the group's meetings."@en ;
+                                                           rdfs:comment "Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña. En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos	propuestos en las reuniones del grupo."@es ,
+                                                                        "This version has been generated within the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate. In this version, classes and properties have been defined according to the requirements and glossary of concepts proposed at the group's meetings."@en ;
                                                            owl:versionInfo "Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña." .
 
 #################################################################
@@ -73,10 +69,6 @@
 <http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> rdfs:domain _:genid2147483670 .
-
-
 ###  http://purl.org/dc/terms/hasVersion
 <http://purl.org/dc/terms/hasVersion> rdf:type owl:AnnotationProperty .
 
@@ -92,10 +84,6 @@
 
 ###  http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/issued
-<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -199,7 +187,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoNivelServicio
 :tipoNivelServicio rdf:type owl:ObjectProperty ,
                             owl:FunctionalProperty ;
-                   rdfs:domain :Carga ;
+                   rdfs:domain :carga ;
                    rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                      [ rdf:type owl:Restriction ;
                                                        owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
@@ -208,9 +196,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                    ) ;
                                 rdf:type owl:Class
                               ] ;
-                   rdfs:comment "Level of service according to the property Load"@en ,
-                                """Tipo de nivel de servicio que puede determinar la propiedad
-      Carga"""@es ;
+                   rdfs:comment "Level of service according to the instance traffic load of the class PropiedadMedicionTrafico"@en ,
+                                "Tipo de nivel de servicio que puede determinar la instancia Carga de la clase Propiedad de Medición de Tráfico"@es ;
                    rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/transporte/trafico> ;
                    rdfs:label "Level of Service"@en ,
                               "Tipo de Nivel de servicio"@es .
@@ -275,16 +262,23 @@ xsd:date rdf:type rdfs:Datatype .
 <http://www.w3.org/ns/sosa/observes> rdf:type owl:ObjectProperty .
 
 
-###  http://www.w3.org/ns/sosa/phenomenonTime
-<http://www.w3.org/ns/sosa/phenomenonTime> rdfs:domain :ObservacionTrafico .
-
-
 #################################################################
 #    Data properties
 #################################################################
 
 ###  http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> rdf:type owl:DatatypeProperty .
+<http://purl.org/dc/terms/description> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain [ rdf:type owl:Class ;
+                                                     owl:unionOf ( :EquipoTrafico
+                                                                   :Incidencia
+                                                                   :Tramo
+                                                                 )
+                                                   ] ;
+                                       rdfs:comment "A description of the resource within a given context."@en ,
+                                                    "Una descripción del recurso dentro de un contexto dado."@es ;
+                                       rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                       rdfs:label "Descripción"@es ,
+                                                  "Description"@en .
 
 
 ###  http://purl.org/dc/terms/identifier
@@ -412,7 +406,7 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:subPropertyOf owl:topDataProperty ;
         rdfs:domain :EquipoTrafico ;
         rdfs:range xsd:boolean ;
-        rdfs:comment "Esta propiedad permite saber si el equipo es urbano o no."@es ,
+        rdfs:comment "Esta propiedad permite describir si el dispositivo es urbano o no."@es ,
                      "This property allows knowing whether the device is urban or not"@en ;
         rdfs:label "Urban"@en ,
                    "Urbano"@es .
@@ -432,7 +426,12 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.w3.org/ns/sosa/phenomenonTime
 <http://www.w3.org/ns/sosa/phenomenonTime> rdf:type owl:DatatypeProperty ;
                                            rdfs:subPropertyOf owl:topDataProperty ;
-                                           rdfs:range xsd:dateTime .
+                                           rdfs:domain :ObservacionTrafico ;
+                                           rdfs:range xsd:dateTime ;
+                                           rdfs:comment "Esta propiedad establece el intervalo de tiempo de la observación."@es ,
+                                                        "This property sets the interval of time of the observation"@en ;
+                                           rdfs:label "Interval Time"@en ,
+                                                      "Intervalo"@es .
 
 
 ###  http://www.w3.org/ns/sosa/resultTime
@@ -449,16 +448,6 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Classes
 #################################################################
-
-###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#Carga
-:Carga rdf:type owl:Class ;
-       rdfs:subClassOf :PropiedadMedicionTrafico ;
-       rdfs:comment "Carga es una propiedad de la Observación realizada por un Dispositivo de Medición de Tráfico"@es ,
-                    "Load is a property of the Observation by a Traffic Measuring Device"@en ;
-       rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/transporte/trafico> ;
-       rdfs:label "Carga"@es ,
-                  "Load"@en .
-
 
 ###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico
 :DispositivoMedicionTrafico rdf:type owl:Class ;
@@ -509,34 +498,14 @@ xsd:date rdf:type rdfs:Datatype .
                                   "Planned incidence"@en .
 
 
-###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#Intensidad
-:Intensidad rdf:type owl:Class ;
-            rdfs:subClassOf :PropiedadMedicionTrafico ;
-            rdfs:comment "Intensidad es una propiedad de la Observación realizada por un Dispositivo de Medición de Tráfico"@es ,
-                         "Intensity is a property of the Observation by a Traffic Measuring Device"@en ;
-            rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/transporte/trafico> ;
-            rdfs:label "Intensidad"@es ,
-                       "Intensity"@en .
-
-
 ###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico
 :ObservacionTrafico rdf:type owl:Class ;
                     rdfs:subClassOf <http://www.w3.org/ns/sosa/Observation> ;
-                    rdfs:comment "Observación realizada por un Dispositivo de Medición de Tráfico, puede medir intensidad, ocupación y carga"@es ,
-                                 "Observation by a Traffic Measuring Device, you can measure intensity, occupancy and load"@en ;
+                    rdfs:comment "Observación realizada por un Dispositivo de Medición de Tráfico"@es ,
+                                 "Observation by a Traffic Measuring Device"@en ;
                     rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/transporte/trafico> ;
                     rdfs:label "Observación del tráfico"@es ,
                                "Traffic monitoring"@en .
-
-
-###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#Ocupacion
-:Ocupacion rdf:type owl:Class ;
-           rdfs:subClassOf :PropiedadMedicionTrafico ;
-           rdfs:comment "Occupation is a property of the Observation by a Traffic Measuring Device"@en ,
-                        "Ocupación es una propiedad de la Observación realizada por un Dispositivo de Medición de Tráfico"@es ;
-           rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/transporte/trafico> ;
-           rdfs:label "Occupation"@en ,
-                      "Ocupación"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico
@@ -551,12 +520,16 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo
 :Tramo rdf:type owl:Class ;
-       rdfs:comment "Part of a route defined by coordinates and a date and time"@en ,
+       rdfs:comment "ParSt of a route defined by coordinates and a date and time"@en ,
                     """Tramo definido por un punto de inicio y fin que puede pertenecer a una o
       más vías"""@es ;
        rdfs:isDefinedBy <http://vocab.ciudadesabiertas.es/def/transporte/trafico> ;
        rdfs:label "Section of track"@en ,
                   "Tramo"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#carga
+:carga rdf:type owl:Class .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via
@@ -606,10 +579,10 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
                                               owl:disjointWith <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                              <http://purl.org/dc/terms/issued> "2004-02-xx" ;
                                               rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core#> ;
                                               rdfs:label "Concept"@en ;
-                                              <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought." ;
-                                              <http://purl.org/dc/terms/issued> "2004-02-xx" .
+                                              <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought." .
 
 
 ###  http://www.w3.org/2004/02/skos/core#ConceptScheme
@@ -642,19 +615,44 @@ xsd:date rdf:type rdfs:Datatype .
 #    Individuals
 #################################################################
 
+###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#carga
+:carga rdf:type owl:NamedIndividual ,
+                :PropiedadMedicionTrafico .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#intensidad
+:intensidad rdf:type owl:NamedIndividual ,
+                     :PropiedadMedicionTrafico ;
+            rdfs:label "intensidad"@es ,
+                       "traffic intensity"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/trafico#ocupacion
+:ocupacion rdf:type owl:NamedIndividual ,
+                    :PropiedadMedicionTrafico ;
+           rdfs:label "occupation"@en ,
+                      "ocupación"@es .
+
+
 ###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico> rdf:type owl:NamedIndividual ,
-                                                                                                      <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+                                                                                                      <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                                                             rdfs:label "tipo de equipo de tráfico"@es ,
+                                                                                                        "type of traffic devices"@en .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-incidencia
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-incidencia> rdf:type owl:NamedIndividual ,
-                                                                                                  <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+                                                                                                  <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                                                         rdfs:label "tipo de incidencia"@es ,
+                                                                                                    "type of incidence"@en .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-nivel-servicio
 <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-nivel-servicio> rdf:type owl:NamedIndividual ,
-                                                                                                      <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+                                                                                                      <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                                                                             rdfs:label "tipo de nivel de servicio"@es ,
+                                                                                                        "type of traffic levels of service"@en .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio
@@ -665,23 +663,14 @@ xsd:date rdf:type rdfs:Datatype .
 #    Annotations
 #################################################################
 
-<http://purl.org/dc/terms/description> rdfs:comment "A description of the resource within a given context."@en ,
-                                                    "Una descripción del recurso dentro de un contexto dado."@es ;
-                                       rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                       rdfs:label "Descripción"@es ,
-                                                  "Description"@en .
-
-
 <http://purl.org/dc/terms/issued> <http://purl.org/dc/terms/hasVersion> <http://dublincore.org/usage/terms/history/#issued-003> ;
                                   rdfs:comment "Date of formal issuance (e.g., publication) of the resource."@en ;
                                   rdfs:isDefinedBy "http://purl.org/dc/terms/"@en ;
                                   rdfs:label "Date Issued"@en .
 
 
-<http://www.w3.org/ns/sosa/phenomenonTime> rdfs:comment "Esta propiedad establece el intervalo de tiempo de la observación."@es ,
-                                                        "This property sets the interval of time of the observation"@en ;
-                                           rdfs:label "Interval Time"@en ,
-                                                      "Intervalo"@es .
+:carga rdfs:label "carga"@es ,
+                  "traffic load"@en .
 
 
-###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
