@@ -11,35 +11,57 @@ This section provides details for each class and property defined by Vocabulary 
             title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
       </li>
       <li>
-         <a href="#http://www.opengis.net/spec/geosparql/1.0#Feature"
-            title="http://www.opengis.net/spec/geosparql/1.0#Feature">Feature</a>
+         <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">Feature</a>
       </li>
       <li>
-         <a href="#http://www.opengis.net/spec/geosparql/1.0#Geometry"
-            title="http://www.opengis.net/spec/geosparql/1.0#Geometry">Geometry</a>
+         <a href="#http://www.w3.org/ns/sosa/FeatureOfInterest" title="http://www.w3.org/ns/sosa/FeatureOfInterest">Feature Of Interest</a>
+      </li>
+      <li>
+         <a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a>
       </li>
       <li>
          <a href="#Incidencia"
             title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">Incidence</a>
       </li>
       <li>
+         <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/ns/sosa/Observation" title="http://www.w3.org/ns/sosa/Observation">Observation</a>
+      </li>
+      <li>
          <a href="#IncidenciaPlanificada"
             title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada">Planned incidence</a>
       </li>
       <li>
-         <a href="#http://www.opengis.net/spec/geosparql/1.0#Point" title="http://www.opengis.net/spec/geosparql/1.0#Point">Point</a>
+         <a href="#http://www.opengis.net/ont/sf#Point" title="http://www.opengis.net/ont/sf#Point">Point</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2006/time#ProperInterval" title="http://www.w3.org/2006/time#ProperInterval">Proper interval</a>
       </li>
       <li>
          <a href="#Tramo"
-            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of track</a>
+            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of Track</a>
       </li>
       <li>
-         <a href="#http://www.opengis.net/spec/geosparql/1.0#SpatialObject"
-            title="http://www.opengis.net/spec/geosparql/1.0#SpatialObject">SpatialObject</a>
+         <a href="#http://www.w3.org/ns/sosa/Sensor" title="http://www.w3.org/ns/sosa/Sensor">Sensor</a>
+      </li>
+      <li>
+         <a href="#http://www.opengis.net/ont/geosparql#SpatialObject"
+            title="http://www.opengis.net/ont/geosparql#SpatialObject">SpatialObject</a>
       </li>
       <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"
             title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via">Street</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2006/time#TemporalEntity" title="http://www.w3.org/2006/time#TemporalEntity">Temporal Entity</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2006/time#Instant" title="http://www.w3.org/2006/time#Instant">Time instant</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2006/time#Interval" title="http://www.w3.org/2006/time#Interval">Time interval</a>
       </li>
       <li>
          <a href="#EquipoTrafico"
@@ -118,8 +140,6 @@ This section provides details for each class and property defined by Vocabulary 
                title="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-incidencia">type of incidence</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico"
                title="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico">type of traffic devices</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-nivel-servicio"
-               title="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-nivel-servicio">type of traffic levels of service</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -129,57 +149,93 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://www.opengis.net/spec/geosparql/1.0#Feature">
+   <div class="entity" id="http://www.opengis.net/ont/geosparql#Feature">
       <h3>Feature<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.opengis.net/spec/geosparql/1.0#Feature</p>
+         <strong>IRI:</strong> http://www.opengis.net/ont/geosparql#Feature</p>
       <div class="comment">
          <span class="markdown">This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156, and it is superclass of all feature types.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
-            <a href="http://www.opengis.net/spec/geosparql/1.0">http://www.opengis.net/spec/geosparql/1.0</a>
+            <a href="http://www.opengis.net/ont/geosparql#">http://www.opengis.net/ont/geosparql#</a>
          </dd>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.opengis.net/spec/geosparql/1.0#SpatialObject"
-               title="http://www.opengis.net/spec/geosparql/1.0#SpatialObject">SpatialObject</a>
+            <a href="#http://www.opengis.net/ont/geosparql#SpatialObject"
+               title="http://www.opengis.net/ont/geosparql#SpatialObject">SpatialObject</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Incidencia"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">Incidence</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Tramo"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of Track</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#EquipoTrafico"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico">Traffic equipment</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://www.opengis.net/spec/geosparql/1.0#Geometry">
+   <div class="entity" id="http://www.w3.org/ns/sosa/FeatureOfInterest">
+      <h3>Feature Of Interest<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/sosa/FeatureOfInterest</p>
+      <div class="comment">
+         <span class="markdown">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator.</pre>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.opengis.net/ont/geosparql#Geometry">
       <h3>Geometry<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.opengis.net/spec/geosparql/1.0#Geometry</p>
+         <strong>IRI:</strong> http://www.opengis.net/ont/geosparql#Geometry</p>
       <div class="comment">
          <span class="markdown">This class represents the top-level geometry type. This class is equivalent to GFI_Geometry defined in ISO 19156, and it is superclass of all geometry types.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
-            <a href="http://www.opengis.net/spec/geosparql/1.0">http://www.opengis.net/spec/geosparql/1.0</a>
+            <a href="http://www.opengis.net/ont/geosparql#">http://www.opengis.net/ont/geosparql#</a>
          </dd>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.opengis.net/spec/geosparql/1.0#SpatialObject"
-               title="http://www.opengis.net/spec/geosparql/1.0#SpatialObject">SpatialObject</a>
+            <a href="#http://www.opengis.net/ont/geosparql#SpatialObject"
+               title="http://www.opengis.net/ont/geosparql#SpatialObject">SpatialObject</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://www.opengis.net/spec/geosparql/1.0#Point" title="http://www.opengis.net/spec/geosparql/1.0#Point">Point</a>
+            <a href="#http://www.opengis.net/ont/sf#Point" title="http://www.opengis.net/ont/sf#Point">Point</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -201,6 +257,11 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
       </dl>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">Feature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#IncidenciaPlanificada"
@@ -214,17 +275,92 @@ This section provides details for each class and property defined by Vocabulary 
             <a href="#http://schema.org/startDate" title="http://schema.org/startDate">(expected) start date</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#incidenciaEnTramo"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo">Incidence in Section</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#ubicacionIncidencia"
-               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia">Location of Incidence</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#numSentidos"
-               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos">Street directions</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#numCarriles"
-               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles">Traffic lanes</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#tipoIncidencia"
+            <sup class="type-op" title="object property">op</sup>, <a href="#tipoIncidencia"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia">Type of Incidence</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://schema.org/endDate" title="http://schema.org/endDate">end date</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://schema.org/datePosted" title="http://schema.org/datePosted">posted incidence date</a>
             <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#EquipoTrafico"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico">Traffic equipment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Tramo"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of Track</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/sosa/ObservableProperty">
+      <h3>Observable Property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/sosa/ObservableProperty</p>
+      <div class="comment">
+         <span class="markdown">An observable quality (property, characteristic) of a FeatureOfInterest.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">An observable quality (property, characteristic) of a FeatureOfInterest.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted.</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#PropiedadMedicionTrafico"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico">Traffic meassuring property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/sosa/Observation">
+      <h3>Observation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/sosa/Observation</p>
+      <div class="comment">
+         <span class="markdown">Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake.</pre>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ObservacionTrafico"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico">Traffic monitoring</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/sosa/phenomenonTime" title="http://www.w3.org/ns/sosa/phenomenonTime">Interval Time</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -263,36 +399,37 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://www.opengis.net/spec/geosparql/1.0#Point">
+   <div class="entity" id="http://www.opengis.net/ont/sf#Point">
       <h3>Point<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.opengis.net/spec/geosparql/1.0#Point</p>
+         <strong>IRI:</strong> http://www.opengis.net/ont/sf#Point</p>
       <div class="comment">
          <span class="markdown">This class represents the top-level point type. This class is equivalent to GFI_Point defined in ISO 19156, and it is superclass of all point types.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
-            <a href="http://www.opengis.net/spec/geosparql/1.0">http://www.opengis.net/spec/geosparql/1.0</a>
+            <a href="http://www.opengis.net/ont/geosparql#">http://www.opengis.net/ont/geosparql#</a>
          </dd>
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.opengis.net/spec/geosparql/1.0#Geometry"
-               title="http://www.opengis.net/spec/geosparql/1.0#Geometry">Geometry</a>
+            <a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://datos.ign.es/def/geo_core#xETRS89" title="https://datos.ign.es/def/geo_core#xETRS89">xETRS89</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://datos.ign.es/def/geo_core#yETRS89" title="https://datos.ign.es/def/geo_core#yETRS89">yETRS89</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#ubicacionIncidencia"
-               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia">Location of Incidence</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#ubicacionEquipoTrafico"
-               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico">Location of Traffic Equipment</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#finTramo"
+            <a href="#finTramo"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#finTramo">Section end</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#inicioTramo"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#inicioTramo">Section start</a>
@@ -300,15 +437,50 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://www.w3.org/2006/time#ProperInterval">
+      <h3>Proper interval<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2006/time#ProperInterval</p>
+      <div class="comment">
+         <span class="markdown">A temporal entity with non-zero extent or duration, i.e. for which the value of the beginning and end are different.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/2006/time#">http://www.w3.org/2006/time#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.w3.org/2006/time#Interval" title="http://www.w3.org/2006/time#Interval">Time interval</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://www.w3.org/2006/time#hasBeginning" title="http://www.w3.org/2006/time#hasBeginning">Has Beginning</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/2006/time#hasEnd" title="http://www.w3.org/2006/time#hasEnd">Has End</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/sosa/phenomenonTime" title="http://www.w3.org/ns/sosa/phenomenonTime">Interval Time</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Tramo">
-      <h3>Section of track<sup class="type-c" title="class">c</sup>
+      <h3>Section of Track<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo</p>
       <div class="comment">
-         <span class="markdown">ParSt of a route defined by coordinates and a date and time</span>
+         <span class="markdown">Section/s of a Track defined by a starting and an ending Point.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -317,6 +489,11 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
       </dl>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">Feature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#finTramo"
@@ -333,34 +510,74 @@ This section provides details for each class and property defined by Vocabulary 
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo">Incidence in Section</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#monitorea"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea">Monitors</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/sosa/hasFeatureOfInterest" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#EquipoTrafico"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico">Traffic equipment</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Incidencia"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">Incidence</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://www.opengis.net/spec/geosparql/1.0#SpatialObject">
-      <h3>SpatialObject<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="http://www.w3.org/ns/sosa/Sensor">
+      <h3>Sensor<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.opengis.net/spec/geosparql/1.0#SpatialObject</p>
+         <strong>IRI:</strong> http://www.w3.org/ns/sosa/Sensor</p>
       <div class="comment">
-         <span class="markdown">This class represents the top-level spatial object type. This class is
-	equivalent to GFI_SpatialObject defined in ISO 19156, and it is superclass of all spatial object types.</span>
+         <span class="markdown">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</span>
+      </div>
+      <div class="comment">
+         <span class="markdown">Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
-            <a href="http://www.opengis.net/spec/geosparql/1.0">http://www.opengis.net/spec/geosparql/1.0</a>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes.</pre>
          </dd>
       </dl>
       <dl class="description">
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#http://www.opengis.net/spec/geosparql/1.0#Feature"
-               title="http://www.opengis.net/spec/geosparql/1.0#Feature">Feature</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://www.opengis.net/spec/geosparql/1.0#Geometry"
-               title="http://www.opengis.net/spec/geosparql/1.0#Geometry">Geometry</a>
+            <a href="#DispositivoMedicionTrafico"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico">Traffic Measuring Device</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.opengis.net/ont/geosparql#SpatialObject">
+      <h3>SpatialObject<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.opengis.net/ont/geosparql#SpatialObject</p>
+      <div class="comment">
+         <span class="markdown">This class represents the top-level spatial object type. This class is equivalent to GFI_SpatialObject defined in ISO 19156, and it is superclass of all spatial object types.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.opengis.net/ont/geosparql#">http://www.opengis.net/ont/geosparql#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">Feature</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">Geometry</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -390,6 +607,96 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://www.w3.org/2006/time#TemporalEntity">
+      <h3>Temporal Entity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2006/time#TemporalEntity</p>
+      <div class="comment">
+         <span class="markdown">A temporal interval or instant.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/2006/time#">http://www.w3.org/2006/time#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://www.w3.org/2006/time#Instant" title="http://www.w3.org/2006/time#Instant">Time instant</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/2006/time#Interval" title="http://www.w3.org/2006/time#Interval">Time interval</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/2006/time#Instant">
+      <h3>Time instant<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2006/time#Instant</p>
+      <div class="comment">
+         <span class="markdown">A temporal entity with zero extent or duration.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/2006/time#">http://www.w3.org/2006/time#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.w3.org/2006/time#TemporalEntity" title="http://www.w3.org/2006/time#TemporalEntity">Temporal Entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://www.w3.org/2006/time#inXSDgYearMonth" title="http://www.w3.org/2006/time#inXSDgYearMonth">in XSD g-YearMonth</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://www.w3.org/2006/time#hasBeginning" title="http://www.w3.org/2006/time#hasBeginning">Has Beginning</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/2006/time#hasEnd" title="http://www.w3.org/2006/time#hasEnd">Has End</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/2006/time#inXSDgYearMonth" title="http://www.w3.org/2006/time#inXSDgYearMonth">in XSD g-YearMonth</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/2006/time#Interval">
+      <h3>Time interval<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2006/time#Interval</p>
+      <div class="comment">
+         <span class="markdown">A temporal entity with an extent or duration.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/2006/time#">http://www.w3.org/2006/time#</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.w3.org/2006/time#TemporalEntity" title="http://www.w3.org/2006/time#TemporalEntity">Temporal Entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://www.w3.org/2006/time#ProperInterval" title="http://www.w3.org/2006/time#ProperInterval">Proper interval</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="EquipoTrafico">
       <h3>Traffic equipment<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -407,6 +714,11 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
       </dl>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.opengis.net/ont/geosparql#Feature" title="http://www.opengis.net/ont/geosparql#Feature">Feature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#DispositivoMedicionTrafico"
@@ -415,15 +727,21 @@ This section provides details for each class and property defined by Vocabulary 
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#ubicacionEquipoTrafico"
-               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico">Location of Traffic Equipment</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#monitorea"
+            <a href="#monitorea"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea">Monitors</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#tipoEquipoTrafico"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoEquipoTrafico">Type of Traffic Equipment</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#urbano"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano">Urban</a>
             <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Incidencia"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">Incidence</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Tramo"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of Track</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -435,7 +753,7 @@ This section provides details for each class and property defined by Vocabulary 
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico</p>
       <div class="comment">
-         <span class="markdown">Property of the Meassurement of Traffic</span>
+         <span class="markdown">Property of the Meassurement of Traffic: composition, load, occupation, intensity, level or speed.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -446,7 +764,7 @@ This section provides details for each class and property defined by Vocabulary 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</span>
+            <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">Observable Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -455,10 +773,22 @@ This section provides details for each class and property defined by Vocabulary 
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida">Unit of Measurement</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/sosa/observedProperty" title="http://www.w3.org/ns/sosa/observedProperty">observed property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/sosa/observes" title="http://www.w3.org/ns/sosa/observes">observes</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#ocupacion"
+            <a href="#composicion"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#composicion">composition</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#nivel"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#nivel">level</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ocupacion"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ocupacion">occupation</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#velocidad"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#velocidad">speed</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#intensidad"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#intensidad">traffic intensity</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#carga"
@@ -486,10 +816,24 @@ This section provides details for each class and property defined by Vocabulary 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#EquipoTrafico"
+            <a href="#http://www.w3.org/ns/sosa/Sensor" title="http://www.w3.org/ns/sosa/Sensor">Sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#EquipoTrafico"
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico">Traffic equipment</a>
-            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://www.w3.org/ns/sosa/Sensor">sensor</span>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#frecuenciaMedicion"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#frecuenciaMedicion">Measurement Frequency</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#enServicio"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#enServicio">Running device</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/sosa/observes" title="http://www.w3.org/ns/sosa/observes">observes</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/sosa/madeBySensor" title="http://www.w3.org/ns/sosa/madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -512,15 +856,19 @@ This section provides details for each class and property defined by Vocabulary 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://www.w3.org/ns/sosa/Observation">observation</span>
+            <a href="#http://www.w3.org/ns/sosa/Observation" title="http://www.w3.org/ns/sosa/Observation">Observation</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://www.w3.org/ns/sosa/phenomenonTime" title="http://www.w3.org/ns/sosa/phenomenonTime">Interval Time</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/sosa/hasSimpleResult" title="http://www.w3.org/ns/sosa/hasSimpleResult">Observation Result</a>
+            <a href="#http://www.w3.org/ns/sosa/hasSimpleResult" title="http://www.w3.org/ns/sosa/hasSimpleResult">Observation Result</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/sosa/resultTime" title="http://www.w3.org/ns/sosa/resultTime">Phenomenon Time</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#validada"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#validada">Validated Observation</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/sosa/hasFeatureOfInterest" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/sosa/madeBySensor" title="http://www.w3.org/ns/sosa/madeBySensor">made by sensor</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/sosa/observedProperty" title="http://www.w3.org/ns/sosa/observedProperty">observed property</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -553,27 +901,41 @@ This section provides details for each class and property defined by Vocabulary 
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
+         <a href="#http://www.w3.org/2006/time#hasBeginning" title="http://www.w3.org/2006/time#hasBeginning">Has Beginning</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2006/time#hasEnd" title="http://www.w3.org/2006/time#hasEnd">Has End</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/ns/sosa/hasFeatureOfInterest" title="http://www.w3.org/ns/sosa/hasFeatureOfInterest">has feature of interest</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2006/time#inXSDgYearMonth" title="http://www.w3.org/2006/time#inXSDgYearMonth">
+            <span>in XSD g-YearMonth</span>
+         </a>
+      </li>
+      <li>
          <a href="#incidenciaEnTramo"
             title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo">Incidence in Section</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/ns/sosa/phenomenonTime" title="http://www.w3.org/ns/sosa/phenomenonTime">Interval Time</a>
       </li>
       <li>
          <a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
       </li>
       <li>
-         <a href="#tipoNivelServicio"
-            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoNivelServicio">Level of Service</a>
-      </li>
-      <li>
-         <a href="#ubicacionIncidencia"
-            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia">Location of Incidence</a>
-      </li>
-      <li>
-         <a href="#ubicacionEquipoTrafico"
-            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico">Location of Traffic Equipment</a>
+         <a href="#http://www.w3.org/ns/sosa/madeBySensor" title="http://www.w3.org/ns/sosa/madeBySensor">made by sensor</a>
       </li>
       <li>
          <a href="#monitorea"
             title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea">Monitors</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/ns/sosa/observedProperty" title="http://www.w3.org/ns/sosa/observedProperty">observed property</a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/ns/sosa/observes" title="http://www.w3.org/ns/sosa/observes">observes</a>
       </li>
       <li>
          <a href="#finTramo"
@@ -596,6 +958,113 @@ This section provides details for each class and property defined by Vocabulary 
             title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoEquipoTrafico">Type of Traffic Equipment</a>
       </li>
    </ul>
+   <div class="entity" id="http://www.w3.org/2006/time#hasBeginning">
+      <h3>Has Beginning<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2006/time#hasBeginning</p>
+      <div class="comment">
+         <span class="markdown">Beginning of a temporal entity</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.w3.org/2006/time#ProperInterval" title="http://www.w3.org/2006/time#ProperInterval">Proper interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.w3.org/2006/time#Instant" title="http://www.w3.org/2006/time#Instant">Time instant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/2006/time#hasEnd">
+      <h3>Has End<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2006/time#hasEnd</p>
+      <div class="comment">
+         <span class="markdown">End of a temporal entity</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.w3.org/2006/time#ProperInterval" title="http://www.w3.org/2006/time#ProperInterval">Proper interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.w3.org/2006/time#Instant" title="http://www.w3.org/2006/time#Instant">Time instant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/sosa/hasFeatureOfInterest">
+      <h3>has feature of interest<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/sosa/hasFeatureOfInterest</p>
+      <div class="comment">
+         <span class="markdown">A relation between an Observation and the entity whose quality was observed.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ObservacionTrafico"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico">Traffic monitoring</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Tramo"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/2006/time#inXSDgYearMonth">
+      <h3>in XSD g-YearMonth<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2006/time#inXSDgYearMonth</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.w3.org/2006/time#Instant" title="http://www.w3.org/2006/time#Instant">Time instant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.w3.org/2006/time#Instant" title="http://www.w3.org/2006/time#Instant">Time instant</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>data property</dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="incidenciaEnTramo">
       <h3>Incidence in Section<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -625,7 +1094,32 @@ This section provides details for each class and property defined by Vocabulary 
             <dt>has range</dt>
             <dd>
                <a href="#Tramo"
-                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of track</a>
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/sosa/phenomenonTime">
+      <h3>Interval Time<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/sosa/phenomenonTime</p>
+      <div class="comment">
+         <span class="markdown">This property sets the interval of time of the observation</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/sosa/Observation" title="http://www.w3.org/ns/sosa/Observation">Observation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.w3.org/2006/time#ProperInterval" title="http://www.w3.org/2006/time#ProperInterval">Proper interval</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -639,7 +1133,7 @@ This section provides details for each class and property defined by Vocabulary 
       <p>
          <strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#inScheme</p>
       <div class="comment">
-         <span class="markdown">Relates a resource (for example a concept) to a concept scheme in which it is included.</span>
+         <span class="markdown">Relaciona un recurso (por ejemplo un concepto) con un esquema de conceptos en el que está incluido.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -658,107 +1152,34 @@ This section provides details for each class and property defined by Vocabulary 
          </dl>
       </div>
    </div>
-   <div class="entity" id="tipoNivelServicio">
-      <h3>Level of Service<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="http://www.w3.org/ns/sosa/madeBySensor">
+      <h3>made by sensor<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoNivelServicio</p>
+         <strong>IRI:</strong> http://www.w3.org/ns/sosa/madeBySensor</p>
       <div class="comment">
-         <span class="markdown">Level of service according to the instance traffic load of the class PropiedadMedicionTrafico</span>
+         <span class="markdown">Relación entre una Observación y un Sensor que realiza la Observación.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
-            <a href="http://vocab.ciudadesabiertas.es/def/transporte/trafico">http://vocab.ciudadesabiertas.es/def/transporte/trafico</a>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
          </dd>
       </dl>
       <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#carga">traffic load</span>
+               <a href="#ObservacionTrafico"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico">Traffic monitoring</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">and</span> (<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">value</span> 
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio">tipo nivel servicio</span>)</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="ubicacionIncidencia">
-      <h3>Location of Incidence<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionIncidencia</p>
-      <div class="comment">
-         <span class="markdown">Relationship between Incidence and its location</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://vocab.ciudadesabiertas.es/def/transporte/trafico">http://vocab.ciudadesabiertas.es/def/transporte/trafico</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Incidencia"
-                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">Incidence</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://www.opengis.net/spec/geosparql/1.0#Point" title="http://www.opengis.net/spec/geosparql/1.0#Point">Point</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="ubicacionEquipoTrafico">
-      <h3>Location of Traffic Equipment<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#ubicacionEquipoTrafico</p>
-      <div class="comment">
-         <span class="markdown">Relationship between Traffic Equipment and its location</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://vocab.ciudadesabiertas.es/def/transporte/trafico">http://vocab.ciudadesabiertas.es/def/transporte/trafico</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#EquipoTrafico"
-                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico">Traffic equipment</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://www.opengis.net/spec/geosparql/1.0#Point" title="http://www.opengis.net/spec/geosparql/1.0#Point">Point</a>
+               <a href="#DispositivoMedicionTrafico"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico">Traffic Measuring Device</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -772,7 +1193,7 @@ This section provides details for each class and property defined by Vocabulary 
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea</p>
       <div class="comment">
-         <span class="markdown">Relationship between Traffic Equipment and the section it monitors</span>
+         <span class="markdown">Relationship between Traffic Equipment and the Section it monitors</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -793,7 +1214,73 @@ This section provides details for each class and property defined by Vocabulary 
             <dt>has range</dt>
             <dd>
                <a href="#Tramo"
-                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of track</a>
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of Track</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/sosa/observedProperty">
+      <h3>observed property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/sosa/observedProperty</p>
+      <div class="comment">
+         <span class="markdown">Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ObservacionTrafico"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico">Traffic monitoring</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PropiedadMedicionTrafico"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico">Traffic meassuring property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.w3.org/ns/sosa/observes">
+      <h3>observes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/ns/sosa/observes</p>
+      <div class="comment">
+         <span class="markdown">Relation between a Sensor and an ObservableProperty that it is capable of sensing.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/sosa/">http://www.w3.org/ns/sosa/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DispositivoMedicionTrafico"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico">Traffic Measuring Device</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PropiedadMedicionTrafico"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico">Traffic meassuring property</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -822,12 +1309,12 @@ This section provides details for each class and property defined by Vocabulary 
             <dt>has domain</dt>
             <dd>
                <a href="#Tramo"
-                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of track</a>
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://www.opengis.net/spec/geosparql/1.0#Point" title="http://www.opengis.net/spec/geosparql/1.0#Point">Point</a>
+               <a href="#http://www.opengis.net/ont/sf#Point" title="http://www.opengis.net/ont/sf#Point">Point</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -856,12 +1343,12 @@ This section provides details for each class and property defined by Vocabulary 
             <dt>has domain</dt>
             <dd>
                <a href="#Tramo"
-                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of track</a>
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://www.opengis.net/spec/geosparql/1.0#Point" title="http://www.opengis.net/spec/geosparql/1.0#Point">Point</a>
+               <a href="#http://www.opengis.net/ont/sf#Point" title="http://www.opengis.net/ont/sf#Point">Point</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -875,7 +1362,7 @@ This section provides details for each class and property defined by Vocabulary 
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#via</p>
       <div class="comment">
-         <span class="markdown">Relationship of the Section with the track/s it covers, in case the it is indicated</span>
+         <span class="markdown">Relationship of the Section with the Track/s it covers, in case the it is indicated</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -888,7 +1375,7 @@ This section provides details for each class and property defined by Vocabulary 
             <dt>has domain</dt>
             <dd>
                <a href="#Tramo"
-                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of track</a>
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -987,6 +1474,9 @@ This section provides details for each class and property defined by Vocabulary 
          <a href="#http://schema.org/startDate" title="http://schema.org/startDate">(expected) start date</a>
       </li>
       <li>
+         <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">Created</a>
+      </li>
+      <li>
          <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">Description</a>
       </li>
       <li>
@@ -996,7 +1486,8 @@ This section provides details for each class and property defined by Vocabulary 
          <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">Identifier</a>
       </li>
       <li>
-         <a href="#http://www.w3.org/ns/sosa/phenomenonTime" title="http://www.w3.org/ns/sosa/phenomenonTime">Interval Time</a>
+         <a href="#frecuenciaMedicion"
+            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#frecuenciaMedicion">Measurement Frequency</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/sosa/hasSimpleResult" title="http://www.w3.org/ns/sosa/hasSimpleResult">Observation Result</a>
@@ -1016,6 +1507,10 @@ This section provides details for each class and property defined by Vocabulary 
             title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente">Recurrent incidence</a>
       </li>
       <li>
+         <a href="#enServicio"
+            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#enServicio">Running device</a>
+      </li>
+      <li>
          <a href="#numSentidos"
             title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos">Street directions</a>
       </li>
@@ -1031,6 +1526,16 @@ This section provides details for each class and property defined by Vocabulary 
          <a href="#urbano"
             title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano">Urban</a>
       </li>
+      <li>
+         <a href="#validada"
+            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#validada">Validated Observation</a>
+      </li>
+      <li>
+         <a href="#https://datos.ign.es/def/geo_core#xETRS89" title="https://datos.ign.es/def/geo_core#xETRS89">xETRS89</a>
+      </li>
+      <li>
+         <a href="#https://datos.ign.es/def/geo_core#yETRS89" title="https://datos.ign.es/def/geo_core#yETRS89">yETRS89</a>
+      </li>
    </ul>
    <div class="entity" id="fechaFinPrevista">
       <h3>(expected) end date<sup class="type-dp" title="data property">dp</sup>
@@ -1040,8 +1545,7 @@ This section provides details for each class and property defined by Vocabulary 
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#fechaFinPrevista</p>
       <div class="comment">
-         <span class="markdown">The end date and time of a planned
-	incidence (in ISO 8601 date format).</span>
+         <span class="markdown">The end date and time of a planned incidence (in ISO 8601 date format).</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1092,6 +1596,32 @@ This section provides details for each class and property defined by Vocabulary 
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://purl.org/dc/terms/created">
+      <h3>Created<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/created</p>
+      <div class="comment">
+         <span class="markdown">Date of creation of the resource.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/creator">creator</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://purl.org/dc/terms/description">
       <h3>Description<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1121,7 +1651,7 @@ This section provides details for each class and property defined by Vocabulary 
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Tramo"
-                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of track</a>
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1184,20 +1714,28 @@ This section provides details for each class and property defined by Vocabulary 
                <span class="logic">or</span> 
                <a href="#Incidencia"
                   title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">Incidence</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#ObservacionTrafico"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico">Traffic monitoring</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Tramo"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo">Section of Track</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://www.w3.org/ns/sosa/phenomenonTime">
-      <h3>Interval Time<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="frecuenciaMedicion">
+      <h3>Measurement Frequency<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3.org/ns/sosa/phenomenonTime</p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#frecuenciaMedicion</p>
       <div class="comment">
-         <span class="markdown">This property sets the interval of time of the observation</span>
+         <span class="markdown">This property allows to know the measurement frequency of the device.</span>
       </div>
       <div class="description">
          <dl>
@@ -1207,13 +1745,13 @@ This section provides details for each class and property defined by Vocabulary 
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#ObservacionTrafico"
-                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico">Traffic monitoring</a>
+               <a href="#DispositivoMedicionTrafico"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico">Traffic Measuring Device</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
             </dd>
          </dl>
       </div>
@@ -1226,7 +1764,7 @@ This section provides details for each class and property defined by Vocabulary 
       <p>
          <strong>IRI:</strong> http://www.w3.org/ns/sosa/hasSimpleResult</p>
       <div class="comment">
-         <span class="markdown">TThis property shows the result of the observation</span>
+         <span class="markdown">This property shows the result of the observation</span>
       </div>
       <div class="description">
          <dl>
@@ -1344,8 +1882,7 @@ This section provides details for each class and property defined by Vocabulary 
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente</p>
       <div class="comment">
-         <span class="markdown">This property allows describing whether there is a recurrence in the
-	incidence or not</span>
+         <span class="markdown">This property allows describing whether there is a recurrence in the incidence or not</span>
       </div>
       <div class="description">
          <dl>
@@ -1357,6 +1894,35 @@ This section provides details for each class and property defined by Vocabulary 
             <dd>
                <a href="#IncidenciaPlanificada"
                   title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada">Planned incidence</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="enServicio">
+      <h3>Running device<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#enServicio</p>
+      <div class="comment">
+         <span class="markdown">This property allows describing whether the device is working or not.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DispositivoMedicionTrafico"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico">Traffic Measuring Device</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1386,6 +1952,10 @@ This section provides details for each class and property defined by Vocabulary 
          <dl>
             <dt>has domain</dt>
             <dd>
+               <a href="#EquipoTrafico"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico">Traffic equipment</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Incidencia"
                   title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">Incidence</a>
                <sup class="type-c" title="class">c</sup>
@@ -1417,6 +1987,10 @@ This section provides details for each class and property defined by Vocabulary 
          <dl>
             <dt>has domain</dt>
             <dd>
+               <a href="#EquipoTrafico"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico">Traffic equipment</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#Incidencia"
                   title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia">Incidence</a>
                <sup class="type-c" title="class">c</sup>
@@ -1436,8 +2010,7 @@ This section provides details for each class and property defined by Vocabulary 
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida</p>
       <div class="comment">
-         <span class="markdown">This property allows describing
-	the unit of measurement of the Trafic Monitoring Device</span>
+         <span class="markdown">In the case of the Service level, the possible measures are: green or fluid; yellow or slow; orange or dense; red or congestion; black or interrupted circulation; grey or no data.</span>
       </div>
       <div class="description">
          <dl>
@@ -1487,12 +2060,101 @@ This section provides details for each class and property defined by Vocabulary 
          </dl>
       </div>
    </div>
+   <div class="entity" id="validada">
+      <h3>Validated Observation<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#validada</p>
+      <div class="comment">
+         <span class="markdown">This property states whether the observation is validated or not.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ObservacionTrafico"
+                  title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico">Traffic monitoring</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://datos.ign.es/def/geo_core#xETRS89">
+      <h3>xETRS89<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://datos.ign.es/def/geo_core#xETRS89</p>
+      <div class="comment">
+         <span class="markdown">X-Coordinate in meters (ETRS89)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.opengis.net/ont/sf#Point" title="http://www.opengis.net/ont/sf#Point">Point</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://datos.ign.es/def/geo_core#yETRS89">
+      <h3>yETRS89<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://datos.ign.es/def/geo_core#yETRS89</p>
+      <div class="comment">
+         <span class="markdown">Y-Coordinate in meters (ETRS89)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.opengis.net/ont/sf#Point" title="http://www.opengis.net/ont/sf#Point">Point</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
 </div><div id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
+         <a href="#composicion"
+            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#composicion">composition</a>
+      </li>
+      <li>
+         <a href="#nivel"
+            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#nivel">level</a>
+      </li>
+      <li>
          <a href="#ocupacion"
             title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ocupacion">occupation</a>
+      </li>
+      <li>
+         <a href="#velocidad"
+            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#velocidad">speed</a>
       </li>
       <li>
          <a href="#intensidad"
@@ -1500,9 +2162,7 @@ This section provides details for each class and property defined by Vocabulary 
       </li>
       <li>
          <a href="#carga"
-            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#carga">
-            <span>traffic load</span>
-         </a>
+            title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#carga">traffic load</a>
       </li>
       <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-incidencia"
@@ -1512,11 +2172,45 @@ This section provides details for each class and property defined by Vocabulary 
          <a href="#http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico"
             title="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico">type of traffic devices</a>
       </li>
-      <li>
-         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-nivel-servicio"
-            title="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-nivel-servicio">type of traffic levels of service</a>
-      </li>
    </ul>
+   <div class="entity" id="composicion">
+      <h3>composition<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#composicion</p>
+      <div class="comment">
+         <span class="markdown">It is obtained by the equation of intensity and time of occupation with certain correction factors. It is expressed as a percentage: a 100% load implies circulatory collapse, interrupted circulation, while 0% implies empty street. It is similar to the Level of Service of the road that is usually measured with the letters A, B, C, D, E and F: level A, between 0% and 20% load; level F, between 90% and 100% load. The level of service is complex to measure and that is why the load is used.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PropiedadMedicionTrafico"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico">Traffic meassuring property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="nivel">
+      <h3>level<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#nivel</p>
+      <div class="comment">
+         <span class="markdown">Calculated from the speed, it requires an equation or associated speed levels: green, fluid; yellow, slow; orange, dense; red, congestion; black, traffic interrupted; grey, no data.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PropiedadMedicionTrafico"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico">Traffic meassuring property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="ocupacion">
       <h3>occupation<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -1524,6 +2218,28 @@ This section provides details for each class and property defined by Vocabulary 
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#ocupacion</p>
+      <div class="comment">
+         <span class="markdown">It is the occupation of the detector while it is passing over a vehicle, it is associated with electromagnetic loop type detectors, and it is the time from when the detector detects the vehicle until it allows it to be detected.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PropiedadMedicionTrafico"
+               title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico">Traffic meassuring property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="velocidad">
+      <h3>speed<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#velocidad</p>
+      <div class="comment">
+         <span class="markdown">Directly meassured speed with detectors</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -1540,6 +2256,9 @@ This section provides details for each class and property defined by Vocabulary 
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#intensidad</p>
+      <div class="comment">
+         <span class="markdown">Intensity or capacity, number of vehicles in time unit (hour, day, month, year). The usual ones are hour and day.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -1556,6 +2275,9 @@ This section provides details for each class and property defined by Vocabulary 
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/transporte/trafico#carga</p>
+      <div class="comment">
+         <span class="markdown">It is obtained by the equation of intensity and time of occupation with certain correction factors. It is expressed as a percentage: a 100% load implies circulatory collapse, interrupted circulation, while 0% implies empty street. It is similar to the Level of Service of the road that is usually measured with the letters A, B, C, D, E and F: level A, between 0% and 20% load; level F, between 90% and 100% load. The level of service is complex to measure and that is why the load is used.</span>
+      </div>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -1563,8 +2285,6 @@ This section provides details for each class and property defined by Vocabulary 
                title="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico">Traffic meassuring property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is also defined as</dt>
-         <dd>class</dd>
       </dl>
    </div>
    <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-incidencia">
@@ -1590,22 +2310,6 @@ This section provides details for each class and property defined by Vocabulary 
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-equipo-trafico</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
-               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-nivel-servicio">
-      <h3>type of traffic levels of service<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/transporte/tipo-nivel-servicio</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
