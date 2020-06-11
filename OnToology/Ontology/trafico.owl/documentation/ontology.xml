@@ -30,7 +30,7 @@
         <dc:title xml:lang="en">Vocabulary for the representation of data on traffic made by motor vehicles.</dc:title>
         <terms:creator>Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
         <terms:hasVersion>1.0.0</terms:hasVersion>
-        <terms:issued xml:lang="es">2020-04-02</terms:issued>
+        <terms:issued xml:lang="es">2020-06-10</terms:issued>
         <terms:license>https://creativecommons.org/licenses/by/4.0</terms:license>
         <rdfs:comment xml:lang="es">Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña. En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos	propuestos en las reuniones del grupo.</rdfs:comment>
         <rdfs:comment xml:lang="en">This version has been generated within the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate. In this version, classes and properties have been defined according to the requirements and glossary of concepts proposed at the group&apos;s meetings.</rdfs:comment>
