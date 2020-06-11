@@ -344,7 +344,7 @@
   } ],
   "http://purl.org/dc/terms/issued" : [ {
     "@language" : "es",
-    "@value" : "2020-04-02"
+    "@value" : "2020-06-10"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@value" : "https://creativecommons.org/licenses/by/4.0"
