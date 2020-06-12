@@ -1,18 +1,24 @@
 <html>
-    <h2 id="desc" class="list">Vocabulario para la representación de los datos de tráfico de vehículos a motor: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+    <h2 id="desc" class="list">Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
 
-	<!-- Comienzo explicación -->
+    <!-- Comienzo explicación -->
+
+    Este vocabulario representa la información de tráfico de las ciudades, lo cual comprende los vehículos motorizados y excluye otro tipo de vehículos o transeúntes.
+
+    Por tanto se define el alcance de este vocabulario en:
+Equipos de tráfico, incluidos los dispositivos de medición, tipos de dispositivos, medidas que obtienen, histórico de las medidas, ubicación de los dispositivos, tramos que miden.
+Incidencias relacionadas con el tráfico en la vía pública, tipo de incidencia.
+    Tramo donde se sitúan los equipos o donde se producen las incidencias.
+    
     <p>La Figura 1 muestra las clases y propiedades del vocabulario de tráfico. El principal objetivo de este vocabulario es permitir la representación de los equipos de tráfico así como de las incidencias.</p>
 
     <div><center><img src="resources/images/ontologia-trafico.png" alt="Diagrama del vocabulario de tráfico de la iniciativas Ciudades Abiertas"/><figcaption>Figura 1. - Vocabulario para la representación de datos sobre el tráfico de vehículos a motor</figcaption></center></div>
 
-    <p>Para representar los equipos de control se ha creado el concepto <a href="#EquipoTrafico">estraf:EquipoTrafico</a> que debe tener asociado un <a href="#tipoEquipoTrafico">estraf:tipoEquipoTrafico</a> que se relaciona con la taxonomía <a href="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico">estraf-kos:tipo-equipo-trafico</a>. Tiene como propiedades un identificador del equipo <a href="http://purl.org/dc/terms/identifier" >dct:identifier</a>, una descripción <a href="#descripcion">estraf:descripcion</a>, el número de sentidos a los que sirve <a href="#numSentidos" >estraf#numSentidos</a>, el número de carriles <a href="#numeroCarriles">estraf:numCarriles</a> y si es urbano o no <a href="#urbano" >estraf:urbano</a>.</p>
+    <p>Para representar los equipos de control se ha creado el concepto <a href="#EquipoTrafico">estraf:EquipoTrafico</a> que debe tener asociado un <a href="#tipoEquipoTrafico">estraf:tipoEquipoTrafico</a> que se relaciona con la taxonomía <a href="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico">estraf-kos:tipo-equipo-trafico</a>. Tiene como propiedades un identificador del equipo <a href="http://purl.org/dc/terms/identifier" >dct:identifier</a>, una descripción <a href="#descripcion">estraf:descripcion</a>, el número de sentidos a los que sirve <a href="#numSentidos" >estraf:numSentidos</a>, el número de carriles <a href="#numeroCarriles">estraf:numCarriles</a> y si es urbano o no <a href="#urbano" >estraf:urbano</a>.</p>
 
-    <p>Este equipo tiene una ubicación <a href="#ubicacionEquipo">estraf:ubicacionEquipo</a> que es una instancia del punto con coordenadas geográficas <a href="http://www.opengis.net/doc/IS/geosparql/1.0#Point">geosparql:Point</a> con una latitud <a href="#lat">geo:lat</a> y una longitud <a href="#long">geo:long</a> (más desarrollado en <a href="#Tramo">estraf:Tramo</a>).</p>
+    <p>El equipo monitorea <a href="#monitorea">estraf:monitorea</a> un tramo <a href="#Tramo">estraf:Tramo</a> que es una clase que se ha creado para describir tanto los tramos que monitorean los equipos como los tramos de vía que se ven afectados por una <a href="#Incidencia">estraf:Incidencia</a>.</p>
 
-    <p>El equipo <a href="#monitorea">estraf:monitorea</a> un tramo <a href="#Tramo">estraf:Tramo</a> que es una clase que se ha creado para describir tanto los tramos que monitorean los equipos como los tramos de vía que se ven afectados por una <a href="#Incidencia">estraf:Incidencia</a>.</p>
-
-    <p>Hay dos tipos de equipo de tráfico, equipos de control de tráfico y dispositivos de medición de tráfico. Ambos subtipos y sus corresondientes subtipos están definidos en la citada taxomonía <a href="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico">estraf-kos:tipo-equipo-trafico</a>.</p>
+    <p>Hay dos tipos de equipo de tráfico: equipos de control de tráfico y <a href="DispositivoMedicionTrafico">estraf:DispositivoMedicionTrafico</a>. Ambos subtipos y sus correspondientes subtipos están definidos en la citada taxomonía <a href="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico">estraf-kos:tipo-equipo-trafico</a>.</p>
 
     <p>Para los dispositivos de medición de tráfico se ha creado la clase <a href="#DispositivoMedicionTrafico">estraf:DispositivoMedicionTrafico</a> que es a su vez una subclase de <a href="http://www.w3.org/ns/sosa/Sensor">sosa:Sensor</a> y que despliega el diagrama de relación con este vocabulario de descripción de dispositivos.</p>
 
@@ -20,74 +26,124 @@
 
     <p>La clase <a href="#DispositivoMedicionTrafico">estraf:DispositivoMedicionTrafico</a>, que es subclase de <a href="#EquipoTrafico">estraf:EquipoTrafico</a> y de <a href="http://www.w3.org/ns/sosa/Sensor">sosa:Sensor</a>, está observando (<a href="http://www.w3.org/ns/sosa/observes">sosa:observes</a>) la instancia de la clase creada <a href="#PropiedadMedicionTrafico">estraf:PropiedadMedicionTrafico</a> que es una subclase de <a href="http://www.w3.org/ns/sosa/ObservableProperty">sosa:ObservableProperty</a> donde se especifica la unidad medida por el dispositivo con la propiedad <a href="#unidadMedida">estraf:unidadMedida</a>. Además, <a href="#DispositivoMedicionTrafico" >estraf:DispositivoMedicionTrafico</a> tiene un atributo que indica si se encuentra en servicio o no, <a href="#enservicio" >estraf:enservicio</a></p>
 
-    <p>La clase <a href="#PropiedadMedicionTrafico">estraf:PropiedadMedicionTrafico</a> cuenta con tres instancias que son las mediciones definidas hasta ahora: intensidad <a href="#Intensidad">estraf:Intensidad</a>, ocupación <a href="#Ocupacion">estraf:Ocupacion</a> y carga <a href="#Carga">estraf:Carga</a>.</p>
+    <p>La clase <a href="#PropiedadMedicionTrafico">estraf:PropiedadMedicionTrafico</a> cuenta con seis instancias que son las mediciones definidas hasta ahora: intensidad <a href="#intensidad">estraf:Intensidad</a>, ocupación <a href="#ocupacion">estraf:ocupacion</a>, carga <a href="#carga">estraf:carga</a>, velocidad <a href="#velocidad">estraf:velocidad</a>, nivel <a href="#nivel">estraf:nivel</a> y composición <a href="#composicion">estraf:composicion</a>.</p>
 
-    <p>La <a href="#Carga">estraf:Carga</a> está relacionada con la taxonomía <a href="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-nivel-servicio">estraf-kos:tipo-nivel-servicio</a> a través de la propiedad <a href="#tipoNivelServicio">estraf:tipoNivelServicio</a>.</p>
-    
-    <p>Es además la propiedad observada (<a href="https://www.w3.org/ns/sosa/observedProperty">sosa:observedProperty</a>) de la clase <a href="#ObservacionTrafico">estraf:ObservacionTrafico</a> (una subclase de <a href="https://www.w3.org/ns/sosa/Observation" >sosa:Observation</a>) que tiene como atributos el intervalo de la observación <a href="https://www.w3.org/ns/sosa/phenomenonTime" >sosa:phenomenonTime</a>, el registro horario del resultado <a href="https://www.w3.org/ns/sosa/resultTime" >sosa:resultTime</a> y el resultado en sí <a href="https://www.w3.org/ns/sosa/hasSimpleResult" >sosa:hasSimpleResult</a>. Esta clase tiene una relación <a href="https://www.w3.org/ns/sosa/hasFeatureOfInterest" >sosa:hasFeatureOfInterest</a> con <a href="#Tramo" >estraf:Tramo</a>.</p>
+    <p>Las propiedades son las propiedades observadas <a href="http://www.w3.org/ns/sosa/observedProperty">sosa:observedProperty</a> de la clase <a href="#ObservacionTrafico">estraf:ObservacionTrafico</a>, una clase creada que es subclase de <a href="http://www.w3.org/ns/sosa/Observation" >sosa:Observation</a> que tiene como atributos el registro horario del resultado <a href="https://www.w3.org/ns/sosa/resultTime" >sosa:resultTime</a>, el resultado en sí <a href="http://www.w3.org/ns/sosa/hasSimpleResult" >sosa:hasSimpleResult</a> y la creada propiedad <a href="#validada">estraf:validada</a>. El tiempo en el que se ha realizado la observación se expresa a través de la propiedad <a href="http://www.w3.org/ns/sosa/phenomenonTime">sosa:phenomenonTime</a> que enlaza con la clase <a href="http://www.w3.org/2006/time#ProperInterval">time:ProperInterval</a>, subclase de <a href="http://www.w3.org/2006/time#Interval">time:Interval</a> que tiene un inicio de intervalo <a href="http://www.w3.org/2006/time#hasBegining">time:hasBegining</a> y un fin de intervalo <a href="http://www.w3.org/2006/time#hasEnd">time:hasEnd</a> que enlazan con la clase <a href="http://www.w3.org/2006/time#Instant">time:Instant</a> que es también, como time:Interval, subclase de <a href="http://www.w3.org/2006/time#TemporalEntity">time:TemporalEntity</a>. Finalmente, la observación tiene una tiene una característica de Interés <a href="https://www.w3.org/ns/sosa/hasFeatureOfInterest" >sosa:hasFeatureOfInterest</a> con el tramo <a href="#Tramo" >estraf:Tramo</a> que observa.</p>
 
     <!-- INCIDENCIA -->
     
     <div><center><img src="resources/images/trafico-incidencia.png" alt="Diagrama de la Incidencia de Tráfico y su relación con el Tramo"/><figcaption>Figura 3. - Diagrama de la Incidencia de Tráfico y su relación con el Tramo</figcaption></center></div>
 
-    <p>El concepto principal de esta sección es la <a href="#Incidencia" >estraf:Incidencia</a> que se relaciona con <a href="#Tramo" >estraf:Tramo</a> a través de la propiedad <a href="#incidenciaEnTramo">estraf:incidenciaEnTramo</a>, con las coordenadas geográficas de <a href="http://www.opengis.net/doc/IS/geosparql/1.0#Point" >geosparql:Point</a> a traves de la propiedad <a href="#ubicacionIncidencia" >estraf:ubicacionIncidencia</a> y con la taxonomía <a href="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia">estraf-kos:tipo-incidencia</a> a través de la propiedad <a href="#tipoIncidencia" >estraf:tipoIncidencia</a>.</p>
+    <p>El concepto principal de esta sección es la <a href="#Incidencia" >estraf:Incidencia</a> que se relaciona con <a href="#Tramo" >estraf:Tramo</a> a través de la propiedad <a href="#incidenciaEnTramo">estraf:incidenciaEnTramo</a>, con las coordenadas geográficas de <a href="http://www.opengis.net/ont/geosparql#" >geosparql:Point</a> a traves de la propiedad <a href="#ubicacionIncidencia" >estraf:ubicacionIncidencia</a> y con la taxonomía <a href="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia">estraf-kos:tipo-incidencia</a> a través de la propiedad <a href="#tipoIncidencia" >estraf:tipoIncidencia</a>.</p>
     
     <p>Además de un identificador <a href="http://purl.org/dc/terms/identifier" >dct:identifier</a> y de una descripción <a href="http://purl.org/dc/terms/description" >dct:description</a>, la clase <a href="#Incidencia" >estraf:Incidencia</a> tiene las propiedades <a href="https://schema.org/startDate" >schema:startDate</a> de fecha y hora de inicio de la incidencia, <a href="https://schema.org/endDate" >schema:endDate</a> de fecha y hora de fin de la incidencia, <a href="#numSentidos" >estraf:numSentidos</a> del número de sentidos a los que puede afectar y <a href="#numCarriles" >estraf:numCarriles</a> del número de carriles a los que puede afectar.</p>
 
     <p>Cuenta con dos subclases, la de <a href="#IncidenciaPlanificada" >estraf:IncidenciaPlanificada</a> para las incidencias que están planificadas y <a href="#IncidenciaNoPlanificada" >estraf:IncidenciaNoPlanificada</a> para las que no lo son.</p>
 
-    <p>Con la finalidad de representar la ubicación de los <a href="#EquipoTrafico" >estraf:EquipoTrafico</a>, de los <a href="#Tramo" >estraf:Tramo</a> y de las <a href="#Incidencia" >estraf:Incidencia</a> expresados al menos en un punto o dos en términos de su longitud y latitud, se han reutilizado las clases <a href="http://www.opengis.net/doc/IS/geosparql/1.0#Feature">" geosparql:Feature</a>, de la que <a href="#Tramo" >estraf:Tramo</a> es subclase; la ya referida clase <a href="http://www.opengis.net/doc/IS/geosparql/1.0#Point">geosparql:Point</a>, subclase de <a href="http://www.opengis.net/doc/IS/geosparql/1.0#Geometry">geosparql:Geometry</a> y ésta y <a href="http://www.opengis.net/doc/IS/geosparql/1.0#Feature">" geosparql:Feature</a> son subclases de <a href="http://www.opengis.net/doc/IS/geosparql/1.0#SpatialObject">geosparql:SpatialObject</a>.</p>
+    <p>Con la finalidad de representar la ubicación de los equipos de tráfico <a href="#EquipoTrafico">estraf:EquipoTrafico</a>, de los tramos <a href="#Tramo">estraf:Tramo</a> y de las incidencias <a href="#Incidencia">estraf:Incidencia</a> se ha considerado que son subclases de <a href="http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a>. Su propiedad <a href="http://www.opengis.net/ont/geosparql#hasGeomtry">geosparql:hasGeometry</a> se relaciona con <a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a>. Ambas son subclases de <a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a>. Finalmente, <a href="http://www.opengis.net/ont/sf#Point">sf:Point</<a> es subclase de <a href="http://www.opengis.net/ont/geosparql#Geometry">geosparql:Geometry</a>, cuyas propiedades son <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat">geo:lat</a>, <a href="http://www.w3.org/2003/01/geo/wgs84_pos#">geo:long</a>, <a href="https://datos.ign.es/def/geo_core#xETRS89">geo_core:xETRS89</a> y <a href="https://datos.ign.es/def/geo_core#yETRS89">geo_core:yETRS89</a>.</p>
     <h3>3.1 Ejemplos de uso<span class="backlink" > volver al <a href="#toc" >&iacute;ndice</a></span></h3>
     
 <p>Con la finalidad de facilitar la comprensión del uso de algunas clases y propiedades de este vocabulario se proporcionan a continuación algunos ejemplos:</p>
 
 <h4>3.1.1 Equipo Tráfico</h4>
-    <p>En primer lugar, para la representación del equipo de tráfico se crea una instancia de la clase <a href="#EquipoTrafico">estraf:EquipoTrafico</a> en el caso de que sea un equipo de monitorización del tráfico o bien de la clase <a href="#DispositivoMedicionTrafico" >estraf:DispositivoMedicionTrafico</a> en caso de que sea un equipo de medición del tráfico. El equipo, sea cual sea, tendrá un identificador <a href="http://purl.org/dc/terms/identifier" >dct:identifier</a> y en caso de que sea de medición se indicará si está en servicio o no con la propiedad <a href="#enservicio" >estraf:enservicio</a>. Las otras propiedades son opcionales.</p>
+
+    <p>En primer lugar, para la representación del equipo de tráfico se crea una instancia de la clase <a href="#EquipoTrafico">estraf:EquipoTrafico</a> en el caso de que sea un equipo de onitoreo del tráfico o bien de la clase <a href="#DispositivoMedicionTrafico" >estraf:DispositivoMedicionTrafico</a> en caso de que sea un equipo de medición del tráfico. El equipo, sea cual sea, tendrá un dentificador <a href="http://purl.org/dc/terms/identifier" >dct:identifier</a>, una descripción <a href="http://purl.org/dc/terms/description">dct:description</a> y en caso de que sea de medición se indicará si está en servicio o no con la propiedad <a href="#enServicio" >estraf:enServicio</a> y la frecuencia de medición <a href="#frecuenciaMedicion">estraf:frecuenciaMedicion</a>. También se puede indicar a cuántos sentidos observa el dispositivo con <a href="#numSentidos">estraf:numSentidos</a>, a cuántos o qué carriles con <a href="#numCarriles">estraf:numCarriles</a> y si se trata de un equipo urbano o no con <a href="#urbano">estraf:urbano</a>.</p>
     <p>Se enlaza con la propiedad <a href="#tipoEquipoTrafico" >estraf:tipoEquipoTrafico</a> con el tipo de dispositivo correspondiente de la taxonomía de tipos de equipos de tráfico. Por ejemplo, si fuera un <b>Tubo neumático</b> se enlazaría con <a href="http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/tipo-control-trafico/tubo-neumatico">estraf-kos:tubo-neumatico</a>.</p>
-    <p>Este dispositivo se asocia con instancias de la clase <a href="#PropiedadMedicionTrafico" >estraf:PropiedadMedicionTrafico</a> a través de la propiedad <a href="http://www.w3.org/ns/sosa/observes">sosa:observes</a>. Esta instancia tiene la unidad de medida en la propiedad <a href="#unidadMedida">estraf:unidadMedida</a>. Con instancias de esta clase también se relaciona la clase <a href="#ObservacionTrafico" >estraf:ObservacionTrafico</a> a través de la propiedad <a href="http://www.w3.org/ns/sosa/observedProperty">sosa:observedProperty</a>. En esta clase se incluyen como propiedades el intervalo de registro de datos en <a href="http://www.w3.org/ns/sosa/phenomenonTime">sosa:phenomenonTime</a>, la hora de realización del registro en <a href="http://www.w3.org/ns/sosa/resultTime">sosa:resultTime</a> y el resultado en <a href="http://www.w3.org/ns/sosa/observedProperty">sosa:hasSimpleResult</a>.</p>
-    <p>Esto se representaría en formato <a href="https://www.w3.org/TR/Turtle">Turtle</a> de la siguiente manera:</p>
+   
     <pre>
-&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/DispositivoMedicionTrafico/123456&gt; a estraf:DispositivoMedicionTrafico ;
-  dct:identifier "123456" ;
-  estraf:description "Dispositivo que detecta los cambios que se producen en un campo electromagnético cuando circula un vehículo (masa metálica) sobre un punto determinado de la calzada. Registra el número total de vehículos que pasan y pueden clasificarlos por su longitud, número de ejes y masas."@es ;
-  estraf:numSentidos "2"^^xsd:integer ;
-  estraf:numCarriles "2"^^xsd:integer ;
-  estraf:urbano "1"^^xsd:boolean ;
-  estraf:ubicacionEquipo &lt;http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/Point/123456&gt; ;
-  estraf:tipoEquipoTrafico &lt;http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/lazo-magnetico&gt; ;
-sosa:observes &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/PropiedadMedicionTrafico/carga&gt; 
-  estraf:monitorea  &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/Tramo/123456&gt; .
+      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/equipotrafico/100&gt; a estraf:DispositivoMedicionTrafico ;
+      dct:identifier "100"^^xsd:string ;
+      dct:description "C. GRAN VIA;San Bernardo-Garcia Molinas;San Bernardo"^^xsd:string ;
+      sosa:observes &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/carga&gt; ;
+      estraf:numSentidos "2"^^xsd:int ;
+      estraf:numCarriles "8"^^xsd:integer ;
+      estraf:urbano "true"^^xsd:boolean ;
+      estraf:enServicio "true"^^xsd:boolean ;
+      estraf:frecuenciaMedicion "5 minutos"^^xsd:string ;
+      geosparql:hasGeometry &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/point/100&gt; ;
+      estraf:monitorea &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/tramo/100&gt; ;
+      estraf:tipoEquipoTrafico &lt;http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/lazo-magnetico&gt; .
+</pre>
+    <h4>3.1.2 Accidente geográfico</h4>
+    
+    <p>Dado que <a href="#EquipoTrafico">estraf:EquipoTrafico</a> es subclase de <a href="http://www.opengis.net/ont/geosparql#Feature">geosparql:Feature</a> se relaciona a través de <a href="http://www.opengis.net/ont/geosparql#hasGeometry">geosparql:hasGeometry</a> la localización donde se encuentra la medición en el punto <a href="http://www.opengis.net/ont/sf#Point">sf:Point</<a>.</p>
+<p>geosparql:hasGeometry</p>
+
+    <pre>
+      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/point/100&gt; a sf:Point ;
+      geo:lat "40,42262"^^xsd:float ;
+      geo:long "-3,71224"^^xsd:float ;
+      geo_core:xETRS89 "-2465360,47"^^xsd:float ;
+      geo_core:yETRS89 "5100548,33"^^xsd:float ;
+      geosparql:asWKT  "POINT (-3.71224 40,42262)"^^geosparql:wktLiteral .
     </pre>
 
-    <h4>3.1.2 Observacion Trafico</h4>
-    <p>Para representar una observación realizada por un dispositivo se ha creado la clase <a href="#ObservacionTrafico" >estraf:ObservacionTrafico</a> que cuenta con las propiedades señaladas intervalo de la observación (<a href="https://www.w3.org/ns/sosa/phenomenonTime" >sosa:phenomenonTime</a>), registro horario del resultado (<a href="https://www.w3.org/ns/sosa/resultTime" >sosa:resultTime</a>) y resultado en sí (<a href="https://www.w3.org/ns/sosa/hasSimpleResult" >sosa:hasSimpleResult</a>).</p>
-    <p>Si estuviera observando la instancia <a href="#intensidad">estraf:intensidad</a>, representaría:</p>
-    <pre>
-      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/ObservacionTrafico/123456&gt; a estraf:ObservacionTrafico ;    
-  sosa:phenomenonTime "00:00:05"^^xsd:dateTime ;
-  sosa:resultTime "2020-04-01T12:45"^^xsd:dateTime ;
-  sosa:hasSimpleResult "30"^^xsd:integer;
-  sosa:observedProperty &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/PropiedadMedicionTrafico/intensidad&gt; ;
-  sosa:hasFeatureOfInterest &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/Tramo/123456&gt; ;
-  sosa:madeBySensor &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/DispositivoMedicionTrafico/123456&gt; .
-    </pre>
+    <h4>3.1.3 Lo que observa</h4>
     
-    <h4>3.1.3 Incidencia</h4>
-    <p>Para representar una incidencia se ha creado la clase <a href="#Incidencia" >estraf:Incidencia</a>:</p>
+    <p>La instancia de <a href="#DispositivoMedicionTrafico">estraf:DispositivoMedicionTrafico</a> se asocia con instancias de la clase <a href="#PropiedadMedicionTrafico" >estraf:PropiedadMedicionTrafico</a> a través de la propiedad <a href="http://www.w3.org/ns/sosa/observes">sosa:observes</a>. Esta instancia tiene la unidad de medida en la propiedad <a href="#unidadMedida">estraf:unidadMedida</a>.</p>
+
     <pre>
-&lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/Incidencia/123456&gt; a estraf:Incidencia ;
-  dct:identifier "123456" ;
-  dct:description "Corte de calles entre el cruce de Alcalá con Gran Vía y la Plaza de la Independencia"@es ;
-  schema:startDate "2020-03-31T23:00:00"^^xsd:dateTime ;
-  schema:endDate "2020-05-03T23:59:00"^^xsd:dateTime ;
-  estraf:numSentidos "2"^^xsd:integer ;
-  estraf:numCarriles "8"^^xsd:integer ;
-  estraf:tipoIncidencia &lt;http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/obra&gt; ;
-  estraf:ubicacionIncidencia &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/Punto/123456&gt; ;
-  geo:long "-3.699489" ;
-  geo:lat "40.419751" ;
-  estraf:incidenciaEnTramo &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/Tramo/123456&gt; .
+      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/carga&gt; a estraf:PropiedadMedicionTrafico ;
+      estraf:unidadMedida "Porcentaje"^^xsd:string .
     </pre>
-	
-	
+
+    <h4>3.1.4 Observación de Tráfico</h4>
+    
+    <p>Con instancias de esta clase también se relaciona la clase <a href="#ObservacionTrafico" >estraf:ObservacionTrafico</a> a través de la propiedad <a href="http://www.w3.org/ns/sosa/observedProperty">sosa:observedProperty</a>. En esta clase se incluyen como propiedades la hora de realización del registro en <a href="http://www.w3.org/ns/sosa/resultTime">sosa:resultTime</a> y el resultado en <a href="http://www.w3.org/ns/sosa/observedProperty">sosa:hasSimpleResult</a>, además de la propiedad creada <a href="#validada">estraf:validada</a> que indica si el dato ha sido validado o no. Para representar el intervalo de registro de datos se utiliza la propiedad <a href="http://www.w3.org/ns/sosa/phenomenonTime">sosa:phenomenonTime</a> que se relaciona con la clase <a href="http://www.w3.org/2006/time#ProperInterval">time:ProperInterval</a> como se ha explicado anteriormente.</p>
+    <p>Observación:</p>
+    <pre>
+      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/observaciontrafico/20200423114500&gt; a estraf:ObservacionTrafico ;
+      dct:identifier "100-20200423114500"^^xsd:string ;
+      sosa:resultTime "2020-04-23T11:45:00+02:00"^^xsd:dateTime ;
+      sosa:hasSimpleResult "60"^^xsd:integer ;
+      estraf:validada "true"^^xsd:boolean ;
+      sosa:madeBySensor &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/equipo-trafico/100&gt; ;
+      sosa:observedProperty &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/carga&gt; ;
+      sosa:hasFeatureOfInterest &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/tramo/100&gt; ;
+      sosa:phenomenonTime &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/properinterval/20200423114500&gt; .
+    </pre>
+
+    <p>Intervalo de observación:</p>
+    <pre>
+      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/properinterval/20200423114500&gt; a time:ProperInterval ;
+      time:hasBegining &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/instant/20200423114455&gt; ;
+      time:hasEnd &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/instant/202004231145000&gt; .
+
+      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/instant/20200423114455&gt; a time:Instant ;
+      time:inXSDgYearMonth "2020-04-23T11:44:55+02:00"^^xsd:dateTime .
+      
+      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/instant/20200423114500&gt; a time:Instant ;
+      time:inXSDgYearMonth "2020-04-23T11:45:00+02:00"^^xsd:dateTime .
+    </pre>
+<h4>3.1.5 Donde aparece</h4>
+    <p>Esta Observación aparece a través de <a href="https://www.w3.org/ns/sosa/hasFeatureOfInterest" >sosa:hasFeatureOfInterest</a> que relaciona con el tramo <a href="#Tramo" >estraf:Tramo</a> que ésta monitorea.</p>
+    
+    <pre>
+      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/tramo/100&gt; a estraf:Tramo ;
+      geosparql:hasGeometry &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/point/100&gt; ;
+      estraf:inicioTramo &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/point/100&gt; ;
+      estraf:finTramo &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/point/101&gt; ;
+      estraf:via  &lt;http://vocab.linkeddata.es/datosabiertos/urbanismo-infraestructuras/callejero/calle/100&gt; .
+    </pre>
+
+    <h4>3.1.6 Incidencia</h4>
+    <p>Para representar una incidencia se ha creado la clase <a href="#Incidencia" >estraf:Incidencia</a> que cuenta con las propiedades relatadas anteriormente: una fecha de creación de la incidencia <a href="http://purl.org/dc/terms/created">dct:created</a>; una fecha de inicio <a href="https://schema.org/startDate" >schema:startDate</a>; una fecha de fin <a href="https://schema.org/endDate" >schema:endDate</a>; una fecha de fin prevista en la propiedad creada <a href="#fechaFinPrevista" >estraf:fechaFinPrevista</a>; el número de sentidos <a href="#numSentidos">estraf:numSentidos</a>; el número de carriles <a href="#numCarriles">estraf:numCarriles</a>; si es recurrente <a href="#esRecurrente">estraf:esRecurrente</a> y en este caso el motivo de la recurrencia <a href="#recurrencia">estraf:recurrencia</a>;y  un documento en una URI donde ampliar o poner toda la información de la incidencia con <a href="http://www.w3.org/2000/01/rdf-schema#seeAlso">rdfs:seeAlso</a>:</p>
+
+    <pre>
+            &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/incidenciaplanificada/1000&gt; a estraf:Incidencia ;
+      dct:identifier "1000"^^xsd:string ;
+      dct:description "EXP-2020/22329 Plaza Humilladero-Almendro"^^xsd:string ;
+      schema:startDate "2020-03-12T16:00:00+02:00"^^xsd:dateTime ;
+      schema:endDate "2020-03-13T23:00:00+02:00"^^xsd:dateTime ;
+      estraf:fechaFinPrevista "2028-03-08T23:00:00+02:00"^^xsd:dateTime ;
+      estraf:numSentidos "1"^^xsd:integer ;
+      estraf:numCarriles "3"^^xsd:integer ;
+      estraf:esRecurrente "true"^^xsd:boolean ;
+      estraf:recurrencia "Excursión juvenil" ;
+      estraf:tipoIncidencia &lt;http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/evento&gt; ;
+      geosparql:hasGeometry
+      &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/point/1000&gt; ;
+      estraf:incidenciaEnTramo &lt;http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/tramo/1000&gt; .
+    </pre>
+
 </html>

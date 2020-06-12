@@ -16,7 +16,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:sosa="http://w3.org/ns/sosa/"
      xmlns:time="http://www.w3.org/2006/time#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
     <owl:Ontology rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico">
@@ -38,13 +38,22 @@
         <dc:rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</dc:rights>
         <dc:title xml:lang="es">Vocabulario para la representación de datos sobre el tráfico de vehículos a motor de las ciudades.</dc:title>
         <dc:title xml:lang="en">Vocabulary for the representation of data on traffic made by motor vehicles.</dc:title>
-        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
-        <terms:hasVersion>1.0.0</terms:hasVersion>
-        <terms:issued xml:lang="es">2020-06-10</terms:issued>
-        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0</terms:license>
-        <rdfs:comment xml:lang="es">Esta versión ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña. En esta versión se han definido clases y propiedades de acuerdo a los requisitos y glosario de conceptos	propuestos en las reuniones del grupo.</rdfs:comment>
-	<rdfs:comment xml:lang="en">This version has been generated within the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate. In this version, classes and properties have been defined according to the requirements and glossary of concepts proposed at the group's meetings.</rdfs:comment>
-        <owl:versionInfo>Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</owl:versionInfo>
+	<dc:description xml:lang="es" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Este vocabulario de tráfico urbano de los vehículos a motor ha sido generado dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</dc:description>
+	<dc:description xml:lang="en" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This vocabulary of the Urban Traffic run by motor vehicles has been generated within the context of the Open Government, Collaborative and Interoperable Platform in which partipate the city councils of  Madrid, Zaragoza, Santiago de Compostela y A Coruña.</dc:description>
+	<vann:preferredNamespacePrefix>estraf</vann:preferredNamespacePrefix>
+	<vann:preferredNamespaceUri rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#"/>
+	<dct:publisher xml:lang="es">Ontology Engineering Group - Universidad Politécnica de Madrid</dct:publisher>
+	<dct:publisher xml:lang="en">Ontology Engineering Group - Universidad Politécnica de Madrid</dct:publisher>
+        <dct:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)</dct:creator>
+        <dct:hasVersion>1.0.0</dct:hasVersion>
+        <dct:issued xml:lang="es">2020-06-10</dct:issued>
+        <dct:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0</dct:license>
+        <rdfs:comment xml:lang="es">Este vocabulario de tráfico urbano de los vehículos a motor  ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</rdfs:comment>
+	<rdfs:comment xml:lang="en">This vocabulary version has been generated within the context of the project Open, collaborative and interoperable government platform in which participate the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña.</rdfs:comment>
+	<dc:abstract xml:lang="es" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</dc:abstract>
+		        <dc:abstract xml:lang="en">This is the initial version of the vocabulary of Traffic that has been generated within the context of the project Open Government, Collaborative and Interoperable Platform in which partipate the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña.</dc:abstract>
+        <owl:versionInfo xml:lang="es">Esta es la versión inicial de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</owl:versionInfo>
+	        <owl:versionInfo xml:lang="en">This is the initial version of the vocabulary of Traffic that has been generated within the context of the project Open Government, Collaborative and Interoperable Platform in which partipate the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña.</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -114,7 +123,7 @@
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
-        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
+        <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
         <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://purl.org/dc/terms/</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Date Issued</rdfs:label>
@@ -425,6 +434,7 @@
         <rdfs:label xml:lang="es">Identificador</rdfs:label>
         <rdfs:label xml:lang="en">Identifier</rdfs:label>
     </owl:DatatypeProperty>
+
     
     <!-- https://datos.ign.es/def/geo_core#xETRS89 -->
 
@@ -434,7 +444,7 @@
       <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
       <rdfs:comment xml:lang="es">Coordenada X en metros (ETRS89)</rdfs:comment>
       <rdfs:comment xml:lang="en">X-Coordinate in meters (ETRS89)</rdfs:comment>
-      <rdfs:label xml:lang="es">xETRS89</rdfs:label>
+      <rdfs:label>xETRS89</rdfs:label>
     </owl:DatatypeProperty>
 
     <!-- https://datos.ign.es/def/geo_core#yETRS89 -->
@@ -481,8 +491,8 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/"/>
         <rdfs:label xml:lang="en">(expected) start date</rdfs:label>
-        <rdfs:label xml:lang="es">La fecha y hora de inicio de una incidencia (en formato fecha ISO 8601).</rdfs:label>
-        <rdfs:label xml:lang="en">The start date and time of an incidence (in ISO 8601 date format).</rdfs:label>
+        <rdfs:comment xml:lang="es">La fecha y hora de inicio de una incidencia (en formato fecha ISO 8601).</rdfs:comment>
+        <rdfs:comment xml:lang="en">The start date and time of an incidence (in ISO 8601 date format).</rdfs:comment>
         <rdfs:label xml:lang="es">fecha de inicio (prevista)</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -529,7 +539,7 @@
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#frecuenciaMedicion">
       <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
       <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico"/>
-      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
       <rdfs:comment xml:lang="es">Esta propiedad permite conocer la frecuencia de medición del dispositivo.</rdfs:comment>
       <rdfs:comment xml:lang="en">This property allows to know the measurement frequency of the device.</rdfs:comment>
       <rdfs:label xml:lang="es">Frecuencia Medición</rdfs:label>
@@ -679,8 +689,8 @@
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico">
         <rdfs:subClassOf rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-        <rdfs:comment xml:lang="es">Dispositivo de Medición de Tráfico</rdfs:comment>
-        <rdfs:comment xml:lang="en">Traffic Measuring Device</rdfs:comment>
+        <rdfs:comment xml:lang="es">Dispositivo de Medición de Tráfico, tipo de	equipo de tráfico que realiza mediciones.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Traffic Measuring Device, type of Traffic Device which performs measurements.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
         <rdfs:label xml:lang="es">Dispositivo de medición de tráfico</rdfs:label>
         <rdfs:label xml:lang="en">Traffic Measuring Device</rdfs:label>
@@ -843,7 +853,6 @@
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
-        <terms:issued>2004-02-xx</terms:issued>
         <rdfs:comment xml:lang="en">A concept scheme may be defined to include concepts from different sources.</rdfs:comment>
         <rdfs:comment xml:lang="en">Thesauri, classification schemes, subject heading lists, taxonomies, &apos;folksonomies&apos;, and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
