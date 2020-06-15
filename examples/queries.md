@@ -8,66 +8,120 @@ Los datos transformados y anotados con este vocabulario se han cargado en un Vir
 
 A continuación, se presentan varias consultas que se han ejecutado en este endpoint y que han permitido evaluar el vocabulario de acuerdo con los requisitos que se plantearon en la actividad de especificación. 
 
-## Consulta 1: ¿Cuál es la ubicación de los equipos de control del tráfico del ayuntamiento?
+El grafo de trabajo, con datos de prueba y skos, está en http://ciudadesabiertas.linkeddata.es/datosabiertos/grafo/transporte/trafico/observaciones-incidencias
 
-Asumimos que por Equipos de Control del Tráfico del Ayuntamiento nos referimos a todos los Equipos de Tráfico, que incluyen equipos de control y dispositivos de medición.
+## Consulta 1: Lista con la ubicación, el tipo y el nombre de los equipos (todos)
 
 ```
-PREFIX geosparql:<http://www.opengis.net/doc/IS/geosparql/1.0#>
-PREFIX estraf:<http://vocab.ciudadesabiertas.es/recurso/transporte/trafico#>
-PREFIX time:<http://www.w3.org/2006/time#>
+PREFIX estraf:<http://vocab.ciudadesabiertas.es/def/transporte/trafico#>
 PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
-PREFIX skos-tipo-equipo:<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/>
+PREFIX skos-tipo-equipo:<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico>
+PREFIX sosa:<http://www.w3.org/ns/sosa/>
+PREFIX dcterms:<http://purl.org/dc/terms/>
+PREFIX sf:<http://www.opengis.net/ont/sf#>
 
-SELECT  ?descripcion  ?ubicacionLat ?ubicacionLong ?tipoEquipo
-WHERE { ?equipo a estraf:EquipoTrafico .
+
+SELECT  ?descripcion ?labelTipoEquipo ?ubicacionLat ?ubicacionLong  
+WHERE { ?equipo a sosa:Sensor .
         ?equipo estraf:tipoEquipoTrafico ?tipoEquipo .
-        ?equipo estraf:descripcion ?descripcion .
-        ?equipo estraf:ubicacionEquipo ?punto .
-        ?punto a geosparql:Point .
-        ?punto geosparql:lat ?ubicacionLat .
-        ?punto geosparql:long ?ubicacionLong
-        #FILTER (lang(?labelTipoEquipo)="es")
+        ?tipoEquipo skos:prefLabel ?labelTipoEquipo .
+        ?equipo dcterms:description ?descripcion .
+        ?equipo estraf:ubicacionEquipoTrafico ?punto .
+        ?punto a sf:Point .
+        ?punto geo:lat ?ubicacionLat .
+       ?punto geo:long ?ubicacionLong
 }
 ```
-## Consulta 2: ¿Cuáles son las incidencias de tráfico registradas en el ayuntamiento en fecha 2020-03-08?
+
+## Consulta 2: Lista de incidencias de tráfico registradas en una fecha dada, por ejemplo, 01-04-2020
+
 ```
-PREFIX geosparql:<http://www.opengis.net/spec/geosparql>
+PREFIX estraf:<http://vocab.ciudadesabiertas.es/def/transporte/trafico#>
+PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX skos-tipo-incidencia:<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/>
+PREFIX schema:<http://schema.org/>
+PREFIX dct:<http://purl.org/dc/terms/>
+
+SELECT  ?descripcion  ?labelTipoIncidencia  
+WHERE { ?incidencia a estraf:IncidenciaPlanificada .
+        ?incidencia estraf:tipoIncidencia ?tipoIncidencia .
+        ?incidencia schema:startDate ?fechaIncidencia .
+        ?tipoIncidencia skos:prefLabel ?labelTipoIncidencia .
+        ?incidencia dct:description ?descripcion .
+        FILTER (?fechaIncidencia = "2020-04-01T00:00:00"^^xsd:dateTime) 
+}
+```
+
+## Consulta 3. ¿Cuáles son los valores de medición, en tiempo real, obtenidos por los dispositivos del ayuntamiento?
+
+```
 PREFIX estraf:<http://vocab.ciudadesabiertas.es/def/transporte/trafico#>
 PREFIX time:<http://www.w3.org/2006/time#>
 PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
-PREFIX inc:<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/>
+PREFIX skos-tipo-equipo-trafico:<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/>
 PREFIX schema:<http://schema.org/>
+PREFIX sosa:<http://www.w3.org/ns/sosa/>
+PREFIX dcterms:<http://purl.org/dc/terms/>
 
-SELECT  ?descripcion  
-WHERE { ?incidencia a estraf:Incidencia .
-        ?incidencia estraf:tipoIncidencia ?tipoIncidencia .
-        ?incidencia schema:startDate ?fechaIncidencia .
-	  ?incidencia estraf:descripcion ?descripcion .
-        FILTER (?fechaIncidencia = "2020-03-08T15:00:00+02:00"^^xsd:dateTime) 
-
+SELECT ?id ?descripcion ?propiedad ?fechaHora ?resultado WHERE {
+	?dispositivo a sosa:Sensor .
+	?dispositivo dcterms:identifier ?id .
+	?dispositivo dcterms:description ?descripcion .
+	?observacion sosa:madeBySensor ?dispositivo .
+	?observacion sosa:observedProperty ?propiedad .
+	?observacion sosa:resultTime ?fechaHora .
+	?observacion sosa:hasSimpleResult ?resultado
 }
 ```
-
-## Consulta 3: ¿Cuáles son las incidencias de tráfico registradas en el ayuntamiento desde 2020-03-09?
+## Consulta 4. ¿Cuáles son los valores de carga en tiempo real registrados en el ayuntamiento?
 
 ```
-PREFIX geosparql:<http://www.opengis.net/spec/geosparql>
 PREFIX estraf:<http://vocab.ciudadesabiertas.es/def/transporte/trafico#>
 PREFIX time:<http://www.w3.org/2006/time#>
 PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
-PREFIX inc:<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia/>
+PREFIX skos-tipo-equipo-trafico:<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/>
 PREFIX schema:<http://schema.org/>
+PREFIX sosa:<http://www.w3.org/ns/sosa/>
+PREFIX dcterms:<http://purl.org/dc/terms/>
 
-SELECT  ?descripcion  
-WHERE { ?incidencia a estraf:Incidencia .
-        ?incidencia estraf:tipoIncidencia ?tipoIncidencia .
-        ?incidencia schema:startDate ?fechaIncidencia .
-       ?incidencia estraf:descripcion ?descripcion .
-        FILTER (?fechaIncidencia > "2020-03-09T00:00:00+02:00"^^xsd:dateTime) 
+SELECT ?id ?descripcion  ?fechaHora ?resultado WHERE {
+	?dispositivo a sosa:Sensor .
+	?dispositivo dcterms:identifier ?id .
+	?dispositivo dcterms:description ?descripcion .
+	?observacion sosa:madeBySensor ?dispositivo .
+	?observacion sosa:observedProperty <http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/propiedadmediciontrafico/carga> .
+	?observacion sosa:resultTime ?fechaHora .
+	?observacion sosa:hasSimpleResult ?resultado
+}
 
+```
+
+## Consulta 5. ¿Cuáles son los valores de intensidad en tiempo real registrados las estaciones que se encuentran en la calle sepúlveda?
+
+```
+PREFIX geosparql:<http://www.opengis.net/spec/geosparql>
+PREFIX estraf:<http://vocab.ciudadesabiertas.es/def/transporte/trafico#>
+PREFIX estraf-recurso:<http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/>
+PREFIX time:<http://www.w3.org/2006/time#>
+PREFIX skos:<http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX skos-tipo-equipo-trafico:<http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-equipo-trafico/>
+PREFIX schema:<http://schema.org/>
+PREFIX sosa:<http://www.w3.org/ns/sosa/>
+PREFIX dcterms:<http://purl.org/dc/terms/>
+
+SELECT ?id ?descripcion  ?fechaHora ?resultado WHERE {
+	?dispositivo a sosa:Sensor .
+	?dispositivo dcterms:identifier ?id .
+	?dispositivo dcterms:description ?descripcion .
+	?observacion sosa:madeBySensor ?dispositivo .
+	?observacion sosa:observedProperty <http://vocab.ciudadesabiertas.es/recurso/transporte/trafico/propiedadmediciontrafico/intensidad> .
+	?observacion sosa:resultTime ?fechaHora .
+	?observacion sosa:hasSimpleResult ?resultado
+	FILTER (CONTAINS(?descripcion,'SEPULVEDA'))
 }
 ```
