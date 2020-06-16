@@ -100,7 +100,7 @@ SELECT ?id ?descripcion  ?fechaHora ?resultado WHERE {
 
 ```
 
-## Consulta 5. ¿Cuáles son los valores de intensidad en tiempo real registrados las estaciones que se encuentran en la calle sepúlveda?
+## Consulta 5. ¿Cuáles son los valores de intensidad en tiempo real registrados las estaciones que se encuentran en la calle Sepúlveda?
 
 ```
 PREFIX geosparql:<http://www.opengis.net/spec/geosparql>
