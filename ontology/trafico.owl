@@ -19,9 +19,9 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-    <owl:Ontology rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico">
-        <owl:versionIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0"/>
-        <dc:contributor xml:lang="es">Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid</dc:contributor>
+  <owl:Ontology rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico">
+    <owl:versionIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0"/>
+    <dc:contributor xml:lang="es">Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">María Carmen Ruiz Moreno - Ayuntamiento de Madrid</dc:contributor>
 	<dc:contributor xml:lang="es">María Jesús Gallego San Miguel - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">María del Mar Arribas de Andrés - Ayuntamiento de Madrid</dc:contributor>
@@ -66,62 +66,49 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+   <!-- http://purl.org/dc/elements/1.1/abstract -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/abstract"/>
 
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
-    
 
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
-
 
     <!-- http://purl.org/dc/elements/1.1/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
-    
 
-<!-- http://purl.org/dc/elements/1.1/description -->
+    <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
+
     <!-- http://purl.org/dc/elements/1.1/identifier -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
-    
-
 
     <!-- http://purl.org/dc/elements/1.1/rights -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
-    
-
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
 
+    <!-- http://purl.org/dc/terms/created -->
 
-    <!-- http://purl.org/dc/terms/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
-
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
 
     <!-- http://purl.org/dc/terms/hasVersion -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
     
-
-
     <!-- http://purl.org/dc/terms/issued -->
-
+    
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
         <dct:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#issued-003"/>
         <rdfs:comment xml:lang="en">Date of formal issuance (e.g., publication) of the resource.</rdfs:comment>
@@ -129,19 +116,28 @@
         <rdfs:label xml:lang="en">Date Issued</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
     </owl:AnnotationProperty>
-    
-
 
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
 
 
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
-    
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+
 
 
     <!-- 
@@ -158,7 +154,19 @@
     <!-- http://www.w3.org/2001/XMLSchema#date -->
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
-    
+
+        <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaAdjunto -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaAdjunto">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="es">Un documento donde se puede consultar la información sobre la incidencia.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A document where more information about the incidence can be found.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
+        <rdfs:label xml:lang="en">attached to incidence</rdfs:label>
+        <rdfs:label xml:lang="es">adjunto a la incidencia</rdfs:label>
+    </owl:DatatypeProperty>
+
 
 
     <!-- 
@@ -382,7 +390,6 @@
     // // Data properties //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
@@ -435,7 +442,26 @@
         <rdfs:label xml:lang="en">Identifier</rdfs:label>
     </owl:DatatypeProperty>
 
-    
+        <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+    <owl:DatatypeProperty rdf:about=="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+      <rdfs:domain rdf:resource="http://www.opengis.net/ont/sf#Point"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+      <rdfs:comment xml:lang="es">Latitud en WGS84</rdfs:comment>
+      <rdfs:comment xml:lang="en">Latitude in WGS84</rdfs:comment>
+      <rdfs:label>latitude</rdfs:label>
+    </owl:DatatypeProperty>
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+    <owl:DatatypeProperty rdf:about=="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+      <rdfs:domain rdf:resource="http://www.opengis.net/ont/sf#Point"/>
+      <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+      <rdfs:comment xml:lang="es">Longitud en WGS84</rdfs:comment>
+      <rdfs:comment xml:lang="en">Longitude in WGS84</rdfs:comment>
+      <rdfs:label>longitude</rdfs:label>
+    </owl:DatatypeProperty>
+
     <!-- https://datos.ign.es/def/geo_core#xETRS89 -->
 
     <owl:DatatypeProperty rdf:about="https://datos.ign.es/def/geo_core#xETRS89">
@@ -802,9 +828,13 @@
 
     <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
-        <rdfs:comment xml:lang="en">This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156, and it is superclass of all feature types.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the top-level feature type. This
+	class is equivalent to GFI_Feature defined in ISO 19156, and it is superclass of
+	all feature types.</rdfs:comment>
+	<rdfs:comment xml:lang="en">Esta clase representa una característica de alto nivel, equivalente a GFI_Feature definida en ISP 19156 y es una supercale para todos los tipos de características espaciales.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql#"/>
         <rdfs:label xml:lang="en">Feature</rdfs:label>
+	<rdfs:label xml:lang="es">Característica geográfica</rdfs:label>
     </owl:Class>
 
 
@@ -823,19 +853,23 @@
 
     <owl:Class rdf:about="http://www.opengis.net/ont/sf#Point">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
-        <rdfs:comment xml:lang="en">This class represents the top-level point type. This class is equivalent to GFI_Point defined in ISO 19156, and it is superclass of all point types.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the top-level point type. This 	class is equivalent to GFI_Point defined in ISO 19156, and it is superclass of all point types.</rdfs:comment>
+	<rdfs:comment xml:lang="es">Se representa un tipo de punto de alto nivel. Esta clase es equivalente a GFI_Point definida en ISO 19156 y es superclase de todos los tipos de puntos.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql#"/>
-        <rdfs:label xml:lang="en">Point</rdfs:label>
+        <rdfs:label xml:lang="en">Geographic Point</rdfs:label>
+	<rdfs:label xml:lang="es">Punto geográfico</rdfs:label>
     </owl:Class>
-    
-
 
     <!-- http://www.opengis.net/ont/geosparql#SpatialObject -->
 
     <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#SpatialObject">
-        <rdfs:comment xml:lang="en">This class represents the top-level spatial object type. This class is equivalent to GFI_SpatialObject defined in ISO 19156, and it is superclass of all spatial object types.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the top-level spatial object
+	type. This class is equivalent to GFI_SpatialObject defined in ISO 19156, and it
+	is superclass of all spatial object types.</rdfs:comment>
+	<rdfs:comment xml:lang="es">Esta clase representa un tipo de objeto espacial de alto nivel. Es equivalente a GFI SpatialObject difinido en ISO 19156 y es una superclase de todos los tipos de objetos espaciales.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.opengis.net/ont/geosparql#"/>
         <rdfs:label xml:lang="en">SpatialObject</rdfs:label>
+	<rdfs:label xml:lang="es">Objeto Espacial</rdfs:label>
     </owl:Class>
     
  
@@ -846,7 +880,10 @@
         <dct:issued>2004-02-xx</dct:issued>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
         <rdfs:label xml:lang="en">Concept</rdfs:label>
-        <skos:definition>An abstract idea or notion; a unit of thought.</skos:definition>
+	<rdfs:label xml:lang="es">Concepto</rdfs:label>
+        <skos:definition xml:lang="en">An abstract idea or notion; a unit of thought.</skos:definition>
+	<skos:definition xml:lang="es">Una idea o noción abstracta; una unidad de pensamiento.</skos:definition>
+		
     </owl:Class>
 
 
@@ -857,6 +894,7 @@
         <rdfs:comment xml:lang="en">Thesauri, classification schemes, subject heading lists, taxonomies, &apos;folksonomies&apos;, and other types of controlled vocabulary are all examples of concept schemes.  Concept schemes are also embedded in glossaries and terminologies.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
         <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
+	<rdfs:label xml:lang="es">Esquema de conceptos</rdfs:label>
         <skos:definition xml:lang="en">A set of concepts, optionally including statements about semantic relationships between those concepts.</skos:definition>
     </owl:Class>
     
@@ -1037,12 +1075,9 @@
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
       <rdfs:label xml:lang="es">tipo de incidencia</rdfs:label>
       <rdfs:label xml:lang="en">type of incidence</rdfs:label>
+      
     </owl:NamedIndividual>
     
 
 
 </rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
