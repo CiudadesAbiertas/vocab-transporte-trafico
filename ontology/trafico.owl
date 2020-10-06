@@ -27,8 +27,11 @@
         <dc:contributor xml:lang="es">María del Mar Arribas de Andrés - Ayuntamiento de Madrid</dc:contributor>
 	<dc:contributor xml:lang="es">Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña</dc:contributor>
         <dc:contributor xml:lang="es">María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza</dc:contributor>
-	<dc:contributor xml:lang="es">Víctor Morlán Pío - Ayuntamiento de Zaragoza</dc:contributor>
+	<dc:contributor xml:lang="es">Víctor Morlán Plo - Ayuntamiento de Zaragoza</dc:contributor>
         <dc:contributor xml:lang="es">Red.es</dc:contributor>
+	<dc:contributor xml:lang="es">Juan Antonio López López - Ayuntamiento de A Coruña</dc:contributor>
+	<dc:contributor xml:lang="es">Ana Bajo Prieto - Ayuntamiento de Madrid</dc:contributor>
+	<dc:contributor xml:lang="es">José Antonio Chanca Cáceres - Ayuntamiento de Zaragoza</dc:contributor>
         <dc:contributor xml:lang="es">Servicio de Informática - Ayuntamiento de Santiago de Compostela</dc:contributor>
 	<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
@@ -44,8 +47,9 @@
 	<vann:preferredNamespaceUri rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#"/>
 	<dct:publisher xml:lang="es">Ontology Engineering Group - Universidad Politécnica de Madrid</dct:publisher>
 	<dct:publisher xml:lang="en">Ontology Engineering Group - Universidad Politécnica de Madrid</dct:publisher>
-        <dct:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)</dct:creator>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
         <dct:hasVersion>1.0.0</dct:hasVersion>
+	<dct:created rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-06-16</dct:created>
         <dct:issued xml:lang="es">2020-06-10</dct:issued>
         <dct:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0</dct:license>
         <rdfs:comment xml:lang="es">Este vocabulario de tráfico urbano de los vehículos a motor  ha sido generada dentro del contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.</rdfs:comment>
@@ -73,7 +77,6 @@
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
-
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
@@ -393,7 +396,7 @@
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
-        <rdfs:domain rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdfs:domain rdf:resource="http://purl.org/dc/elements/1.1/date"/>
         <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha de creación del recurso.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
@@ -444,7 +447,7 @@
 
         <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
 
-    <owl:DatatypeProperty rdf:about=="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
       <rdfs:domain rdf:resource="http://www.opengis.net/ont/sf#Point"/>
       <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
       <rdfs:comment xml:lang="es">Latitud en WGS84</rdfs:comment>
@@ -454,7 +457,7 @@
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
 
-    <owl:DatatypeProperty rdf:about=="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
       <rdfs:domain rdf:resource="http://www.opengis.net/ont/sf#Point"/>
       <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
       <rdfs:comment xml:lang="es">Longitud en WGS84</rdfs:comment>
