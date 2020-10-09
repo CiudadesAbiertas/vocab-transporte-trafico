@@ -306,7 +306,7 @@
     <!-- http://www.w3.org/ns/sosa/hasFeatureOfInterest -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasFeatureOfInterest">
-      <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico"/>
+
       <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
       <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
       <rdfs:label xml:lang="en">has feature of interest</rdfs:label>
@@ -320,7 +320,6 @@
     <!-- http://www.w3.org/ns/sosa/madeBySensor -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeBySensor">
-      <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico"/>
       <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico"/>
       <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
       <rdfs:label xml:lang="en">made by sensor</rdfs:label>
@@ -332,7 +331,6 @@
     <!-- http://www.w3.org/ns/sosa/observedProperty -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observedProperty">
-      <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico"/>
       <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"/>
       <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
       <rdfs:label xml:lang="en">observed property</rdfs:label>
@@ -345,7 +343,6 @@
     <!-- http://www.w3.org/ns/sosa/observes -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observes">
-      <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico"/>
       <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"/>
       <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/sosa/"/>
       <rdfs:label xml:lang="en">observes</rdfs:label>
@@ -408,15 +405,6 @@
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"/>
-                    <rdf:Description rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
-		    <rdf:Description rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:comment xml:lang="en">A description of the resource within a given context.</rdfs:comment>
         <rdfs:comment xml:lang="es">Una descripción del recurso dentro de un contexto dado.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
@@ -428,16 +416,6 @@
     <!-- http://purl.org/dc/terms/identifier -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"/>
-                    <rdf:Description rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
-		    <rdf:Description rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico"/>
-		    <rdf:Description rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
         <rdfs:comment xml:lang="es">Referencia inequívoca al recurso dentro de un contexto dado.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
@@ -490,7 +468,6 @@
     <!-- http://schema.org/datePosted -->
 
     <owl:DatatypeProperty rdf:about="http://schema.org/datePosted">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="es">La fecha y hora de publicación de una incidencia (en formato fecha ISO 8601)</rdfs:comment>
         <rdfs:comment xml:lang="en">The end date and time of the incidence (in ISO 8601 date format).</rdfs:comment>
@@ -502,7 +479,6 @@
     <!-- http://schema.org/endDate -->
 
     <owl:DatatypeProperty rdf:about="http://schema.org/endDate">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="es">La fecha y hora de finalización de
 	una incidencia (en formato fecha ISO 8601)</rdfs:comment>
@@ -516,7 +492,6 @@
     <!-- http://schema.org/startDate -->
 
     <owl:DatatypeProperty rdf:about="http://schema.org/startDate">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:isDefinedBy rdf:resource="https://schema.org/"/>
         <rdfs:label xml:lang="en">(expected) start date</rdfs:label>
@@ -671,7 +646,6 @@
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa/hasSimpleResult">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="es">Esta propiedad muestra el resultado de la observación.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property shows the result of the observation</rdfs:comment>
@@ -684,7 +658,6 @@
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa/resultTime">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="es">Esta propiedad establece la fecha/hora de la observación.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property sets the dateTime of the observation</rdfs:comment>
