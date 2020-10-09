@@ -1,0 +1,21 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "estraf:Tramo" "geosparql:Feature" "http://www.w3.org/ns/sosa/ObservableProperty" "estraf:Incidencia" "sf:Point" "time:ProperInterval" "estraf:PropiedadMedicionTrafico" "estraf:EquipoTrafico" "http://www.w3.org/ns/sosa/Observation" "time:Interval" "geosparql:SpatialObject" "estraf:DispositivoMedicionTrafico" "time:TemporalEntity" "geosparql:Geometry" "estraf:IncidenciaPlanificada" "http://www.w3.org/ns/sosa/Sensor" "estraf:ObservacionTrafico" "estraf:IncidenciaNoPlanificada" "time:Instant" ; /*classes style*/
+	"time:ProperInterval" -> "time:Interval" [ label = "rdfs:subClassOf" ];
+	"geosparql:Feature" -> "geosparql:SpatialObject" [ label = "rdfs:subClassOf" ];
+	"sf:Point" -> "geosparql:Geometry" [ label = "rdfs:subClassOf" ];
+	"estraf:Tramo" -> "geosparql:Feature" [ label = "rdfs:subClassOf" ];
+	"estraf:Incidencia" -> "geosparql:Feature" [ label = "rdfs:subClassOf" ];
+	"estraf:IncidenciaNoPlanificada" -> "estraf:Incidencia" [ label = "rdfs:subClassOf" ];
+	"estraf:IncidenciaPlanificada" -> "estraf:Incidencia" [ label = "rdfs:subClassOf" ];
+	"estraf:ObservacionTrafico" -> "http://www.w3.org/ns/sosa/Observation" [ label = "rdfs:subClassOf" ];
+	"estraf:PropiedadMedicionTrafico" -> "http://www.w3.org/ns/sosa/ObservableProperty" [ label = "rdfs:subClassOf" ];
+	"time:Instant" -> "time:TemporalEntity" [ label = "rdfs:subClassOf" ];
+	"estraf:DispositivoMedicionTrafico" -> "http://www.w3.org/ns/sosa/Sensor" [ label = "rdfs:subClassOf" ];
+	"estraf:DispositivoMedicionTrafico" -> "estraf:EquipoTrafico" [ label = "rdfs:subClassOf" ];
+	"estraf:EquipoTrafico" -> "geosparql:Feature" [ label = "rdfs:subClassOf" ];
+	"geosparql:Geometry" -> "geosparql:SpatialObject" [ label = "rdfs:subClassOf" ];
+	"time:Interval" -> "time:TemporalEntity" [ label = "rdfs:subClassOf" ];
+
+}

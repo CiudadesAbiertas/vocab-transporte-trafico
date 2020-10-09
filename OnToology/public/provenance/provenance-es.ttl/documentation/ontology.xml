@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedAt -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedAt"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Agent"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent0 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent0">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>Adolfo Antón Bravo (Ontology Engineering Group - Universidad Politécnica de Madrid)</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent1 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent10 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent10">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>María Jesús Gallego San Miguel - Ayuntamiento de Madrid</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent11 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent11">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>María del Mar Arribas de Andrés - Ayuntamiento de Madrid</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent12 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent12">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>Red.es</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent13 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent13">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>Servicio de Informática - Ayuntamiento de Santiago de Compostela</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent14 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent14">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent15 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent15">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>Víctor Morlán Plo - Ayuntamiento de Zaragoza</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent2 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent2">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent3 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent4 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>Ana Bajo Prieto - Ayuntamiento de Madrid</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent5 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent5">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent6 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent6">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>José Antonio Chanca Cáceres - Ayuntamiento de Zaragoza</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent7 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent7">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>Juan Antonio López López - Ayuntamiento de A Coruña</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent8 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent8">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>María Carmen Ruiz Moreno - Ayuntamiento de Madrid</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent9 -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent9">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <foaf:name>María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0 -->
+
+
+    <NamedIndividual rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <terms:title>Vocabulario para la representación de datos sobre el tráfico de vehículos a motor de las ciudades.</terms:title>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent0"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent1"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent10"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent11"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent12"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent13"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent14"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent15"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent2"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent3"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent4"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent5"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent6"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent7"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent8"/>
+        <prov:wasAttributedTo rdf:resource="file:/home/ahmad/repos/adolflow@gmail.com/public/provenance/provenance-es.ttlagent9"/>
+        <prov:wasAttributedTo rdf:resource="http://www.essepuntato.it/lode/"/>
+        <prov:wasAttributedTo rdf:resource="https://github.com/dgarijo/Widoco/"/>
+        <prov:wasGeneratedAt>2020-06-16</prov:wasGeneratedAt>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

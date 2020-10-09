@@ -1,0 +1,21 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Tramo" "http://www.opengis.net/ont/geosparql#Feature" "http://www.w3.org/ns/sosa/ObservableProperty" "base:Incidencia" "http://www.opengis.net/ont/sf#Point" "http://www.w3.org/2006/time#ProperInterval" "base:PropiedadMedicionTrafico" "base:EquipoTrafico" "http://www.w3.org/ns/sosa/Observation" "http://www.w3.org/2006/time#Interval" "http://www.opengis.net/ont/geosparql#SpatialObject" "base:DispositivoMedicionTrafico" "http://www.w3.org/2006/time#TemporalEntity" "http://www.opengis.net/ont/geosparql#Geometry" "base:IncidenciaPlanificada" "http://www.w3.org/ns/sosa/Sensor" "base:ObservacionTrafico" "base:IncidenciaNoPlanificada" "http://www.w3.org/2006/time#Instant" ; /*classes style*/
+	"http://www.w3.org/2006/time#ProperInterval" -> "http://www.w3.org/2006/time#Interval" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/geosparql#Feature" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/sf#Point" -> "http://www.opengis.net/ont/geosparql#Geometry" [ label = "rdfs:subClassOf" ];
+	"base:Tramo" -> "http://www.opengis.net/ont/geosparql#Feature" [ label = "rdfs:subClassOf" ];
+	"base:Incidencia" -> "http://www.opengis.net/ont/geosparql#Feature" [ label = "rdfs:subClassOf" ];
+	"base:IncidenciaNoPlanificada" -> "base:Incidencia" [ label = "rdfs:subClassOf" ];
+	"base:IncidenciaPlanificada" -> "base:Incidencia" [ label = "rdfs:subClassOf" ];
+	"base:ObservacionTrafico" -> "http://www.w3.org/ns/sosa/Observation" [ label = "rdfs:subClassOf" ];
+	"base:PropiedadMedicionTrafico" -> "http://www.w3.org/ns/sosa/ObservableProperty" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/2006/time#Instant" -> "http://www.w3.org/2006/time#TemporalEntity" [ label = "rdfs:subClassOf" ];
+	"base:DispositivoMedicionTrafico" -> "http://www.w3.org/ns/sosa/Sensor" [ label = "rdfs:subClassOf" ];
+	"base:DispositivoMedicionTrafico" -> "base:EquipoTrafico" [ label = "rdfs:subClassOf" ];
+	"base:EquipoTrafico" -> "http://www.opengis.net/ont/geosparql#Feature" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/geosparql#Geometry" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/2006/time#Interval" -> "http://www.w3.org/2006/time#TemporalEntity" [ label = "rdfs:subClassOf" ];
+
+}
