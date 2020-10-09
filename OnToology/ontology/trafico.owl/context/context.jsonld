@@ -1,0 +1,285 @@
+{
+  "@context" : {
+    "IncidenciaPlanificada" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaPlanificada"
+    },
+    "abstract" : {
+      "@id" : "http://purl.org/dc/elements/1.1/abstract"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "DispositivoMedicionTrafico" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#DispositivoMedicionTrafico"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "startDate" : {
+      "@id" : "http://schema.org/startDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "unidadMedida" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#unidadMedida",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "monitorea" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#monitorea",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "via" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#via",
+      "@type" : "@id"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
+    "Geometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+    },
+    "EquipoTrafico" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#EquipoTrafico"
+    },
+    "Instant" : {
+      "@id" : "http://www.w3.org/2006/time#Instant"
+    },
+    "incidenciaAdjunto" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaAdjunto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "inicioTramo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#inicioTramo",
+      "@type" : "@id"
+    },
+    "madeBySensor" : {
+      "@id" : "http://www.w3.org/ns/sosa/madeBySensor",
+      "@type" : "@id"
+    },
+    "long" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "finTramo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#finTramo",
+      "@type" : "@id"
+    },
+    "Feature" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "tipoEquipoTrafico" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoEquipoTrafico",
+      "@type" : "@id"
+    },
+    "esRecurrente" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#esRecurrente",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "xETRS89" : {
+      "@id" : "https://datos.ign.es/def/geo_core#xETRS89",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Via" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Via"
+    },
+    "recurrencia" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#recurrencia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Interval" : {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "urbano" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#urbano",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "resultTime" : {
+      "@id" : "http://www.w3.org/ns/sosa/resultTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "ObservacionTrafico" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#ObservacionTrafico"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "phenomenonTime" : {
+      "@id" : "http://www.w3.org/ns/sosa/phenomenonTime",
+      "@type" : "@id"
+    },
+    "datePosted" : {
+      "@id" : "http://schema.org/datePosted",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasEnd" : {
+      "@id" : "http://www.w3.org/2006/time#hasEnd",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "enServicio" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#enServicio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "numSentidos" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#numSentidos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "TemporalEntity" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+    },
+    "hasBeginning" : {
+      "@id" : "http://www.w3.org/2006/time#hasBeginning",
+      "@type" : "@id"
+    },
+    "validada" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#validada",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/terms/identifier"
+    },
+    "ProperInterval" : {
+      "@id" : "http://www.w3.org/2006/time#ProperInterval"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "inXSDgYearMonth" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDgYearMonth"
+    },
+    "Incidencia" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Incidencia"
+    },
+    "frecuenciaMedicion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#frecuenciaMedicion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "yETRS89" : {
+      "@id" : "https://datos.ign.es/def/geo_core#yETRS89",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "numCarriles" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#numCarriles",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Point" : {
+      "@id" : "http://www.opengis.net/ont/sf#Point"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "observes" : {
+      "@id" : "http://www.w3.org/ns/sosa/observes",
+      "@type" : "@id"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "tipoIncidencia" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#tipoIncidencia",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "SpatialObject" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
+    },
+    "hasFeatureOfInterest" : {
+      "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+      "@type" : "@id"
+    },
+    "lat" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "observedProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/observedProperty",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "PropiedadMedicionTrafico" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#PropiedadMedicionTrafico"
+    },
+    "Tramo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo"
+    },
+    "fechaFinPrevista" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#fechaFinPrevista",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "ObservableProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "incidenciaEnTramo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#incidenciaEnTramo",
+      "@type" : "@id"
+    },
+    "endDate" : {
+      "@id" : "http://schema.org/endDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "Observation" : {
+      "@id" : "http://www.w3.org/ns/sosa/Observation"
+    },
+    "IncidenciaNoPlanificada" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#IncidenciaNoPlanificada"
+    },
+    "Sensor" : {
+      "@id" : "http://www.w3.org/ns/sosa/Sensor"
+    },
+    "hasSimpleResult" : {
+      "@id" : "http://www.w3.org/ns/sosa/hasSimpleResult",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    }
+  }
+}

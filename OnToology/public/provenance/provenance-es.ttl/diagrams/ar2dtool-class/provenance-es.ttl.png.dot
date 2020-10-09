@@ -1,0 +1,23 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent11" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "http://www.essepuntato.it/lode/" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent10" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent9" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent8" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent7" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "https://github.com/dgarijo/Widoco/" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent6" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent4" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent5" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent3" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent2" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent15" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent13" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent1" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent14" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent12" [ label = "prov:wasAttributedTo" ];
+	"http://vocab.ciudadesabiertas.es/def/transporte/trafico/1.0.0" -> "file:///home/ahmad/OnToology/agent0" [ label = "prov:wasAttributedTo" ];
+
+}
